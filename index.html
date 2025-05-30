@@ -1,0 +1,355 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/x-icon" href="resources/images/icon.ico">
+        <title>
+            StudyHelper
+        </title>
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <header>
+            <div>
+                <div id="menuContainer">
+                    <button class="btn menu" id="menuBtn">
+                        &#8801;
+                    </button>
+                    <div class="modal" id="menuModal">
+                        <span>
+                            <div class="menuTextBtns" id="menuExitBtn" onclick="closeMenu()">
+                                X
+                            </div>
+                        </span>
+                        <hr>
+                        <span>
+                            <img src="resources/images/settings.png" width="45px" height="auto" onclick="openSettings()" class="icoBtns settingsBtn">
+                        </span>
+                        <hr>
+                        <span>
+                            <img src="resources/images/calculator.png" width="45px" height="auto" onclick="openCalc()" class="icoBtns calcBtn">
+                        </span>
+                        <hr>
+                        <span>
+                            <img src="resources/images/leaderboard.svg" width="45px" height="auto" onclick="alert('Coming soon(hopfully)')" class="icoBtns leaderboardBtn">
+                        </span>
+                        <hr>
+                        <span>
+                            <div class="menuTextBtns" id="helpBtn" onclick="openHelpModal()">
+                                ?
+                            </div>
+                        </span>
+                    </div>
+                </div>
+                <span id="settings">
+                    <div class="modal" id="settingsModal">
+                        <span>
+                            <div>
+                                <h2 style="text-align: center;">
+                                    <b>
+                                        Settings
+                                    </b>
+                                    <div class="exitModalBtns" onclick="closeSettings()">
+                                        <b>
+                                            X
+                                        </b>
+                                    </div>
+                                </h2>
+                            </div>
+                        </span>
+                        <form>
+                            <input type="text">
+                        </form>
+                    </div>
+                </span>
+                <span id="calculator">
+                    <div class="modal" id="calcModal">
+                        <input type="text" id="display" class="display" disabled>
+                        <button class="calcButton close" onclick="closeCalc()">
+                            <b>
+                                X
+                            </b>
+                        </button>
+                        <button class="calcButton calcModes" id="calcMode">
+                            Rad
+                        </button>
+                        <div class="calcButtons">
+                            <button class="calcButton clear" onclick="clearDisplay()">
+                                <b>
+                                    C
+                                </b>
+                            </button>
+                            <button class="calcButton operator" onclick="appendOperation('/')">
+                                <b>
+                                    /
+                                </b>
+                            </button>
+                            <button class="calcButton operator" onclick="appendOperation('*')">
+                                <b>
+                                    *
+                                </b>
+                            </button>
+                            <button class="calcButton operator" onclick="appendOperation('-')">
+                                <b>
+                                    -
+                                </b>
+                            </button>
+                            <button class="calcButton" onclick="appendNumber('7')">
+                                <b>
+                                    7
+                                </b>
+                            </button>
+                            <button class="calcButton" onclick="appendNumber('8')">
+                                <b>
+                                    8
+                                </b>
+                            </button>
+                            <button class="calcButton" onclick="appendNumber('9')">
+                                <b>
+                                    9
+                                </b>
+                            </button>
+                            <button class="calcButton operator" onclick="appendOperation('+')">
+                                <b>
+                                    +
+                                </b>
+                            </button>
+                            <button class="calcButton" onclick="appendNumber('4')">
+                                <b>
+                                    4
+                                </b>
+                            </button>
+                            <button class="calcButton" onclick="appendNumber('5')">
+                                <b>
+                                    5
+                                </b>
+                            </button>
+                            <button class="calcButton" onclick="appendNumber('6')">
+                                <b>
+                                    6
+                                </b>
+                            </button>
+                            <button class="calcButton operator" onclick="appendOperation('^')">
+                                <b>
+                                    ^
+                                </b>
+                            </button>
+                            <button class="calcButton" onclick="appendNumber('1')">
+                                <b>
+                                    1
+                                </b>
+                            </button>
+                            <button class="calcButton" onclick="appendNumber('2')">
+                                <b>
+                                    2
+                                </b>
+                            </button>
+                            <button class="calcButton" onclick="appendNumber('3')">
+                                <b>
+                                    3
+                                </b>
+                            </button>
+                            <button class="calcButton operator" onclick="appendOperation('√')">
+                                <b>
+                                    &radic;
+                                </b>
+                            </button>
+                            <button class="calcButton" onclick="appendNumber('0')">
+                                <b>
+                                    0
+                                </b>
+                            </button>
+                            <button class="calcButton other" onclick="appendNumber('.')">
+                                <b>
+                                    .
+                                </b>
+                            </button>
+                            <button class="calcButton other" onclick="appendNumber('-')">
+                                <b>
+                                    +/-
+                                </b>
+                            </button>
+                            <button class="calcButton operator" onclick="appendOperation('log')">
+                                <b>
+                                    log
+                                </b>
+                            </button>
+                            <button class="calcButton operator" onclick="appendOperation('cos')">
+                                <b>
+                                    cos
+                                </b>
+                            </button>
+                            <button class="calcButton operator" onclick="appendOperation('sin')">
+                                <b>
+                                    sin
+                                </b>
+                            </button>
+                            <button class="calcButton operator" onclick="appendOperation('tan')">
+                                <b>
+                                    tan
+                                </b>
+                            </button>
+                            <button class="calcButton equal" onclick="calculate()">
+                                <b>
+                                    =
+                                </b>
+                            </button>
+                            <button class="calcButton" onclick="appendNumber(Math.PI)">
+                                <b>
+                                    &#960;
+                                </b>
+                            </button>
+                        </div>
+                    </div>
+                </span>
+                <span id="help">
+                    <div class="modal" id="helpModal"></div>
+                </span>
+                <div id="userInfoContainer">
+                    <button class="btn arrow" id="userInfoDownArrow" onclick="openUserInfoModal()">
+                        <div>
+                            &DownArrowBar;
+                        </div>
+                    </button>
+                    <div class="modal" id="userInfoModal">
+                        <div id="scores" class="userInfoText">
+                            <table>
+                                <tr>
+                                    <td>
+                                        <span id="score"></span>
+                                    </td>
+                                    <td>
+                                        <span id="highscore"></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span id="streak"></span>
+                                    </td>
+                                    <td>
+                                        <span id="highestStreak"></span>
+                                    </td>
+                                </tr>
+                            </table>
+                            <button class="btn arrow" id="userInfoUpArrow" onclick="closeUserInfoModal()">
+                                &UpArrowBar;
+                            </button>
+                            <span>
+                                <button id="fixxer" onclick="resetUserScores()">
+                                    fix
+                                </button>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <br>
+        <section>
+            <span id="sidePanel">
+                <p id="question" style="color:white;"></p>
+                <div id="box" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            </span>
+            <article id="answerBox">
+                <div id="box2"></div>
+            </article>
+        </section>
+        <select name="Unit" id="UnitSelector">
+            <optgroup label="Chem 20">
+                <option value="C2R">
+                    All Units
+                </option>
+                <option value="C2A">
+                    Unit A: Chemical Bonding
+                </option>
+                <option value="C2B">
+                    Unit B: Gases
+                </option>
+                <option value="C2C">
+                    Unit C(a): Solutions
+                </option>
+                <option value="C2E">
+                    Unit C(b): Acids and Bases
+                </option>
+                <option value="C2D">
+                    Unit D: Quantitative Relationships in Chemical Changes
+                </option>
+            </optgroup>
+            <hr>
+            <optgroup label="Chem 30">
+            </optgroup>
+            <hr>
+            <optgroup label="Bio 20">
+                <option value="B2R">
+                    All Units
+                </option>
+                <option value="B2A">
+                    Unit A: Energy and Matter Exchange in the Biosphere
+                </option>
+                <option value="B2B">
+                    Unit B: Ecosystems and Population Change
+                </option>
+                <option value="B2C">
+                    Unit C: Photosythesis and Cellular Respiration
+                </option>
+                <option value="B2D">
+                    Unit D: Human Systems
+                </option>
+            </optgroup>
+            <hr>
+            <optgroup label="Bio 30">
+            </optgroup>
+            <hr>
+            <optgroup label="Social 10">
+            </optgroup>
+            <hr>
+            <optgroup label="Social 20">
+                <option value="S2R">
+                    All Units
+                </option>
+                <option value="S2A">
+                    Unit A: Foundations of Nationalism
+                </option>
+                <option value="S2B">
+                    Unit B: National Interest
+                </option>
+                <option value="S2C">
+                    Unit C: Internationalism
+                </option>
+            </optgroup>
+            <hr>
+            <optgroup label="Social 30">
+            </optgroup>
+            <hr>
+            <optgroup label="Math 10-1">
+            </optgroup>
+            <hr>
+            <optgroup label="Math 20-1">
+            </optgroup>
+            <hr>
+            <optgroup label="Math 30-1">
+                <option value="M2R">
+                    All Units
+                </option>
+                <option value="M3A">
+                    Unit A: Transformations
+                </option>
+                <option value="M3B">
+                    Unit B: Polynomials and Function Operations
+                </option>
+                <option value="M3C">
+                    Unit C: Trigonometry
+                </option>
+                <option value="M3D">
+                    Unit D: Exponents and Logarithms
+                </option>
+                <option value="M3E">
+                    Unit E: Combinatorics
+                </option>
+            </optgroup>
+            <hr>
+        </select>
+        <script src="index.js"></script>
+    </body>
+</html>

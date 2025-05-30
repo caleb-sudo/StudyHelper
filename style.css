@@ -1,0 +1,270 @@
+body {
+    background: radial-gradient(hsl(209 40% 32%), hsl(209 40% 16%));
+    background-attachment: fixed;
+    background-size: cover;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+table {
+    border-collapse: collapse;
+}
+
+td {
+    border: 1px solid black;
+    padding: 2px;
+}
+
+#calcModal {
+    width: auto;
+    height: auto;
+    padding: 10px;
+    position: absolute;
+    background-color: rgb(0 0 0 / 0.1);
+    border-radius: 16px;
+    cursor: move;
+    display: none;
+}
+
+input {
+    cursor: pointer;
+}
+
+.radioLabel {
+    justify-content: center;
+    align-content: center;
+    word-wrap: normal;
+    cursor: pointer;
+    width: 10%
+}
+
+.submitBtn,
+.nextBtn {
+    background-color: #2196F3;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.submitBtn:hover,
+.nextBtn:hover {
+    opacity: 0.6;
+}
+
+.modal {
+    display: none;
+    z-index: 1;
+    width: auto;
+    height: auto;
+    overflow: auto;
+    background-color: rgb(0 0 0 / 0.1);
+    border-radius: 16px;
+    padding: 15px 15px 15px 15px;
+}
+
+#menuContainer {
+    margin: 0;
+    float: left;
+}
+
+#menuModal {
+    left: 0;
+    top: 0;
+}
+
+#settingsModal {
+    position: absolute;
+    left: 4%;
+    top: 3%;
+    width: 90%;
+    height: 90%;
+    background-color: gray;
+}
+
+#userInfoModal {
+    right: 0;
+    top: 0;
+}
+
+#userInfoContainer {
+    margin: 0;
+    float: right;
+}
+
+.menuTextBtns,
+.exitModalBtns {
+    font-size: 25px;
+    cursor: pointer;
+    color: black;
+}
+
+.exitModalBtns {
+    float: right;
+}
+
+.btn {
+    cursor: pointer;
+    background: none;
+    color: rgba(255, 255, 255, 0.7);
+    border: none;
+    border-radius: 50%;
+    font-size: 25px;
+}
+
+.scoresText {
+    font-size: 20px;
+}
+
+.question {
+    float: left;
+    width: 50%;
+}
+
+article,
+#scores {
+    background-color: rgb(0 0 0 / 0.1);
+    border-radius: 16px;
+}
+
+article {
+    float: right;
+    padding: 20px;
+    width: 50%;
+    height: fit-content;
+}
+
+section {
+    display: flex;
+    float: left;
+    width: 100%;
+}
+
+.icoBtns {
+    cursor: pointer;
+}
+
+.display {
+    width: 75%;
+    height: 50px;
+    text-align: right;
+    font-size: 1.5rem;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    background-color: #ffeb3b;
+    border-radius: 8px;
+    color: #333;
+}
+
+.calcButtons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.calcButton {
+    background-color: #03a9f4;
+    border: none;
+    font-size: 1.5rem;
+    padding: 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.3s, transform 0.2s;
+    color: white;
+}
+
+.calcButton:hover {
+    background-color: #0288d1;
+    transform: scale(1.1);
+}
+
+.calcButton:active {
+    transform: scale(0.95);
+}
+
+.calcButton.clear {
+    background-color: #ff5722;
+}
+
+.calcButton.clear:hover {
+    background-color: #e64a19;
+}
+
+.calcButton.equal {
+    background-color: #8bc34a;
+}
+
+.calcButton.equal:hover {
+    background-color: #689f38;
+}
+
+.calcButton.operator {
+    background-color: #ff9800;
+}
+
+.calcButton.operator:hover {
+    background-color: #f57c00;
+}
+
+.calcButton.close {
+    background-color: red;
+    float: right;
+}
+
+.calcButton.other {
+    background-color: violet;
+}
+
+#exitLeaderboardModal {
+    float: right;
+    cursor: pointer;
+}
+
+table {
+    border: 1px solid black;
+}
+
+.title {
+    position: absolute;
+}
+
+.radioBox {
+    cursor: pointer;
+}
+
+.radioBox:hover {
+    scale: 1.1;
+}
+
+.radioBox,
+.draggables,
+.dropboxes {
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 4px 4px 0 0 #050505;
+    background: #24292d;
+    width: fit-content;
+    height: fit-content;
+    padding: 5px;
+}
+
+.draggables {
+    cursor: grab;
+}
+
+.droppers {
+    border: 2px dashed white;
+    padding: 10px;
+    width: fit-content;
+    height: fit-content;
+}
+
+#sidePanel {
+    width: 50%;
+}
+
+.checker {
+    font-size: 25px;
+}
