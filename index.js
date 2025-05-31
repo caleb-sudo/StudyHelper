@@ -711,6 +711,23 @@ function buildQuestion() {
                     qField.appendChild(elements);
                     qField.appendChild(br);
                 }
+                
+                let submitBtn = document.createElement('button');
+                submitBtn.innerHTML = "Submit";
+                submitBtn.classList = "submitBtn";
+                qField.appendChild(submitBtn);
+
+                let nextBtn = document.createElement('button');
+                nextBtn.innerHTML = "Next";
+                nextBtn.classList = "nextBtn";
+
+                function submitFillIn() {
+                    submitBtn.style.display = "none";
+                    qField.appendChild(nextBtn);
+                }
+
+                submitBtn.addEventListener("click", submitFillIn);
+                nextBtn.addEventListener("click", reloadPage);
             }
         })
         .catch(error => console.error('Failed to fetch data: ', error));
