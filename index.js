@@ -373,13 +373,13 @@ function buildQuestion() {
                     imgField.appendChild(document.createElement('br'));
                 }
 
-                let r = randomize(4);
                 const opts = [
                     "A) ",
                     "B) ",
                     "C) ",
                     "D) "
                 ];
+                
                 for (let i = 0; i < 4; i++) {
                     const div = document.createElement('div');
                     div.classList = "radioBox";
@@ -703,9 +703,11 @@ function buildQuestion() {
                 onePanelMode();
                 let r = randomize(unit[questionNum].totalElements);
                 for (var i = 0; i < unit[questionNum].totalElements; i++) {
-                    let elements = document.createElement('span');
                     let br = document.createElement('br');
+                    let elements = document.createElement('span');
                     elements.innerHTML = unit[questionNum].definitions[r[i]];
+                    elements.classList = "fill_inDefinitions";
+                    elements.id = "fill_inDefinition" + i;
                     qField.appendChild(elements);
                     qField.appendChild(br);
                 }

@@ -268,3 +268,12 @@ table {
 .checker {
     font-size: 25px;
 }
+
+.fill_in {
+    background-color: transparent;
+    color: white;
+}
+
+.fill_inDefinitions {
+    font-size: 20px;
+}
