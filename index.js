@@ -142,6 +142,9 @@ function onePanelMode() {
     sidePanel.style.textAlign = "center";
     sidePanel.style.paddingLeft = "5%";
     sidePanel.style.paddingRight = "5%";
+
+    let ansBox = document.getElementById("answerBox");
+    ansBox.style.display = "none";
 }
 
 let currentInput = '';
@@ -605,9 +608,6 @@ function buildQuestion() {
                 text.style.textAlign = "center";
                 text.style.fontSize = "15px";
 
-                let ansBox = document.getElementById("answerBox");
-                ansBox.style.display = "none";
-
                 let checker = document.createElement('span');
                 checker.classList = "checker";
 
@@ -704,8 +704,10 @@ function buildQuestion() {
                 let r = randomize(unit[questionNum].totalElements);
                 for (var i = 0; i < unit[questionNum].totalElements; i++) {
                     let elements = document.createElement('span');
+                    let br = document.createElement('br');
                     elements.innerHTML = unit[questionNum].definitions[r[i]];
                     qField.appendChild(elements);
+                    qField.appendChild(br);
                 }
             }
         })
