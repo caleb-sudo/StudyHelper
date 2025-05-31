@@ -593,6 +593,9 @@ function buildQuestion() {
                 sidePanel.style.textAlign = "center";
                 sidePanel.style.paddingLeft = "5%";
                 sidePanel.style.paddingRight = "5%";
+
+                let br = document.createElement('br');
+
                 let ansBox = document.getElementById("answerBox");
                 ansBox.style.display = "none";
 
@@ -604,7 +607,7 @@ function buildQuestion() {
                 responseBox.id = "response";
                 qField.appendChild(responseBox);
                 qField.appendChild(checker);
-                qField.appendChild(document.createElement('br'));
+                qField.appendChild(br);
 
                 let submitBtn = document.createElement('button');
                 submitBtn.innerHTML = "Submit";
@@ -627,16 +630,21 @@ function buildQuestion() {
                     correctAns.style.color = "white";
                     let color = document.createElement('span');
                     localStorage.setItem("totalAnswered", totalAnswered + 1);
-                    qField.appendChild(document.createElement('br'));
+                    qField.appendChild(br);
                         
                     if (val == answer && value.search(u) == -1) {
                         localStorage.setItem("score", score + 0.5);
                         localStorage.setItem("streak", strk + 1);
                         localStorage.setItem("totalAnsweredCorrect", totalAnsweredCorrect + 0.5);
-                        checker.innerHTML = "You forgot you're units";
+                        let arr = [
+                            "You forgot you're units",
+                            "What does that number represent!?",
+                            "What does that number mean!?",
+                            "What does that number mean!? Grams?, Moles?, Miles?, Liters? What is it?!"
+                        ]
+                        checker.innerHTML = arr[Math.floor(Math.random() * arr.length)];
                         checker.style.color = "white";
-                        checker.style.fontSize = "20px";
-                        checker.appendChild(document.createElement('br'));
+                        checker.appendChild(br);
                         color.style.fontSize = "25px";
                         color.style.color = "green";
                         color.innerHTML = "&check;";
@@ -647,8 +655,16 @@ function buildQuestion() {
                         localStorage.setItem("totalAnsweredCorrect", totalAnsweredCorrect + 1);
                         checker.style.color = "green";
                         checker.innerHTML = "&check;";
-                    } else if (val-1 <= val <= val+1 && value.search(u) != -1) {
-                        alert("hello");
+                    } else if (valMin <= val <= valMax && val != answer && value.search(u) != -1) {
+                        localStorage.setItem("score", score + 0.5);
+                        localStorage.setItem("streak", strk + 1);
+                        localStorage.setItem("totalAnsweredCorrect", totalAnsweredCorrect + 0.5);
+                        checker.innerHTML = "So close";
+                        checker.style.color = "white";
+                        checker.appendChild(br);
+                        color.style.fontSize = "25px";
+                        color.style.color = "green";
+                        checker.appendChild(color);
                     } else {
                         localStorage.setItem("score", score - 1);
                         localStorage.setItem("streak", 0);
@@ -657,12 +673,14 @@ function buildQuestion() {
                         correctAns.innerHTML = "The correct was <b>&asymp;" + answer + u[0] + "</b>";
                         qField.appendChild(correctAns);
                     }
-                    qField.appendChild(document.createElement('br'));
+                    qField.appendChild(br);
                     qField.appendChild(nextBtn);
                 }
                 submitBtn.addEventListener("click", submitNumeric);
                 nextBtn.addEventListener("click", reloadPage);
             } else if (unit[questionNum].type == 5) { //true or false
+
+            } else if (unit[questionNum].type == 6) { //fill in the blanks
 
             }
         })
