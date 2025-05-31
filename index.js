@@ -136,6 +136,14 @@ function resetUserScores() {
     }
 }
 
+function onePanelMode() {
+    let sidePanel = document.getElementById("sidePanel");
+    sidePanel.style.width = "100%";
+    sidePanel.style.textAlign = "center";
+    sidePanel.style.paddingLeft = "5%";
+    sidePanel.style.paddingRight = "5%";
+}
+
 let currentInput = '';
 let currentOperation = '';
 let previousInput = '';
@@ -588,11 +596,7 @@ function buildQuestion() {
 
                 nextBtn.addEventListener("click", reloadPage);
             } else if (unit[questionNum].type == 4) { //numeric response question
-                let sidePanel = document.getElementById("sidePanel");
-                sidePanel.style.width = "100%";
-                sidePanel.style.textAlign = "center";
-                sidePanel.style.paddingLeft = "5%";
-                sidePanel.style.paddingRight = "5%";
+                onePanelMode();
 
                 let br = document.createElement('br');
 
@@ -696,7 +700,13 @@ function buildQuestion() {
             } else if (unit[questionNum].type == 5) { //true or false
 
             } else if (unit[questionNum].type == 6) { //fill in the blanks
-
+                onePanelMode();
+                let r = randomize(unit[questionNum].totalElements);
+                for (var i = 0; i < unit[questionNum].totalElements; i++) {
+                    let elements = document.createElement('span');
+                    elements.innerHTML = unit[questionNum].definitions[r[i]];
+                    qField.appendChild(elements);
+                }
             }
         })
         .catch(error => console.error('Failed to fetch data: ', error));
