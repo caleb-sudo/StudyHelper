@@ -711,6 +711,9 @@ function buildQuestion() {
                     qField.appendChild(elements);
                     qField.appendChild(br);
                 }
+
+                let checker = document.createElement('span');
+                checker.classList = "checker";
                 
                 let submitBtn = document.createElement('button');
                 submitBtn.innerHTML = "Submit";
@@ -720,9 +723,14 @@ function buildQuestion() {
                 let nextBtn = document.createElement('button');
                 nextBtn.innerHTML = "Next";
                 nextBtn.classList = "nextBtn";
-
                 function submitFillIn() {
                     submitBtn.style.display = "none";
+                    for (var i = 0; i < unit[questionNum].totalElements; i++) {
+                        let textBox = document.getElementsByClassName("fill_in");
+                        let value = textBox.value;
+                        value[i].toLowerCase();
+                        //if (unit[questionNum].answers[i].length)
+                    }
                     qField.appendChild(nextBtn);
                 }
 

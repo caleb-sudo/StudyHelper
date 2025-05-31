@@ -3470,7 +3470,9 @@
                         "The <input type='text' class='fill_in' id='fill_in7'> oversees the establishment and implementation of global trade regulations. The WTO promotes free-market capitalism and the decrease of government regulations and trade barriers."
                     ],
                     "answers": [
-                        "International Court of Justice",
+                        [
+                            "International Court of Justice"
+                        ],
                         [
                             "UNESCO",
                             "United Nations Educational, Scientific, and Cultural Organization"
