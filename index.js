@@ -596,6 +596,11 @@ function buildQuestion() {
 
                 let br = document.createElement('br');
 
+                let text = document.createElement('span');
+                text.style.color = "white";
+                text.style.textAlign = "center";
+                text.style.fontSize = "15px";
+
                 let ansBox = document.getElementById("answerBox");
                 ansBox.style.display = "none";
 
@@ -631,40 +636,44 @@ function buildQuestion() {
                     let color = document.createElement('span');
                     localStorage.setItem("totalAnswered", totalAnswered + 1);
                     qField.appendChild(br);
-                        
-                    if (val == answer && value.search(u) == -1) {
-                        localStorage.setItem("score", score + 0.5);
-                        localStorage.setItem("streak", strk + 1);
-                        localStorage.setItem("totalAnsweredCorrect", totalAnsweredCorrect + 0.5);
-                        let arr = [
-                            "You forgot you're units",
-                            "What does that number represent!?",
-                            "What does that number mean!?",
-                            "What does that number mean!? Grams?, Moles?, Miles?, Liters? What is it?!"
-                        ]
-                        checker.innerHTML = arr[Math.floor(Math.random() * arr.length)];
-                        checker.style.color = "white";
-                        checker.appendChild(br);
-                        color.style.fontSize = "25px";
-                        color.style.color = "green";
-                        color.innerHTML = "&check;";
-                        checker.appendChild(color);
-                    } else if (val == answer && value.search(u) != -1) {
+                    
+                    if (val == answer && value.search(u) != -1) {
                         localStorage.setItem("score", score + 1);
                         localStorage.setItem("streak", strk + 1);
                         localStorage.setItem("totalAnsweredCorrect", totalAnsweredCorrect + 1);
                         checker.style.color = "green";
                         checker.innerHTML = "&check;";
+                    } else if (val == answer && value.search(u) == -1) {
+                        localStorage.setItem("score", score + 0.5);
+                        localStorage.setItem("streak", strk + 1);
+                        localStorage.setItem("totalAnsweredCorrect", totalAnsweredCorrect + 0.5);
+                        let unitsArr = [
+                            "You forgot you're units.",
+                            "What does that number represent!?",
+                            "What does that number mean!?",
+                            "What does that number mean!? Grams?, Moles?, Miles?, Liters? What is it?!"
+                        ];
+                        checker.style.fontSize = "25px";
+                        checker.style.color = "green";
+                        checker.innerHTML = "&check;";
+                        qField.appendChild(br);
+                        text.innerHTML = unitsArr[Math.floor(Math.random() * unitsArr.length)];
+                        qField.appendChild(text);
                     } else if (valMin <= val <= valMax && val != answer && value.search(u) != -1) {
                         localStorage.setItem("score", score + 0.5);
                         localStorage.setItem("streak", strk + 1);
                         localStorage.setItem("totalAnsweredCorrect", totalAnsweredCorrect + 0.5);
-                        checker.innerHTML = "So close";
-                        checker.style.color = "white";
-                        checker.appendChild(br);
-                        color.style.fontSize = "25px";
-                        color.style.color = "green";
-                        checker.appendChild(color);
+                        let valsArr = [
+                            "So Close",
+                            "Did you round incorrectly?",
+                            "Did you check your significant digits?"
+                        ];
+                        checker.style.fontSize = "25px";
+                        checker.style.color = "green";
+                        checker.innerHTML = "&check";
+                        qField.appendChild(br);
+                        text.innerHTML = valsArr[Math.floor(Math.random() * valsArr.length)];
+                        qField.appendChild(text);
                     } else {
                         localStorage.setItem("score", score - 1);
                         localStorage.setItem("streak", 0);
@@ -688,7 +697,7 @@ function buildQuestion() {
 }
 buildQuestion();
 
-/*function openLeaderBoards() {
+function openLeaderBoards() {
     const btn = document.getElementById("leaderboardIco");
     const modal = document.getElementById("leaderboardModal");
     const exit = document.getElementById("exitLeaderboardModal");
@@ -717,4 +726,4 @@ buildQuestion();
             tr.appendChild(td);
         }
     }
-}*/
+}
