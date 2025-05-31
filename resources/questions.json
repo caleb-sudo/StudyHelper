@@ -271,6 +271,42 @@
                     ],
                     "answer": 2,
                     "picture": null
+                },
+                {
+                    "type": 0,
+                    "question": "What definition best fits an Autotroph?",
+                    "options": [
+                        "An organism that makes it's own energy.",
+                        "An organism that uses chemicals to make it's own energy.",
+                        "An organism that relys on organic material for energy.",
+                        "An organism that feeds on producers for energy."
+                    ],
+                    "answer": 0,
+                    "picture": null
+                },
+                {
+                    "type": 0,
+                    "question": "What definition best fits an Chemoautotroph?",
+                    "options": [
+                        "An organism that makes it's own energy.",
+                        "An organism that uses chemicals to make it's own energy.",
+                        "An organism that relys on organic material for energy.",
+                        "An organism that feeds on other consumers for energy."
+                    ],
+                    "answer": 1,
+                    "picture": null
+                },
+                {
+                    "type": 0,
+                    "question": "What definition best fits an Heterotroph?",
+                    "options": [
+                        "An organism that makes it's own energy",
+                        "An organism that uses chemicals to make it's own energy.",
+                        "An organism that relys on organic material for energy.",
+                        "An organism that feeds on producers for energy."
+                    ],
+                    "answer": 2,
+                    "picture": null
                 }
             ],
             "UnitB": [
@@ -288,6 +324,42 @@
                         "<b>Genus</b>",
                         "<b>Species</b>"
                     ]
+                },
+                {
+                    "type": 0,
+                    "question": "What zone of a lake ecosystem would plant growth be in?",
+                    "options": [
+                        "the Littoral zone",
+                        "the Limnetic zone",
+                        "the Lifundal zone",
+                        "the Profunal zone"
+                    ],
+                    "answer": 0,
+                    "picture": null
+                },
+                {
+                    "type": 0,
+                    "question": "What zone of a lake ecosystem does light still penatrate, but no plant life is present?",
+                    "options": [
+                        "the Littoral zone",
+                        "the Limnetic zone",
+                        "the Lifundal zone",
+                        "the Profunal zone"
+                    ],
+                    "answer": 1,
+                    "picture": null
+                },
+                {
+                    "type": 0,
+                    "question": "what zone of a lake ecosystem does the light not penatrate, and is beneath the waters surface?",
+                    "options": [
+                        "the Littoral zone",
+                        "the Limnetic zone",
+                        "the Lifundal zone",
+                        "the Profunal zone"
+                    ],
+                    "answer": 3,
+                    "picture": null
                 }
             ],
             "UnitC": [
