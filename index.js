@@ -637,7 +637,6 @@ function buildQuestion() {
                     let u = unit[questionNum].unit;
                     let correctAns = document.createElement('span');
                     correctAns.style.color = "white";
-                    let color = document.createElement('span');
                     localStorage.setItem("totalAnswered", totalAnswered + 1);
                     qField.appendChild(br);
                     
