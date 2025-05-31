@@ -729,7 +729,9 @@ function buildQuestion() {
                         let textBox = document.getElementsByClassName("fill_in");
                         let value = textBox.value;
                         value[i].toLowerCase();
-                        //if (unit[questionNum].answers[i].length)
+                        for (var x = 0; x < unit[questionNum].answers[i].length; x++) {
+                            
+                        }
                     }
                     qField.appendChild(nextBtn);
                 }
