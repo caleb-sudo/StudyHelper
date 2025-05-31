@@ -701,19 +701,16 @@ function buildQuestion() {
 
             } else if (unit[questionNum].type == 6) { //fill in the blanks
                 onePanelMode();
-                let r = randomize(unit[questionNum].totalElements);
+                //let r = randomize(unit[questionNum].totalElements);
                 for (var i = 0; i < unit[questionNum].totalElements; i++) {
                     let br = document.createElement('br');
                     let elements = document.createElement('span');
-                    elements.innerHTML = unit[questionNum].definitions[r[i]];
+                    elements.innerHTML = unit[questionNum].definitions[i];
                     elements.classList = "fill_inDefinitions";
                     elements.id = "fill_inDefinition" + i;
                     qField.appendChild(elements);
                     qField.appendChild(br);
                 }
-
-                let checker = document.createElement('span');
-                checker.classList = "checker";
                 
                 let submitBtn = document.createElement('button');
                 submitBtn.innerHTML = "Submit";
@@ -724,14 +721,30 @@ function buildQuestion() {
                 nextBtn.innerHTML = "Next";
                 nextBtn.classList = "nextBtn";
                 function submitFillIn() {
+                    let correct = 0;
                     submitBtn.style.display = "none";
                     for (var i = 0; i < unit[questionNum].totalElements; i++) {
+                        let definitions = document.getElementsByClassName("fill_inDefinitions");
+                        let checker = document.createElement('span');
+                        checker.classList = "checker";
                         let textBox = document.getElementsByClassName("fill_in");
-                        let value = textBox.value;
-                        value[i].toLowerCase();
-                        for (var x = 0; x < unit[questionNum].answers[i].length; x++) {
-                            
+                        let value = textBox[i].value;
+                        let val = value.toLowerCase();
+                        let ans = (x) => unit[questionNum].answers[i][x].toString().toLowerCase();
+                        if (ans(0) == val || ans(1) == val) {
+                            checker.style.color = "green";
+                            checker.innerHTML = "&check;";
+                            correct++;
+                            localStorage.setItem("score", score + correct);
+                            localStorage.setItem("streak", strk + 1);
+                            localStorage.setItem("totalAnsweredCorrect", totalAnsweredCorrect + correct);
+                        } else {
+                            checker.style.color = "red";
+                            checker.innerHTML = "&cross;";
+                            localStorage.setItem("score", score - (unit[questionNum].totalElements - correct));
+                            localStorage.setItem("streak", 0);
                         }
+                        definitions[i].appendChild(checker)
                     }
                     qField.appendChild(nextBtn);
                 }
