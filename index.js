@@ -647,7 +647,7 @@ function buildQuestion() {
                         localStorage.setItem("totalAnsweredCorrect", totalAnsweredCorrect + 1);
                         checker.style.color = "green";
                         checker.innerHTML = "&check;";
-                    } else if (value.search(answer) != -1 && val-1 <= val <= val+1 && value.search(u) != -1) {
+                    } else if (value.search(answer) == -1 && val-1 <= val <= val+1 && value.search(u) != -1) {
                         alert("hello");
                     } else {
                         localStorage.setItem("score", score - 1);
