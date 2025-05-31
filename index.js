@@ -629,7 +629,7 @@ function buildQuestion() {
                     localStorage.setItem("totalAnswered", totalAnswered + 1);
                     qField.appendChild(document.createElement('br'));
                         
-                    if (value.search(answer) != -1 && value.search(u[0]) == -1) {
+                    if (value.search(answer) != -1 && value.search(u) == -1) {
                         localStorage.setItem("score", score + 0.5);
                         localStorage.setItem("streak", strk + 1);
                         localStorage.setItem("totalAnsweredCorrect", totalAnsweredCorrect + 0.5);
@@ -641,12 +641,14 @@ function buildQuestion() {
                         color.style.color = "green";
                         color.innerHTML = "&check;";
                         checker.appendChild(color);
-                    } else if (value.search(answer) != -1 && value.search(u[0]) != -1) {
+                    } else if (value.search(answer) != -1 && value.search(u) != -1) {
                         localStorage.setItem("score", score + 1);
                         localStorage.setItem("streak", strk + 1);
                         localStorage.setItem("totalAnsweredCorrect", totalAnsweredCorrect + 1);
                         checker.style.color = "green";
                         checker.innerHTML = "&check;";
+                    } else if (value.search(answer) != -1 && val-1 <= val <= val+1 && value.search(u) != -1) {
+                        alert("hello");
                     } else {
                         localStorage.setItem("score", score - 1);
                         localStorage.setItem("streak", 0);
