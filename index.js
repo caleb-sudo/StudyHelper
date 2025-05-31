@@ -663,11 +663,17 @@ function buildQuestion() {
                         localStorage.setItem("score", score + 0.5);
                         localStorage.setItem("streak", strk + 1);
                         localStorage.setItem("totalAnsweredCorrect", totalAnsweredCorrect + 0.5);
-                        let valsArr = [
-                            "So Close",
-                            "Did you round incorrectly?",
-                            "Did you check your significant digits?"
-                        ];
+                        if (unitSelect.value[0] == 'C' || unitSelect.value[0] == 'P') {
+                            let valsArr = [
+                                "So Close",
+                                "Did you round incorrectly?",
+                                "Did you check your significant digits?"
+                            ];
+                        } else {
+                            let valsArr = [
+                                "So Close"
+                            ];
+                        }
                         checker.style.fontSize = "25px";
                         checker.style.color = "green";
                         checker.innerHTML = "&check";
