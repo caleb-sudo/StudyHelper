@@ -107,9 +107,9 @@ const scoreText = document.getElementById("score");
 const highscoreText = document.getElementById("highscore");
 const highestStreakText = document.getElementById("highestStreak");
 
-scoreText.innerHTML = "Your Score: <b class='scoresText'>" + getscore + "</b>   ";
+scoreText.innerHTML = "Your Score: <b class='scoresText'>" + getscore + "</b>";
 highscoreText.innerHTML = "Your Highscore: <b class='scoresText'>" + getHighscore + "</b>";
-strkText.innerHTML = "Your Streak: <b class='scoresText'>" + getstrk + "</b>   ";
+strkText.innerHTML = "Your Streak: <b class='scoresText'>" + getstrk + "</b>";
 highestStreakText.innerHTML = "Your highest Streak: <b class='scoresText'>" + getHighestStrk + "</b>";
 
 if (score >= highscore) localStorage.setItem("highscore", score);
@@ -700,11 +700,11 @@ function buildQuestion() {
 
             } else if (unit[questionNum].type == 6) { //fill in the blanks
                 onePanelMode();
-                //let r = randomize(unit[questionNum].totalElements);
+                let r = randomize(unit[questionNum].totalElements);
                 for (var i = 0; i < unit[questionNum].totalElements; i++) {
                     let br = document.createElement('br');
                     let elements = document.createElement('span');
-                    elements.innerHTML = unit[questionNum].definitions[i];
+                    elements.innerHTML = unit[questionNum].definitions[r[i]];
                     elements.classList = "fill_inDefinitions";
                     elements.id = "fill_inDefinition" + i;
                     qField.appendChild(elements);
@@ -727,9 +727,9 @@ function buildQuestion() {
                         let checker = document.createElement('span');
                         checker.classList = "checker";
                         let textBox = document.getElementsByClassName("fill_in");
-                        let value = textBox[i].value;
+                        let value = textBox[r[i]].value;
                         let val = value.toLowerCase();
-                        let ans = (x) => unit[questionNum].answers[i][x].toString().toLowerCase();
+                        let ans = (x) => unit[questionNum].answers[r[i]][x].toString().toLowerCase();
                         if (ans(0) == val || ans(1) == val) {
                             checker.style.color = "green";
                             checker.innerHTML = "&check;";
