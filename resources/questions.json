@@ -8,7 +8,7 @@
                 {
                     "type": 4,
                     "question": "Small amounts of hydrogen are conveniently prepared by reacting zinc with hydrochloric acid. What mass zinc is required to prepare 2.50L of hydrogen gas at 765mmHg and 22&deg;C?",
-                    "formula": null,
+                    "formula": "Zn + 2HCl &rarr; H<sub>2</sub> + ZnCl<sub>2</sub>",
                     "answer": 6.8,
                     "unit": "g",
                     "picture": null
@@ -16,7 +16,7 @@
                 {
                     "type": 4,
                     "question": "When carbon dioxide is bubbled into a solution of calcium hydroxide, calcium carbonate precipitates and water is formed. During a particular experiment 2.35g of calcium carbonate were formed. What volume of carbon dioxide at 15&deg;C and 775mmHg must have been bubbled into a solution of calcium hydroxide to give this quantity of calcium carbonate?",
-                    "formula": null,
+                    "formula": "CO<sub>2(l)</sub> + Ca(OH)<sub>2(aq)</sub> &rarr; H<sub>2</sub>O<sub>(l)</sub> + CaCO<sub>3(s)</sub>",
                     "answer": 0.546,
                     "unit": "L",
                     "picture": null
@@ -24,15 +24,15 @@
                 {
                     "type": 4,
                     "question": "Liquid oxygen was first prepared by heating potassium chlorate in a closed vessel to obtain oxygen at high pressure; the only other product is potassium chloride. If 85.0g of potassium chlorate react in a 2.50L vessel, which was initially evacuated, what pressure of oxygen will be attained when the temperature is finally cooled to 21&deg;C. Ignore the volume of the solid product.",
-                    "formula": null,
+                    "formula": "2KClO<sub>3(s)</sub> &rarr; 3O<sub>2(l)</sub> + 2KCl<sub>(s)</sub>",
                     "answer": "1.02x10<sup>3</sub>",
                     "unit": "kPa",
                     "picture": null
                 },
                 {
                     "type": 4,
-                    "question": "Carbon dioxide can be prepared by dropping hydrochloric acid into marble chips (calcium carbonate). The products of the reaction are calcium chloride, water and carbon dioxide. What mass of calcium carbonate are required to prepare 3.75L of carbon dioxide at 885mmHg and 26&deg;C?",
-                    "formula": null,
+                    "question": "Carbon dioxide can be prepared by dropping hydrochloric acid into marble chips (calcium carbonate). The products of the reaction are calcium chloride, water, and carbon dioxide. What mass of calcium carbonate are required to prepare 3.75L of carbon dioxide at 885mmHg and 26&deg;C?",
+                    "formula": "2HCl + CaCO<sub>3</sub> &rarr; CaCl<sub>2</sub> + H<sub>2</sub>O + CO<sub>2</sub>",
                     "answer": 18.2,
                     "unit": "g",
                     "picture": null
