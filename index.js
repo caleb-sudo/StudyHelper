@@ -741,7 +741,7 @@ function buildQuestion() {
                             checker.innerHTML = "&cross;";
                             localStorage.setItem("score", score - (unit[questionNum].totalElements - correct));
                             localStorage.setItem("streak", 0);
-                            text.innerHTML = "The correct answer was ` " + unit[questionNum].answers[r[i]][0] + " `";
+                            text.innerHTML = "The correct answer was `<b> " + unit[questionNum].answers[r[i]][0] + " </b>`";
                         }
                         checker.appendChild(text);
                         definitions[i].appendChild(checker);
