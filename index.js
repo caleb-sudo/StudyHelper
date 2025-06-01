@@ -603,11 +603,6 @@ function buildQuestion() {
 
                 let br = document.createElement('br');
 
-                let text = document.createElement('span');
-                text.style.color = "white";
-                text.style.textAlign = "center";
-                text.style.fontSize = "15px";
-
                 let checker = document.createElement('span');
                 checker.classList = "checker";
 
@@ -723,6 +718,10 @@ function buildQuestion() {
                     let correct = 0;
                     submitBtn.style.display = "none";
                     for (var i = 0; i < unit[questionNum].totalElements; i++) {
+                        let text = document.createElement('span');
+                        text.style.color = "white";
+                        text.style.textAlign = "center";
+                        text.style.fontSize = "15px";
                         let definitions = document.getElementsByClassName("fill_inDefinitions");
                         let checker = document.createElement('span');
                         checker.classList = "checker";
@@ -742,6 +741,8 @@ function buildQuestion() {
                             checker.innerHTML = "&cross;";
                             localStorage.setItem("score", score - (unit[questionNum].totalElements - correct));
                             localStorage.setItem("streak", 0);
+                            text.innerHTML = "The correct answer was ` " + unit[questionNum].answers[r[i]][0] + " `";
+                            qField.appendChild(text);
                         }
                         definitions[i].appendChild(checker)
                     }
