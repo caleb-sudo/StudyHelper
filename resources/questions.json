@@ -90,12 +90,72 @@
                     ],
                     "answer": 2,
                     "picture": null
+                },
+                {
+                    "type": 0,
+                    "question": "What are <b>Spectator Ions</b>?",
+                    "options": [
+                        "Ions that react and change, and therefore are not involved in the reaction.",
+                        "Ions that do not react or change, and therefore are involved in the reaction.",
+                        "Ions that react and change, and therfore are involved in the reaction.",
+                        "Ions that do not react or change, and therefore are not involved in the reaction."
+                    ],
+                    "answer": 3,
+                    "picture": null
+                },
+                {
+                    "type": 4,
+                    "question": "If 5.0g of salt is mixed with 50.0g of water, what is the percent by mass?",
+                    "formula": null,
+                    "answer": 9.1,
+                    "unit": "%",
+                    "picture": null
+                },
+                {
+                    "type": 4,
+                    "question": "How many grams of fat are in a 90g serving of cereal if the percent by mass is 15%?",
+                    "formula": null,
+                    "answer": 14,
+                    "unit": "g",
+                    "picture": null
+                },
+                {
+                    "type": 4,
+                    "question": "What is the percent volume for a solution where 50mL of methanol is added to water to produce 0.350L of solution?",
+                    "formula": null,
+                    "answer": 14,
+                    "unit": "%",
+                    "picture": null
+                },
+                {
+                    "type": 4,
+                    "question": "0.50mol of KCl is dissolved to produce 250mL of solution. What is the molar concentration?",
+                    "formula": null,
+                    "answer": 2.0,
+                    "unit": "mol/L",
+                    "picture": null
+                },
+                {
+                    "type": 4,
+                    "question": "How many moles of potassium permanganate are found in 200mL of a 0.0010mol/L solution?",
+                    "formula": null,
+                    "answer": 0.00020,
+                    "unit": "mol",
+                    "picture": null
+                },
+                {
+                    "type": 4,
+                    "question": "What is the molar concentration if 14.8g of potassium chloride is dissolved to make 175mL of solution?",
+                    "formula": null,
+                    "answer": 1.13,
+                    "unit": "mol/L",
+                    "picture": null
                 }
             ],
             "UnitCb": [
                 {
                     "type": 4,
-                    "question": "If a solution has a pH of 3.78, what is the concentration(mol/L) of H<sub>3</sub>O<sup>+</sup>?<br>To answer the question with scientific notation please use the superscript button below.",
+                    "question": "If a solution has a <b>pH of 3.78</b>, <b>what is the concentration(mol/L)</b> of H<sub>3</sub>O<sup>+</sup>?<br>To answer the question with scientific notation please use the superscript button below.",
                     "formula": null,
                     "answer": "1.7x10<sup>-4</sup>",
                     "unit": "mol/L",
@@ -103,7 +163,7 @@
                 },
                 {
                     "type": 4,
-                    "question": "If a solution has a H<sub>3</sub>O<sup>+</sup> concentration of 3.89x10<sup>-4</sup>mol/L, what is the pH of this solution?",
+                    "question": "If a solution has a H<sub>3</sub>O<sup>+</sup> concentration of <b>3.89x10<sup>-4</sup>mol/L</b>, <b>what is the pH of this solution</b>?",
                     "formula": null,
                     "answer": "3.41",
                     "unit": null,
@@ -111,7 +171,7 @@
                 },
                 {
                     "type": 4,
-                    "question": "If a solution has a pH of 8.81, what is the concentration(mol/L) of H<sub>3</sub>O<sup>+</sup>?<br>To answer the question with scientific notation please use the superscript button below.",
+                    "question": "If a solution has a <b>pH of 8.81</b>, <b>what is the concentration(mol/L)</b> of H<sub>3</sub>O<sup>+</sup>?<br>To answer the question with scientific notation please use the superscript button below.",
                     "formula": null,
                     "answer": "1.6x10<sup>-9</sup>",
                     "unit": "mol/L",
@@ -119,14 +179,14 @@
                 },
                 {
                     "type": 4,
-                    "question": "If a solution has a H<sub>3</sub>O<sup>+</sup> concentration of 2.04x10<sup>-9</sup>mol/L, what is the pH of this solution?",
+                    "question": "If a solution has a H<sub>3</sub>O<sup>+</sup> concentration of <b>2.04x10<sup>-9</sup>mol/L</b>, <b>what is the pH of this solution</b>?",
                     "answer": 8.69,
                     "unit": null,
                     "picture": null
                 },
                 {
                     "type": 4,
-                    "question": "If a solution has a pH of 8.46, what is the concentration(mol/L) of H<sub>3</sub>O<sup>+</sup>?<br>To answer the question with scientific notation please use the superscript button below.",
+                    "question": "If a solution has a <b>pH of 8.46</b>, <b>what is the concentration(mol/L)</b> of H<sub>3</sub>O<sup>+</sup>?<br>To answer the question with scientific notation please use the superscript button below.",
                     "formula": null,
                     "answer": "3.5x10<sup>-9</sup>",
                     "unit": "mol/L",
@@ -134,7 +194,7 @@
                 },
                 {
                     "type": 4,
-                    "question": "If a solution has a H<sub>3</sub>O<sup>+</sup> concentration of 8.45x10<sup>-13</sup>mol/L, what is the pH of this solution?",
+                    "question": "If a solution has a H<sub>3</sub>O<sup>+</sup> concentration of <b>8.45x10<sup>-13</sup>mol/L</b>, <b>what is the pH of this solution</b>?",
                     "formula": null,
                     "answer": 12.073,
                     "unit": null,
