@@ -3461,13 +3461,13 @@
                     "totalElements": 8,
                     "definitions": [
                         "The <input type='text' class='fill_in' id='fill_in0' autocomplete='off'> is a global judicial body to bring those responsible for crimes against humanity to justice.",
-                        "The <input type='text' class='fill_in' id='fill_in1'> aims to foster respect and dignity for every civilization and culture.",
-                        "The <input type='text' class='fill_in' id='fill_in2'> offers worldwide guidance in addressing environmental challenges.",
-                        "The <input type='text' class='fill_in' id='fill_in3'> seeks to deliver humanitarian assistance to children in nations across the globe.",
-                        "The <input type='text' class='fill_in' id='fill_in4'> supports refugees by aiding their relocation to another nation.",
-                        "The <input type='text' class='fill_in' id='fill_in5'> aims to assist developing nations in enhancing their economies, safeguarding human rights, and upgrading their infrastructure.",
-                        "The <input type='text' class='fill_in' id='fill_in6'> aims to address international health challenges.",
-                        "The <input type='text' class='fill_in' id='fill_in7'> oversees the establishment and implementation of global trade regulations. It promotes free-market capitalism and the decrease of government regulations and trade barriers."
+                        "The <input type='text' class='fill_in' id='fill_in1' autocomplete='off'> aims to foster respect and dignity for every civilization and culture.",
+                        "The <input type='text' class='fill_in' id='fill_in2' autocomplete='off'> offers worldwide guidance in addressing environmental challenges.",
+                        "The <input type='text' class='fill_in' id='fill_in3' autocomplete='off'> seeks to deliver humanitarian assistance to children in nations across the globe.",
+                        "The <input type='text' class='fill_in' id='fill_in4' autocomplete='off'> supports refugees by aiding their relocation to another nation.",
+                        "The <input type='text' class='fill_in' id='fill_in5' autocomplete='off'> aims to assist developing nations in enhancing their economies, safeguarding human rights, and upgrading their infrastructure.",
+                        "The <input type='text' class='fill_in' id='fill_in6' autocomplete='off'> aims to address international health challenges.",
+                        "The <input type='text' class='fill_in' id='fill_in7' autocomplete='off'> oversees the establishment and implementation of global trade regulations. It promotes free-market capitalism and the decrease of government regulations and trade barriers."
                     ],
                     "answers": [
                         [
