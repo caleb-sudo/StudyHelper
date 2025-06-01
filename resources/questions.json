@@ -11,7 +11,8 @@
                     "formula": "Zn + 2HCl &rarr; H<sub>2</sub> + ZnCl<sub>2</sub>",
                     "answer": 6.8,
                     "unit": "g",
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": true
                 },
                 {
                     "type": 4,
@@ -19,7 +20,8 @@
                     "formula": "CO<sub>2(l)</sub> + Ca(OH)<sub>2(aq)</sub> &rarr; H<sub>2</sub>O<sub>(l)</sub> + CaCO<sub>3(s)</sub>",
                     "answer": 0.546,
                     "unit": "L",
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": true
                 },
                 {
                     "type": 4,
@@ -27,7 +29,8 @@
                     "formula": "2KClO<sub>3(s)</sub> &rarr; 3O<sub>2(l)</sub> + 2KCl<sub>(s)</sub>",
                     "answer": "1.02x10<sup>3</sub>",
                     "unit": "kPa",
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": true
                 },
                 {
                     "type": 4,
@@ -35,7 +38,8 @@
                     "formula": "2HCl + CaCO<sub>3</sub> &rarr; CaCl<sub>2</sub> + H<sub>2</sub>O + CO<sub>2</sub>",
                     "answer": 18.2,
                     "unit": "g",
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": true
                 },
                 {
                     "type": 4,
@@ -43,7 +47,8 @@
                     "formula": "NH<sub>3(g)</sub> + CO<sub>2(g)</sub> + H<sub>2</sub>O<sub>(l)</sub> &rarr; NaCl<sub>(aq)</sub> → NaHCO<sub>3(s)</sub> + NH<sub>4</sub>Cl<sub>(aq)</sub>",
                     "answer": 0.135,
                     "unit": "L",
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": true
                 },
                 {
                     "type": 4,
@@ -51,7 +56,8 @@
                     "formula": "HC<sub>3</sub>H<sub>3</sub>O<sub>3(aq)</sub> &rarr; C<sub>2</sub>H<sub>4</sub>O<sub>(aq)</sub> + CO<sub>2(g)</sub>",
                     "answer": 0.0324,
                     "unit": "g",
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": true
                 }
             ],
             "UnitCa": [
@@ -65,7 +71,8 @@
                         "The dissolving of molecular compounds where they <b>do not</b> break up into different molecules or ions."
                     ],
                     "answer": 0,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -77,7 +84,8 @@
                         "The dissolving of molecular compounds where they <b>do not</b> break up into different molecules or ions."
                     ],
                     "answer": 1,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -89,7 +97,8 @@
                         "The dissolving of molecular compounds where they <b>do not</b> break up into different molecules or ions."
                     ],
                     "answer": 2,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -101,7 +110,8 @@
                         "Ions that do not react or change, and therefore are not involved in the reaction."
                     ],
                     "answer": 3,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 4,
@@ -109,7 +119,8 @@
                     "formula": null,
                     "answer": 9.1,
                     "unit": "%",
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": true
                 },
                 {
                     "type": 4,
@@ -117,7 +128,8 @@
                     "formula": null,
                     "answer": 14,
                     "unit": "g",
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": true
                 },
                 {
                     "type": 4,
@@ -125,7 +137,8 @@
                     "formula": null,
                     "answer": 14,
                     "unit": "%",
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": true
                 },
                 {
                     "type": 4,
@@ -133,7 +146,8 @@
                     "formula": null,
                     "answer": 2.0,
                     "unit": "mol/L",
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": true
                 },
                 {
                     "type": 4,
@@ -141,7 +155,8 @@
                     "formula": null,
                     "answer": 0.00020,
                     "unit": "mol",
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": true
                 },
                 {
                     "type": 4,
@@ -149,7 +164,8 @@
                     "formula": null,
                     "answer": 1.13,
                     "unit": "mol/L",
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": true
                 }
             ],
             "UnitCb": [
@@ -159,7 +175,8 @@
                     "formula": null,
                     "answer": "1.7x10<sup>-4</sup>",
                     "unit": "mol/L",
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": true
                 },
                 {
                     "type": 4,
@@ -167,7 +184,8 @@
                     "formula": null,
                     "answer": "3.41",
                     "unit": null,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": true
                 },
                 {
                     "type": 4,
@@ -175,14 +193,16 @@
                     "formula": null,
                     "answer": "1.6x10<sup>-9</sup>",
                     "unit": "mol/L",
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": true
                 },
                 {
                     "type": 4,
                     "question": "If a solution has a H<sub>3</sub>O<sup>+</sup> concentration of <b>2.04x10<sup>-9</sup>mol/L</b>, <b>what is the pH of this solution</b>?",
                     "answer": 8.69,
                     "unit": null,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": true
                 },
                 {
                     "type": 4,
@@ -190,7 +210,8 @@
                     "formula": null,
                     "answer": "3.5x10<sup>-9</sup>",
                     "unit": "mol/L",
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": true
                 },
                 {
                     "type": 4,
@@ -198,7 +219,8 @@
                     "formula": null,
                     "answer": 12.073,
                     "unit": null,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": true
                 }
             ],
             "UnitD": [
@@ -208,7 +230,8 @@
                     "formula": "N<sub>2</sub> + O<sub>2</sub> &rarr; 2NO",
                     "answer": 3.04,
                     "unit": "mol",
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": true
                 },
                 {
                     "type": 4,
@@ -216,7 +239,8 @@
                     "formula": "6Li + N<sub>2</sub> &rarr; 2Li<sub>3</sub>N",
                     "answer": 0.31,
                     "unit": "mol",
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": true
                 },
                 {
                     "type": 4,
@@ -224,7 +248,8 @@
                     "formula": "3NH<sub>4</sub>OH + Fe(NO<sub>3</sub>)<sub>3</sub> &rarr; Fe(OH)<sub>3</sub> + 3NH<sub>4</sub>NO<sub>3</sub>",
                     "answer": 0.39,
                     "unit": "mol",
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": true
                 },
                 {
                     "type": 4,
@@ -232,7 +257,8 @@
                     "formula": "4NH<sub>3</sub> + 5O<sub>2</sub> &rarr; 4NO + 6H<sub>2</sub>",
                     "answer": 0.2,
                     "unit": "mol",
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": true
                 },
                 {
                     "type": 4,
@@ -240,7 +266,8 @@
                     "formula": "2C<sub>8</sub>H<sub>18</sub> + 25O<sub>2</sub> &rarr; 16CO<sub>2</sub> + 18H<sub>2</sub>",
                     "answer": 76.75,
                     "unit": "mol",
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": true
                 },
                 {
                     "type": 4,
@@ -248,7 +275,8 @@
                     "formula": "2Na + 2HOH &rarr; 2NaOH + H<sub>2</sub>",
                     "answer": 24.83,
                     "unit": "g",
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": true
                 },
                 {
                     "type": 4,
@@ -256,7 +284,8 @@
                     "formula": "Ca(OH)<sub>s</sub> + CO<sub>2</sub> &rarr; CaCO<sub>3</sub> + H<sub>2</sub>",
                     "answer": 96.3,
                     "unit": "g",
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": true
                 },
                 {
                     "type": 4,
@@ -264,7 +293,8 @@
                     "formula": "P<sub>4</sub> + 6H<sub>2</sub> &rarr; 4H<sub>3</sub>PO<sub>4<sub> + 6S<sub>8</sub>",
                     "answer": 0.6,
                     "unit": "mol",
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": true
                 },
                 {
                     "type": 4,
@@ -272,7 +302,8 @@
                     "formula": "S<sub>8</sub> + 8O<sub>2</sub> &rarr; 8SO<sub>2</sub>",
                     "answer": 4.992,
                     "unit": "mol",
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": true
                 },
                 {
                     "type": 4,
@@ -280,7 +311,8 @@
                     "formula": "CaF<sub>2</sub> + H<sub>2</sub>SO<sub>4</sub> &rarr; CaSO<sub>4</sub> + 2HF",
                     "answer": 0.2,
                     "unit": "mol",
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": true
                 },
                 {
                     "type": 4,
@@ -288,7 +320,8 @@
                     "formula": "H<sub>2</sub> + N<sub>2</sub> &rarr; NH<sub>3</sub>",
                     "answer": 530,
                     "unit": "mol",
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": true
                 },
                 {
                     "type": 4,
@@ -296,7 +329,8 @@
                     "formula": "H<sub>2</sub> + O<sub>2</sub> &rarr; H<sub>2</sub>O",
                     "answer": 0.505,
                     "unit": "g",
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": true
                 }
             ]
         },
@@ -317,7 +351,8 @@
                         "The size of an organism"
                     ],
                     "answer": 1,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -329,7 +364,8 @@
                         "To serve as primary predators"
                     ],
                     "answer": 0,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -341,7 +377,8 @@
                         "Autotrophs"
                     ],
                     "answer": 3,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -353,7 +390,8 @@
                         "They are exclusively herbivores"
                     ],
                     "answer": 2,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -365,7 +403,8 @@
                         "Producers"
                     ],
                     "answer": 0,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -377,7 +416,8 @@
                         "To enhance photosynthesis"
                     ],
                     "answer": 0,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -389,7 +429,8 @@
                         "Habitat"
                     ],
                     "answer": 2,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -401,7 +442,8 @@
                         "An organism that feeds on producers for energy."
                     ],
                     "answer": 0,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -413,7 +455,8 @@
                         "An organism that feeds on other consumers for energy."
                     ],
                     "answer": 1,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -425,7 +468,8 @@
                         "An organism that feeds on producers for energy."
                     ],
                     "answer": 2,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 }
             ],
             "UnitB": [
@@ -443,7 +487,8 @@
                         "<b>Genus</b>",
                         "<b>Species</b>"
                     ],
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -455,7 +500,8 @@
                         "the Profunal zone"
                     ],
                     "answer": 0,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -467,7 +513,8 @@
                         "the Profunal zone"
                     ],
                     "answer": 1,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -479,7 +526,8 @@
                         "the Profunal zone"
                     ],
                     "answer": 3,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 }
             ],
             "UnitC": [
@@ -493,7 +541,8 @@
                         "Granum"
                     ],
                     "answer": 2,
-                    "picture": "resources/images/Bio/chloroplastDiagram.webp"
+                    "picture": "resources/images/Bio/chloroplastDiagram.webp",
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -505,7 +554,8 @@
                         "Lamellae"
                     ],
                     "answer": 0,
-                    "picture": "resources/images/Bio/chloroplastDiagram.webp"
+                    "picture": "resources/images/Bio/chloroplastDiagram.webp",
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -517,7 +567,8 @@
                         "Outer membrane"
                     ],
                     "answer": 2,
-                    "picture": "resources/images/Bio/chloroplastDiagram.webp"
+                    "picture": "resources/images/Bio/chloroplastDiagram.webp",
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -529,7 +580,8 @@
                         "Granum"
                     ],
                     "answer": 3,
-                    "picture": "resources/images/Bio/chloroplastDiagram.webp"
+                    "picture": "resources/images/Bio/chloroplastDiagram.webp",
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -541,7 +593,8 @@
                         "Outer membrane"
                     ],
                     "answer": 1,
-                    "picture": "resources/images/Bio/chloroplastDiagram.webp"
+                    "picture": "resources/images/Bio/chloroplastDiagram.webp",
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -553,7 +606,8 @@
                         "Stroma"
                     ],
                     "answer": 2,
-                    "picture": "resources/images/Bio/chloroplastDiagram.webp"
+                    "picture": "resources/images/Bio/chloroplastDiagram.webp",
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -565,7 +619,8 @@
                         "Outer membrane"
                     ],
                     "answer": 1,
-                    "picture": "resources/images/Bio/mitochondriaDiagram.webp"
+                    "picture": "resources/images/Bio/mitochondriaDiagram.webp",
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -577,7 +632,8 @@
                         "Outer membrane"
                     ],
                     "answer": 3,
-                    "picture": "resources/images/Bio/mitochondriaDiagram.webp"
+                    "picture": "resources/images/Bio/mitochondriaDiagram.webp",
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -589,7 +645,8 @@
                         "Inner membrane"
                     ],
                     "answer": 2,
-                    "picture": "resources/images/Bio/mitochondriaDiagram.webp"
+                    "picture": "resources/images/Bio/mitochondriaDiagram.webp",
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -601,7 +658,8 @@
                         "Outer membrane"
                     ],
                     "answer": 0,
-                    "picture": "resources/images/Bio/mitochondriaDiagram.webp"
+                    "picture": "resources/images/Bio/mitochondriaDiagram.webp",
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -613,7 +671,8 @@
                         "Intermembrane space"
                     ],
                     "answer": 3,
-                    "picture": "resources/images/Bio/mitochondriaDiagram.webp"
+                    "picture": "resources/images/Bio/mitochondriaDiagram.webp",
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -625,7 +684,8 @@
                         "6O<sub>2</sub> + 12H<sub>2</sub>O -> C<sub>6</sub>H<sub>12</sub>O<sub>6</sub> + 6CO<sub>2</sub> + 6H<sub>2</sub>O"
                     ],
                     "answer": 2,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -637,7 +697,8 @@
                         "6O<sub>2</sub> + 12H<sub>2</sub>O -> C<sub>6</sub>H<sub>12</sub>O<sub>6</sub> + 6CO<sub>2</sub> + 6H<sub>2</sub>O"
                     ],
                     "answer": 0,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -649,7 +710,8 @@
                         "C<sub>6</sub>H<sub>12</sub>O<sub>6</sub> and O<sub>2</sub>"
                     ],
                     "answer": 3,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -661,7 +723,8 @@
                         "CO<sub>2</sub>"
                     ],
                     "answer": 1,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -673,7 +736,8 @@
                         "plasma membrane"
                     ],
                     "answer": 1,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -685,7 +749,8 @@
                         "Produce carbon dioxide"
                     ],
                     "answer": 2,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -697,7 +762,8 @@
                         "All of the above"
                     ],
                     "answer": 3,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -709,7 +775,8 @@
                         "absorb photons and transfer light energy to the reaction center chlorophyll"
                     ],
                     "answer": 3,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -721,7 +788,8 @@
                         "Chemiosmosis"
                     ],
                     "answer": 1,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -733,7 +801,8 @@
                         "Krebs cycle"
                     ],
                     "answer": 0,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -745,7 +814,8 @@
                         "8"
                     ],
                     "answer": 0,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -757,7 +827,8 @@
                         "4"
                     ],
                     "answer": 1,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 3,
@@ -770,7 +841,8 @@
                         "The excited electrons from PS I travel trough another electron transport chain, through a series of REDOX reactions.",
                         "The excited electrons recived from the electron transport chain, along with a Hydrogen Ion, soon join an molecule called NADP<sup>+</sup> to form a molecule called NADPH"
                     ],
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 3,
@@ -785,7 +857,8 @@
                         "",
                         ""
                     ],
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 3,
@@ -797,7 +870,8 @@
                         "",
                         ""
                     ],
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 }
             ],
             "UnitD": [
@@ -827,7 +901,8 @@
                         "<b>Distal Convoluted Tubule (DCT)</b>",
                         "<b>Collecting Duct</b>"
                     ],
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -839,7 +914,8 @@
                         "Bowman's Capsule"
                     ],
                     "answer": 1,
-                    "picture": "resources/images/Bio/nephron.webp"
+                    "picture": "resources/images/Bio/nephron.webp",
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -851,7 +927,8 @@
                         "Distal Convoluted Tubule (DCT)"
                     ],
                     "answer": 0,
-                    "picture": "resources/images/Bio/nephron.webp"
+                    "picture": "resources/images/Bio/nephron.webp",
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -863,7 +940,8 @@
                         "Bowman's Capsule"
                     ],
                     "answer": 3,
-                    "picture": "resources/images/Bio/nephron.webp"
+                    "picture": "resources/images/Bio/nephron.webp",
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -875,7 +953,8 @@
                         "Bowman's Capsule"
                     ],
                     "answer": 0,
-                    "picture": "resources/images/Bio/nephron.webp"
+                    "picture": "resources/images/Bio/nephron.webp",
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -887,7 +966,8 @@
                         "Bowman's Capsule"
                     ],
                     "answer": 1,
-                    "picture": "resources/images/Bio/nephron.webp"
+                    "picture": "resources/images/Bio/nephron.webp",
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -899,7 +979,8 @@
                         "Glomerulus"
                     ],
                     "answer": 3,
-                    "picture": "resources/images/Bio/nephron.webp"
+                    "picture": "resources/images/Bio/nephron.webp",
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -911,7 +992,8 @@
                         "Glomerulus"
                     ],
                     "answer": 1,
-                    "picture": "resources/images/Bio/nephron.webp"
+                    "picture": "resources/images/Bio/nephron.webp",
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -923,7 +1005,8 @@
                         "Glomerulus"
                     ],
                     "answer": 0,
-                    "picture": "resources/images/Bio/nephron.webp"
+                    "picture": "resources/images/Bio/nephron.webp",
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -935,7 +1018,8 @@
                         "Glomerulus"
                     ],
                     "answer": 2,
-                    "picture": "resources/images/Bio/nephron.webp"
+                    "picture": "resources/images/Bio/nephron.webp",
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -947,7 +1031,8 @@
                         "Liver"
                     ],
                     "answer": 0,
-                    "picture": "resources/images/Bio/digestiveSystemDiagram.webp"
+                    "picture": "resources/images/Bio/digestiveSystemDiagram.webp",
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -959,7 +1044,8 @@
                         "Liver"
                     ],
                     "answer": 2,
-                    "picture": "resources/images/Bio/digestiveSystemDiagram.webp"
+                    "picture": "resources/images/Bio/digestiveSystemDiagram.webp",
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -971,7 +1057,8 @@
                         "Liver"
                     ],
                     "answer": 3,
-                    "picture": "resources/images/Bio/digestiveSystemDiagram.webp"
+                    "picture": "resources/images/Bio/digestiveSystemDiagram.webp",
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -983,7 +1070,8 @@
                         "Liver"
                     ],
                     "answer": 0,
-                    "picture": "resources/images/Bio/digestiveSystemDiagram.webp"
+                    "picture": "resources/images/Bio/digestiveSystemDiagram.webp",
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -995,7 +1083,8 @@
                         "Liver"
                     ],
                     "answer": 1,
-                    "picture": "resources/images/Bio/digestiveSystemDiagram.webp"
+                    "picture": "resources/images/Bio/digestiveSystemDiagram.webp",
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -1007,7 +1096,8 @@
                         "Liver"
                     ],
                     "answer": 1,
-                    "picture": "resources/images/Bio/digestiveSystemDiagram.webp"
+                    "picture": "resources/images/Bio/digestiveSystemDiagram.webp",
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -1019,7 +1109,8 @@
                         "Large Intestines"
                     ],
                     "answer": 2,
-                    "picture": "resources/images/Bio/digestiveSystemDiagram.webp"
+                    "picture": "resources/images/Bio/digestiveSystemDiagram.webp",
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -1031,7 +1122,8 @@
                         "Large Intestines"
                     ],
                     "answer": 3,
-                    "picture": "resources/images/Bio/digestiveSystemDiagram.webp"
+                    "picture": "resources/images/Bio/digestiveSystemDiagram.webp",
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -1043,7 +1135,8 @@
                         "Superior Vena Cava"
                     ],
                     "answer": 4,
-                    "picture": "resources/images/Bio/heartDiagram.webp"
+                    "picture": "resources/images/Bio/heartDiagram.webp",
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -1055,7 +1148,8 @@
                         "Superior Vena Cava"
                     ],
                     "answer": 1,
-                    "picture": "resources/images/Bio/heartDiagram.webp"
+                    "picture": "resources/images/Bio/heartDiagram.webp",
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -1067,7 +1161,8 @@
                         "Left ventricle"
                     ],
                     "answer": 0,
-                    "picture": "resources/images/Bio/heartDiagram.webp"
+                    "picture": "resources/images/Bio/heartDiagram.webp",
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -1079,7 +1174,8 @@
                         "Left ventricle"
                     ],
                     "answer": 2,
-                    "picture": "resources/images/Bio/heartDiagram.webp"
+                    "picture": "resources/images/Bio/heartDiagram.webp",
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -1091,7 +1187,8 @@
                         "Tricuspid valve"
                     ],
                     "answer": 3,
-                    "picture": "resources/images/Bio/heartDiagram.webp"
+                    "picture": "resources/images/Bio/heartDiagram.webp",
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -1103,7 +1200,8 @@
                         "Tricuspid valve"
                     ],
                     "answer": 1,
-                    "picture": "resources/images/Bio/heartDiagram.webp"
+                    "picture": "resources/images/Bio/heartDiagram.webp",
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -1115,7 +1213,8 @@
                         "Right atrium"
                     ],
                     "answer": 2,
-                    "picture": "resources/images/Bio/heartDiagram.webp"
+                    "picture": "resources/images/Bio/heartDiagram.webp",
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -1127,7 +1226,8 @@
                         "Right atrium"
                     ],
                     "answer": 1,
-                    "picture": "resources/images/Bio/heartDiagram.webp"
+                    "picture": "resources/images/Bio/heartDiagram.webp",
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -1139,7 +1239,8 @@
                         "Pulmonary vein"
                     ],
                     "answer": 0,
-                    "picture": "resources/images/Bio/heartDiagram.webp"
+                    "picture": "resources/images/Bio/heartDiagram.webp",
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -1151,7 +1252,8 @@
                         "Left ventricle"
                     ],
                     "answer": 1,
-                    "picture": "resources/images/Bio/heartDiagram.webp"
+                    "picture": "resources/images/Bio/heartDiagram.webp",
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -1163,7 +1265,8 @@
                         "Tricuspid valve"
                     ],
                     "answer": 0,
-                    "picture": "resources/images/Bio/heartDiagram.webp"
+                    "picture": "resources/images/Bio/heartDiagram.webp",
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -1175,7 +1278,8 @@
                         "Left ventricle"
                     ],
                     "answer": 3,
-                    "picture": "resources/images/Bio/heartDiagram.webp"
+                    "picture": "resources/images/Bio/heartDiagram.webp",
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -1187,7 +1291,8 @@
                         "Tricuspid valve"
                     ],
                     "answer": 2,
-                    "picture": "resources/images/Bio/heartDiagram.webp"
+                    "picture": "resources/images/Bio/heartDiagram.webp",
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -1199,7 +1304,8 @@
                         "Tricuspid valve"
                     ],
                     "answer": 1,
-                    "picture": "resources/images/Bio/heartDiagram.webp"
+                    "picture": "resources/images/Bio/heartDiagram.webp",
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -1211,7 +1317,8 @@
                         "Experatory reserve volume"
                     ],
                     "answer": 0,
-                    "picture": "resources/images/Bio/lungVolumeGraph.webp"
+                    "picture": "resources/images/Bio/lungVolumeGraph.webp",
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -1223,7 +1330,8 @@
                         "Tidal Volume"
                     ],
                     "answer": 2,
-                    "picture": "resources/images/Bio/lungVolumeGraph.webp"
+                    "picture": "resources/images/Bio/lungVolumeGraph.webp",
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -1235,7 +1343,8 @@
                         "Tidal Volume"
                     ],
                     "answer": 3,
-                    "picture": "resources/images/Bio/lungVolumeGraph.webp"
+                    "picture": "resources/images/Bio/lungVolumeGraph.webp",
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -1247,7 +1356,8 @@
                         "Total lung capacity"
                     ],
                     "answer": 2,
-                    "picture": "resources/images/Bio/lungVolumeGraph.webp"
+                    "picture": "resources/images/Bio/lungVolumeGraph.webp",
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -1259,7 +1369,8 @@
                         "Total lung capacity"
                     ],
                     "answer": 0,
-                    "picture": "resources/images/Bio/lungVolumeGraph.webp"
+                    "picture": "resources/images/Bio/lungVolumeGraph.webp",
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -1271,7 +1382,8 @@
                         "Insperatory reserve volume"
                     ],
                     "answer": 1,
-                    "picture": "resources/images/Bio/lungVolumeGraph.webp"
+                    "picture": "resources/images/Bio/lungVolumeGraph.webp",
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -1283,7 +1395,8 @@
                         "Insolation"
                     ],
                     "answer": 0,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -1295,7 +1408,8 @@
                         "Contains mostly Carbon, Oxygen, Hydrogen, and Nitrogen"
                     ],
                     "answer": 2,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -1307,7 +1421,8 @@
                         "None of the above"
                     ],
                     "answer": 3,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -1319,7 +1434,8 @@
                         "The molecule(s) are fish."
                     ],
                     "answer": 1,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -1331,7 +1447,8 @@
                         "Control blood pressure"
                     ],
                     "answer": 1,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -1343,7 +1460,8 @@
                         "Plasma"
                     ],
                     "answer": 2,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -1355,7 +1473,8 @@
                         "Plasma"
                     ],
                     "answer": 1,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -1367,7 +1486,8 @@
                         "Types of plasma"
                     ],
                     "answer": 2,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -1379,7 +1499,8 @@
                         "Plasma"
                     ],
                     "answer": 3,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -1391,7 +1512,8 @@
                         "Spleen"
                     ],
                     "answer": 2,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -1403,7 +1525,8 @@
                         "High cholesterol levels"
                     ],
                     "answer": 2,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -1415,7 +1538,8 @@
                         "Balance fluid levels"
                     ],
                     "answer": 2,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -1427,7 +1551,8 @@
                         "Plasma cells"
                     ],
                     "answer": 3,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -1439,7 +1564,8 @@
                         "An autoimmune disorder"
                     ],
                     "answer": 2,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -1451,7 +1577,8 @@
                         "Particles that clot blood"
                     ],
                     "answer": 2,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -1463,7 +1590,8 @@
                         "Facilitating sleep"
                     ],
                     "answer": 1,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -1475,7 +1603,8 @@
                         "O"
                     ],
                     "answer": 3,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -1487,7 +1616,8 @@
                         "Hemoglobin"
                     ],
                     "answer": 1,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -1499,7 +1629,8 @@
                         "Fever"
                     ],
                     "answer": 1,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -1511,7 +1642,8 @@
                         "Plasma overabundance"
                     ],
                     "answer": 1,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -1523,7 +1655,8 @@
                         "Plasma cells"
                     ],
                     "answer": 2,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -1535,7 +1668,8 @@
                         "It increases oxygen delivery"
                     ],
                     "answer": 1,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -1547,7 +1681,8 @@
                         "All of the above"
                     ],
                     "answer": 2,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -1559,7 +1694,8 @@
                         "By promoting platelet production"
                     ],
                     "answer": 2,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -1571,7 +1707,8 @@
                         "Hemoglobin"
                     ],
                     "answer": 0,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -1583,7 +1720,8 @@
                         "There is no difference; they are the same"
                     ],
                     "answer": 1,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -1595,7 +1733,8 @@
                         "Vaccine response"
                     ],
                     "answer": 2,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -1607,7 +1746,8 @@
                         "The body increases red blood cell production"
                     ],
                     "answer": 0,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -1619,7 +1759,8 @@
                         "Red blood cells and platelets"
                     ],
                     "answer": 1,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -1631,7 +1772,8 @@
                         "Suppressor T-cells"
                     ],
                     "answer": 1,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -1643,7 +1785,8 @@
                         "Active immunity"
                     ],
                     "answer": 1,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -1655,7 +1798,8 @@
                         "Increased susceptibility to infections"
                     ],
                     "answer": 1,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -1667,7 +1811,8 @@
                         "Antigen presence"
                     ],
                     "answer": 2,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -1679,7 +1824,8 @@
                         "Carrying oxygen"
                     ],
                     "answer": 2,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -1691,7 +1837,8 @@
                         "Endothelial cells"
                     ],
                     "answer": 2,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -1703,7 +1850,8 @@
                         "Breaks down clots after healing"
                     ],
                     "answer": 2,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -1715,7 +1863,8 @@
                         "Suppressor T-cells"
                     ],
                     "answer": 2,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -1727,7 +1876,8 @@
                         "The removal of antigens from the body"
                     ],
                     "answer": 1,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -1739,7 +1889,8 @@
                         "By regulating body temperature"
                     ],
                     "answer": 1,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -1751,7 +1902,8 @@
                         "It is formed outside the vascular system"
                     ],
                     "answer": 1,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -1763,7 +1915,8 @@
                         "Adaptive responses do not remember pathogens"
                     ],
                     "answer": 2,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -1775,7 +1928,8 @@
                         "They suppress the immune system to prevent overreaction"
                     ],
                     "answer": 2,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -1787,7 +1941,8 @@
                         "They kill infected cells"
                     ],
                     "answer": 1,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -1799,7 +1954,8 @@
                         "It heals the affected tissues"
                     ],
                     "answer": 2,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -1811,7 +1967,8 @@
                         "Macrophages"
                     ],
                     "answer": 2,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -1823,7 +1980,8 @@
                         "The immune system stops producing white blood cells"
                     ],
                     "answer": 1,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -1835,7 +1993,8 @@
                         "Antibiotics are natural; vaccines are synthetic"
                     ],
                     "answer": 2,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -1847,7 +2006,8 @@
                         "When antibiotics are taken with vaccines"
                     ],
                     "answer": 1,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -1859,7 +2019,8 @@
                         "To regulate blood clotting during infection"
                     ],
                     "answer": 2,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -1871,7 +2032,8 @@
                         "To absorb moisture"
                     ],
                     "answer": 1,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -1883,7 +2045,8 @@
                         "It cools the body down"
                     ],
                     "answer": 1,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -1895,7 +2058,8 @@
                         "It vibrates to produce sounds"
                     ],
                     "answer": 1,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -1907,7 +2071,8 @@
                         "Larynx"
                     ],
                     "answer": 2,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -1919,7 +2084,8 @@
                         "Gluteals"
                     ],
                     "answer": 0,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -1931,7 +2097,8 @@
                         "To humidify the room"
                     ],
                     "answer": 2,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -1943,7 +2110,8 @@
                         "Pharynx"
                     ],
                     "answer": 1,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -1955,7 +2123,8 @@
                         "Moistening air"
                     ],
                     "answer": 1,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -1967,7 +2136,8 @@
                         "Alveoli"
                     ],
                     "answer": 2,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -1979,7 +2149,8 @@
                         "It changes their color"
                     ],
                     "answer": 1,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -1991,7 +2162,8 @@
                         "Elastic"
                     ],
                     "answer": 2,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -2003,7 +2175,8 @@
                         "Air from escaping"
                     ],
                     "answer": 1,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -2015,7 +2188,8 @@
                         "Larynx"
                     ],
                     "answer": 2,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -2027,7 +2201,8 @@
                         "Abdominal cavity"
                     ],
                     "answer": 1,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -2039,7 +2214,8 @@
                         "It fluctuates rapidly"
                     ],
                     "answer": 1,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -2051,7 +2227,8 @@
                         "The total volume of the lungs"
                     ],
                     "answer": 1,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -2063,7 +2240,8 @@
                         "Encapsulated in red blood cells"
                     ],
                     "answer": 1,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -2075,7 +2253,8 @@
                         "They are not involved"
                     ],
                     "answer": 1,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -2087,7 +2266,8 @@
                         "It expels oxygen from the bloodstream"
                     ],
                     "answer": 1,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -2099,7 +2279,8 @@
                         "Both B and C"
                     ],
                     "answer": 3,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -2111,7 +2292,8 @@
                         "The minimum inhale after a maximum exhale"
                     ],
                     "answer": 1,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -2123,7 +2305,8 @@
                         "It warms the air entering the lungs"
                     ],
                     "answer": 1,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -2135,7 +2318,8 @@
                         "Decreased mucus production"
                     ],
                     "answer": 0,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -2147,7 +2331,8 @@
                         "It rotates"
                     ],
                     "answer": 1,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -2159,7 +2344,8 @@
                         "By calculating the difference between total lung capacity and vital capacity"
                     ],
                     "answer": 2,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -2171,7 +2357,8 @@
                         "The air remaining after a forceful exhale"
                     ],
                     "answer": 2,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -2183,7 +2370,8 @@
                         "Hydrogen levels in the blood"
                     ],
                     "answer": 2,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -2195,7 +2383,8 @@
                         "Blood becomes more alkaline"
                     ],
                     "answer": 1,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -2207,7 +2396,8 @@
                         "Filtering of air"
                     ],
                     "answer": 1,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -2219,7 +2409,8 @@
                         "It has no effect on gas exchange"
                     ],
                     "answer": 1,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -2231,7 +2422,8 @@
                         "By decreasing blood pressure"
                     ],
                     "answer": 1,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -2243,7 +2435,8 @@
                         "The normal volume of air inhaled and exhaled"
                     ],
                     "answer": 0,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -2255,7 +2448,8 @@
                         "It fluctuates"
                     ],
                     "answer": 1,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -2267,7 +2461,8 @@
                         "They decrease the thoracic cavity volume"
                     ],
                     "answer": 1,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -2279,7 +2474,8 @@
                         "Encapsulated within platelets"
                     ],
                     "answer": 1,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -2291,7 +2487,8 @@
                         "The number of red blood cells"
                     ],
                     "answer": 0,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -2303,7 +2500,8 @@
                         "To filter toxins from the air"
                     ],
                     "answer": 1,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -2315,7 +2513,8 @@
                         "They decrease the rate of respiration"
                     ],
                     "answer": 1,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -2327,7 +2526,8 @@
                         "Pressure decreases as volume decreases"
                     ],
                     "answer": 0,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -2339,7 +2539,8 @@
                         "Temporarily increases elasticity before permanently decreasing it"
                     ],
                     "answer": 1,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -2351,7 +2552,8 @@
                         "Increase in the number of alveoli"
                     ],
                     "answer": 2,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -2363,7 +2565,8 @@
                         "Periodic breathing patterns"
                     ],
                     "answer": 1,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -2375,7 +2578,8 @@
                         "It regulates blood temperature"
                     ],
                     "answer": 1,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -2387,7 +2591,8 @@
                         "Total lung capacity"
                     ],
                     "answer": 2,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -2399,7 +2604,8 @@
                         "To remove waste from the body"
                     ],
                     "answer": 2,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -2411,7 +2617,8 @@
                         "Liver"
                     ],
                     "answer": 0,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -2423,7 +2630,8 @@
                         "To produce bile"
                     ],
                     "answer": 1,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -2435,7 +2643,8 @@
                         "Pancreas"
                     ],
                     "answer": 2,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -2447,7 +2656,8 @@
                         "Pepsinogen"
                     ],
                     "answer": 2,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -2459,7 +2669,8 @@
                         "It breaks down carbohydrates"
                     ],
                     "answer": 1,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -2471,7 +2682,8 @@
                         "Colon"
                     ],
                     "answer": 0,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -2483,7 +2695,8 @@
                         "To move food along the intestine"
                     ],
                     "answer": 1,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -2495,7 +2708,8 @@
                         "Insulin"
                     ],
                     "answer": 2,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -2507,7 +2721,8 @@
                         "Gastric juice"
                     ],
                     "answer": 1,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -2519,7 +2734,8 @@
                         "The stretching of the stomach walls"
                     ],
                     "answer": 2,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -2531,7 +2747,8 @@
                         "Colon"
                     ],
                     "answer": 2,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -2543,7 +2760,8 @@
                         "To emulsify fats"
                     ],
                     "answer": 2,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -2555,7 +2773,8 @@
                         "It stimulates the gall bladder to release bile"
                     ],
                     "answer": 2,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -2567,7 +2786,8 @@
                         "The villi pump water from the intestine to concentrate food substances"
                     ],
                     "answer": 0,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -2579,7 +2799,8 @@
                         "Nucleotides"
                     ],
                     "answer": 2,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -2591,7 +2812,8 @@
                         "Lactose"
                     ],
                     "answer": 2,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -2603,7 +2825,8 @@
                         "To form cell structures"
                     ],
                     "answer": 1,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -2615,7 +2838,8 @@
                         "Lipid Test"
                     ],
                     "answer": 0,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -2627,7 +2851,8 @@
                         "Monounsaturated fats"
                     ],
                     "answer": 0,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -2639,7 +2864,8 @@
                         "Basic units of proteins"
                     ],
                     "answer": 2,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -2651,7 +2877,8 @@
                         "It shows the presence of vitamins"
                     ],
                     "answer": 1,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -2663,7 +2890,8 @@
                         "Synthesizing new proteins"
                     ],
                     "answer": 1,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -2675,7 +2903,8 @@
                         "Trans fats"
                     ],
                     "answer": 1,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -2687,7 +2916,8 @@
                         "Lipids"
                     ],
                     "answer": 2,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -2699,7 +2929,8 @@
                         "Chitin"
                     ],
                     "answer": 2,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -2711,7 +2942,8 @@
                         "Unsaturated fats are composed of shorter carbon chains"
                     ],
                     "answer": 2,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -2723,7 +2955,8 @@
                         "Quaternary structure"
                     ],
                     "answer": 2,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -2735,7 +2968,8 @@
                         "Linear-Density Lipoprotein"
                     ],
                     "answer": 0,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -2747,7 +2981,8 @@
                         "To produce hormones"
                     ],
                     "answer": 1,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -2759,7 +2994,8 @@
                         "Right ventricle"
                     ],
                     "answer": 1,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -2771,7 +3007,8 @@
                         "Venules"
                     ],
                     "answer": 0,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -2783,7 +3020,8 @@
                         "Liver"
                     ],
                     "answer": 1,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -2795,7 +3033,8 @@
                         "Septum"
                     ],
                     "answer": 1,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -2807,7 +3046,8 @@
                         "Resistance of blood flow in arteries"
                     ],
                     "answer": 1,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -2819,7 +3059,8 @@
                         "Angina"
                     ],
                     "answer": 1,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -2831,7 +3072,8 @@
                         "Valves that prevent backflow of blood."
                     ],
                     "answer": 2,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -2843,7 +3085,8 @@
                         "Left ventricle"
                     ],
                     "answer": 0,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -2855,7 +3098,8 @@
                         "Hypertension"
                     ],
                     "answer": 1,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -2867,7 +3111,8 @@
                         "Sinoatrial node pacing"
                     ],
                     "answer": 1,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -2879,7 +3124,8 @@
                         "Synthesizing red blood cells"
                     ],
                     "answer": 0,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -2891,7 +3137,8 @@
                         "Blood flow to a part of the heart is blocked"
                     ],
                     "answer": 3,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -2903,7 +3150,8 @@
                         "Left ventricle"
                     ],
                     "answer": 3,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -2915,7 +3163,8 @@
                         "Cardiac circulation"
                     ],
                     "answer": 2,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -2927,7 +3176,8 @@
                         "Plasma"
                     ],
                     "answer": 2,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -2939,7 +3189,8 @@
                         "Capillaries"
                     ],
                     "answer": 1,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -2951,7 +3202,8 @@
                         "Arterioles"
                     ],
                     "answer": 2,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -2963,7 +3215,8 @@
                         "Brain only"
                     ],
                     "answer": 1,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -2975,7 +3228,8 @@
                         "Left atrium"
                     ],
                     "answer": 0,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -2987,7 +3241,8 @@
                         "Small branches of veins"
                     ],
                     "answer": 1,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -2999,7 +3254,8 @@
                         "Pressure required to open the heart valves"
                     ],
                     "answer": 1,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -3011,7 +3267,8 @@
                         "Liver"
                     ],
                     "answer": 2,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -3023,7 +3280,8 @@
                         "Hemophilia"
                     ],
                     "answer": 1,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -3035,7 +3293,8 @@
                         "Direct blood flow from the ventricles to the arteries"
                     ],
                     "answer": 2,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -3047,7 +3306,8 @@
                         "Pulmonary valve"
                     ],
                     "answer": 1,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -3059,7 +3319,8 @@
                         "Beat"
                     ],
                     "answer": 0,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -3071,7 +3332,8 @@
                         "Periodically reversing it"
                     ],
                     "answer": 1,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -3083,7 +3345,8 @@
                         "Veins and venules"
                     ],
                     "answer": 2,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -3095,7 +3358,8 @@
                         "Sudden decrease in heart rate"
                     ],
                     "answer": 1,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -3107,7 +3371,8 @@
                         "Have no effect on the heart"
                     ],
                     "answer": 1,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -3119,7 +3384,8 @@
                         "Blood type"
                     ],
                     "answer": 2,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -3131,7 +3397,8 @@
                         "Vasodilation"
                     ],
                     "answer": 3,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -3143,7 +3410,8 @@
                         "Emotional state only"
                     ],
                     "answer": 2,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -3155,7 +3423,8 @@
                         "Ventricles → SA node → AV node → atria"
                     ],
                     "answer": 2,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 }
             ]
         },
@@ -3190,7 +3459,8 @@
                         "y = f(4x)"
                     ],
                     "answer": 3,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": true
                 }
             ],
             "UnitB": [
@@ -3231,7 +3501,8 @@
                         "<b>Narrow National Interest</b>",
                         "<b>Ultranationalist</b>"
                     ],
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 3,
@@ -3244,7 +3515,8 @@
                         "<b>Enlightened National Interest</b>",
                         "<b>Internationalist</b>"
                     ],
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 }
             ],
             "UnitB": [
@@ -3258,7 +3530,8 @@
                         "national interests should be pursued only to a limited extent"
                     ],
                     "answer": 1,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -3270,7 +3543,8 @@
                         "an increase in nationalism across Europe"
                     ],
                     "answer": 2,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -3282,7 +3556,8 @@
                         "supranationalists, nationalists"
                     ],
                     "answer": 1,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -3294,7 +3569,8 @@
                         "Napoleonic Wars"
                     ],
                     "answer": 2,
-                    "picture": "resources/images/Social/WW1Map.webp"
+                    "picture": "resources/images/Social/WW1Map.webp",
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -3306,7 +3582,8 @@
                         "All of the above"
                     ],
                     "answer": 3,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -3318,7 +3595,8 @@
                         "demilitarization"
                     ],
                     "answer": 1,
-                    "picture": "resources/images/Social/cartoon1.webp"
+                    "picture": "resources/images/Social/cartoon1.webp",
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -3330,7 +3608,8 @@
                         "Economic Nationalism"
                     ],
                     "answer": 0,
-                    "picture": "resources/images/Social/cartoon1.webp"
+                    "picture": "resources/images/Social/cartoon1.webp",
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -3354,7 +3633,8 @@
                         "Protect the rest of Russia from the Soviet Union"
                     ],
                     "answer": 0,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -3366,7 +3646,8 @@
                         "Perusing the goals and interests of your neighboring nation"
                     ],
                     "answer": 3,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -3378,7 +3659,8 @@
                         "The Rwandan genocide"
                     ],
                     "answer": 1,
-                    "picture": "resources/images/Social/quote1.webp"
+                    "picture": "resources/images/Social/quote1.webp",
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -3390,7 +3672,8 @@
                         "People must speak out against genocide during early before it is too late"
                     ],
                     "answer": 3,
-                    "picture": "resources/images/Social/quote1.webp"
+                    "picture": "resources/images/Social/quote1.webp",
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -3402,7 +3685,8 @@
                         "Help Britain, Canada’s mother, defend herself from France"
                     ],
                     "answer": 0,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -3414,7 +3698,8 @@
                         "Created the country of Canada"
                     ],
                     "answer": 2,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -3426,7 +3711,8 @@
                         "European alliances declaring war with one another due to protecting national interests"
                     ],
                     "answer": 3,
-                    "picture": "resources/images/Social/cartoon2.webp"
+                    "picture": "resources/images/Social/cartoon2.webp",
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -3438,7 +3724,8 @@
                         "14 Points, rise of tensions between rival European foreign polices"
                     ],
                     "answer": 1,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -3450,7 +3737,8 @@
                         "Crimes against humanity"
                     ],
                     "answer": 2,
-                    "picture": "resources/images/Social/quote2.webp"
+                    "picture": "resources/images/Social/quote2.webp",
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -3462,7 +3750,8 @@
                         "Crimes against humanity"
                     ],
                     "answer": 3,
-                    "picture": "resources/images/Social/quote2.webp"
+                    "picture": "resources/images/Social/quote2.webp",
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -3474,7 +3763,8 @@
                         "Concentrated attacks against a specific nations military and political institutions in order to bring about the defeat of that nation."
                     ],
                     "answer": 1,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -3486,7 +3776,8 @@
                         "Ultranationalism"
                     ],
                     "answer": 2,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -3498,7 +3789,8 @@
                         "Chinese Muslims having greater political freedom"
                     ],
                     "answer": 0,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -3510,7 +3802,8 @@
                         "armed struggle."
                     ],
                     "answer": 2,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -3522,7 +3815,8 @@
                         "Québec Francophones, Inuit, Tibetan Refugees."
                     ],
                     "answer": 1,
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -3534,7 +3828,8 @@
                         "seeking recognition from Americans as a separate nation from Canada."
                     ],
                     "answer": 1,
-                    "picture": "resources/images/Social/quote3.webp"
+                    "picture": "resources/images/Social/quote3.webp",
+                    "allowSketchPad": false
                 },
                 {
                     "type": 0,
@@ -3546,7 +3841,8 @@
                         "build relationships amongst smaller groups who can unite to achieve self-determination together."
                     ],
                     "answer": 0,
-                    "picture": "resources/images/Social/quote3.webp"
+                    "picture": "resources/images/Social/quote3.webp",
+                    "allowSketchPad": false
                 }
             ],
             "UnitC": [
@@ -3598,7 +3894,8 @@
                             "World Trade Organization"
                         ]
                     ],
-                    "picture": null
+                    "picture": null,
+                    "allowSketchPad": false
                 }
             ]
         },
