@@ -55,7 +55,42 @@
                 }
             ],
             "UnitCa": [
-
+                {
+                    "type": 0,
+                    "question": "What is <b>Dissociation</b>?",
+                    "options": [
+                        "The dissolving of ionic compounds in water where they are separated into positive and negative(cations and anions) ions.",
+                        "The dissolving of molecular compounds where they separates into different molecules.",
+                        "The dissolving of molecular compounds where they <b>ionizes</b> to form new ions.",
+                        "The dissolving of molecular compounds where they <b>do not</b> break up into different molecules or ions."
+                    ],
+                    "answer": 0,
+                    "picture": null
+                },
+                {
+                    "type": 0,
+                    "question": "What is <b>Dissolving</b>?",
+                    "options": [
+                        "The dissolving of ionic compounds in water where they are separated into positive and negative(cations and anions) ions.",
+                        "The dissolving of molecular compounds where they separates into different molecules.",
+                        "The dissolving of molecular compounds where they <b>ionizes</b> to form new ions.",
+                        "The dissolving of molecular compounds where they <b>do not</b> break up into different molecules or ions."
+                    ],
+                    "answer": 1,
+                    "picture": null
+                },
+                {
+                    "type": 0,
+                    "question": "What is <b>Ionization</b>?",
+                    "options": [
+                        "The dissolving of ionic compounds in water where they are separated into positive and negative(cations and anions) ions.",
+                        "The dissolving of molecular compounds where they separates into different molecules.",
+                        "The dissolving of molecular compounds where they <b>ionizes</b> to form new ions.",
+                        "The dissolving of molecular compounds where they <b>do not</b> break up into different molecules or ions."
+                    ],
+                    "answer": 2,
+                    "picture": null
+                }
             ],
             "UnitCb": [
                 {
@@ -1216,7 +1251,7 @@
                 },
                 {
                     "type": 0,
-                    "question": "What is a Substrate?",
+                    "question": "What is a <b>Substrate</b>?",
                     "options": [
                         "The molecule(s) that assists enzymes to interacte with other molecules.",
                         "The molecule(s) that changes when interacted with an enzyme.",
@@ -1348,7 +1383,7 @@
                 },
                 {
                     "type": 0,
-                    "question": "What are antigens?",
+                    "question": "What are <b>antigens</b>?",
                     "options": [
                         "Cells that produce antibodies",
                         "Molecules that can trigger an immune response",
@@ -1852,7 +1887,7 @@
                 },
                 {
                     "type": 0,
-                    "question": "What is tidal volume?",
+                    "question": "What is <b>Tidal Volume</b>?",
                     "options": [
                         "Filtering air",
                         "Vocalization",
@@ -1948,7 +1983,7 @@
                 },
                 {
                     "type": 0,
-                    "question": "What is vital capacity?",
+                    "question": "What is <b>Vital Capacity</b>?",
                     "options": [
                         "The minimum volume of air remaining in the lungs after a forceful exhale",
                         "The maximum amount of air exhaled after a maximum inhale",
@@ -2056,7 +2091,7 @@
                 },
                 {
                     "type": 0,
-                    "question": "How is residual volume measured?",
+                    "question": "How is <b>Residual Volume</b> measured?",
                     "options": [
                         "By inhaling as much air as possible",
                         "By exhaling forcefully after a normal exhale",
@@ -2068,7 +2103,7 @@
                 },
                 {
                     "type": 0,
-                    "question": "What is expiratory reserve volume?",
+                    "question": "What is <b>Expiratory Reserve Volume</b>?",
                     "options": [
                         "The extra air inhaled above normal inhalation",
                         "The air exhaled during normal breathing",
@@ -2140,7 +2175,7 @@
                 },
                 {
                     "type": 0,
-                    "question": "What is inspiratory reserve volume?",
+                    "question": "What is <b>Inspiratory Reserve Volume</b>?",
                     "options": [
                         "The maximum amount of air that can be inhaled after a normal inhalation",
                         "The volume of air remaining in the lungs after a normal exhale",
@@ -2356,7 +2391,7 @@
                 },
                 {
                     "type": 0,
-                    "question": "What is the role of pepsinogen in digestion?",
+                    "question": "What is the role of <b>pepsinogen</b> in digestion?",
                     "options": [
                         "It neutralizes stomach acid",
                         "It converts proteins into peptides",
@@ -2512,7 +2547,7 @@
                 },
                 {
                     "type": 0,
-                    "question": "Which test is used to identify the presence of reducing sugars?",
+                    "question": "Which test is used to identify the <b>presence of reducing sugars</b>?",
                     "options": [
                         "Benedict's Test",
                         "Iodine Test",
@@ -2536,7 +2571,7 @@
                 },
                 {
                     "type": 0,
-                    "question": "What are polysaccharides?",
+                    "question": "What are <b>Polysaccharides</b>?",
                     "options": [
                         "Simple sugars",
                         "Double sugars",
@@ -2584,7 +2619,7 @@
                 },
                 {
                     "type": 0,
-                    "question": "What does the Biuret Test detect?",
+                    "question": "What does the <b>Biuret Test</b> detect?",
                     "options": [
                         "Simple sugars",
                         "Starch",
@@ -2704,7 +2739,7 @@
                 },
                 {
                     "type": 0,
-                    "question": "What does systolic blood pressure measure?",
+                    "question": "What does <b>Systolic Blood Pressure</b> measure?",
                     "options": [
                         "Blood pressure during heart relaxation",
                         "Blood pressure during heart contraction",
@@ -2728,7 +2763,7 @@
                 },
                 {
                     "type": 0,
-                    "question": "Capillaries are:",
+                    "question": "<b>Capillaries</b> are:",
                     "options": [
                         "The largest blood vessels that carry blood away from the heart.",
                         "Blood vessels that return blood to the heart.",
@@ -2740,7 +2775,7 @@
                 },
                 {
                     "type": 0,
-                    "question": "The sinoatrial node is located in the:",
+                    "question": "The <b>Sinoatrial Node</b> is located in the:",
                     "options": [
                         "Right atrium",
                         "Left atrium",
@@ -2776,7 +2811,7 @@
                 },
                 {
                     "type": 0,
-                    "question": "Baroreceptors help regulate blood pressure by:",
+                    "question": "<b>Baroreceptors</b> help regulate blood pressure by:",
                     "options": [
                         "Detecting changes in arterial wall tension",
                         "Increasing blood volume",
@@ -2896,7 +2931,7 @@
                 },
                 {
                     "type": 0,
-                    "question": "Diastolic pressure is the:",
+                    "question": "<b>Diastolic Blood Pressure</b> is the:",
                     "options": [
                         "Highest level of blood pressure",
                         "Pressure in the arteries when the heart is at rest",
@@ -2932,7 +2967,7 @@
                 },
                 {
                     "type": 0,
-                    "question": "The atrioventricular node (AV node) functions to:",
+                    "question": "The <b>Atrioventricular Node(AV node)</b> functions to:",
                     "options": [
                         "Initiate the heartbeat",
                         "Pump blood to the lungs",
@@ -2968,7 +3003,7 @@
                 },
                 {
                     "type": 0,
-                    "question": "Vasoconstriction affects blood pressure by:",
+                    "question": "<b>Vasoconstriction</b> affects blood pressure by:",
                     "options": [
                         "Decreasing it",
                         "Increasing it",
@@ -2980,7 +3015,7 @@
                 },
                 {
                     "type": 0,
-                    "question": "Baroreceptors are located in the:",
+                    "question": "<b>Baroreceptors</b> are located in the:",
                     "options": [
                         "Heart only",
                         "Lungs and heart",
@@ -3155,7 +3190,7 @@
             "UnitB": [
                 {
                     "type": 0,
-                    "question": "Ultranationalism is often associated with a belief that ____________.",
+                    "question": "<b>Ultranationalism</b> is often associated with a belief that ____________.",
                     "options": [
                         "international laws and organizations are needed in an interdependent world",
                         "one country is superior to all others",
@@ -3251,7 +3286,7 @@
                 },
                 {
                     "type": 0,
-                    "question": "When the League of Nations was created in 1919, it was designed to:",
+                    "question": "When the <b>League of Nations</b> was created in 1919, it was designed to:",
                     "options": [
                         "Prevent another war from breaking out",
                         "Severely punish Germany for its actions in WWI",
@@ -3263,7 +3298,7 @@
                 },
                 {
                     "type": 0,
-                    "question": "National interest may be defined as all of the following <b>EXCEPT</B>.",
+                    "question": "<b>National Interest</b> may be defined as all of the following <b>EXCEPT</B>.",
                     "options": [
                         "An action benefiting the nation",
                         "Providing economic prosperity for the nation",
