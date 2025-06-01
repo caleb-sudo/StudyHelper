@@ -742,9 +742,9 @@ function buildQuestion() {
                             localStorage.setItem("score", score - (unit[questionNum].totalElements - correct));
                             localStorage.setItem("streak", 0);
                             text.innerHTML = "The correct answer was ` " + unit[questionNum].answers[r[i]][0] + " `";
-                            qField.appendChild(text);
                         }
-                        definitions[i].appendChild(checker)
+                        definitions[i].appendChild(checker);
+                        checker[i].appendChild(text);
                     }
                     qField.appendChild(nextBtn);
                 }
