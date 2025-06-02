@@ -387,7 +387,7 @@ function buildQuestion() {
                 function end(event) {
                     path2.moveTo(event.clientX, event.clientY);
                     ctx.stroke(path2);
-                    console.log("end: (" + event.clientX - canvas.width + ", " + event.clientY + ")");
+                    console.log("end: (" + event.clientX + ", " + event.clientY + ")");
                 }
                 canvas.addEventListener("mousedown", function(event) {
                     start(event);
