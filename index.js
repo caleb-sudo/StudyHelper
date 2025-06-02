@@ -233,9 +233,9 @@ function clearDisplay() {
     document.getElementById("display").value = '';
 }
 
-dragCalulator(calcModal);
+//dragCalulator(calcModal);
 
-function dragCalulator(elmnt) {
+/*function dragCalulator(elmnt) {
     let pos1, pos2, pos3, pos4;
     calcModal.onmousedown = dragMouseDown;
     calcModal.ontouchstart = dragMouseDown;
@@ -267,7 +267,7 @@ function dragCalulator(elmnt) {
         document.onmousemove = null;
         document.ontouchmove = null;
     }
-}
+}*/
 
 function buildQuestion() {
     fetch('https://caleb-sudo.github.io/StudyHelper2/resources/questions.json')
@@ -360,6 +360,42 @@ function buildQuestion() {
 
             let questionNum = Math.floor(Math.random() * unit.length);
             question.innerHTML = unit[questionNum].question;
+
+            const canvas = document.createElement('canvas');
+            const ctx = canvas.getContext("2d")
+
+            if (unit[questionNum].allowSketchPad == true) {
+                canvas.style.border = "1px solid black";
+                canvas.id = "sketchpad";
+                canvas.style.cursor = "crosshair";
+                canvas.style.backgroundColor = "transparent";
+                /*let path1 = new Path2D();
+                path1.rect(10, 10, 100, 100);
+
+                let path2 = new Path2D(path1);
+                path2.moveTo(220, 60);
+                path2.arc(170, 60, 50, 0, 2 * Math.PI);
+
+                ctx.stroke(path2);*/
+                let path1 = new Path2D();
+                let path2;
+                function start(event) {
+                    path1.rect(event.clientX, event.clientY, 100, 100);
+                    path2 = new Path2D(path1);
+                    console.log("start: (" + event.clientX + ", " + event.clientY + ")");
+                }
+                function end(event) {
+                    path2.moveTo(event.clientX, event.clientY);
+                    ctx.stroke(path2);
+                    console.log("end: (" + event.clientX - canvas.width + ", " + event.clientY + ")");
+                }
+                canvas.addEventListener("mousedown", function(event) {
+                    start(event);
+                });
+                canvas.addEventListener("mouseup", function(event) {
+                    end(event);
+                });
+            }
 
             if (unit[questionNum].type == 0) { //multiple choice question
                 const imgField = document.getElementById("box");
@@ -752,6 +788,9 @@ function buildQuestion() {
                 submitBtn.addEventListener("click", submitFillIn);
                 nextBtn.addEventListener("click", reloadPage);
             }
+            qField.appendChild(document.createElement('br'));
+            qField.appendChild(document.createElement('br'));
+            qField.appendChild(canvas);
         })
         .catch(error => console.error('Failed to fetch data: ', error));
 }
