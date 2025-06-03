@@ -386,6 +386,8 @@ function buildQuestion() {
                 canvas.id = "sketchpad";
                 canvas.style.cursor = "crosshair";
                 canvas.style.backgroundColor = "white";
+                canvas.style.width = "100%";
+                canvas.style.height = "100%";
                 /*let path1 = new Path2D();
                 path1.rect(10, 10, 100, 100);
 
