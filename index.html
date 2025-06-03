@@ -74,6 +74,21 @@
                         <button class="calcButton calcModes" id="calcMode">
                             Rad
                         </button>
+                        <button class="calcButton history">
+                            <img src="resources/images/history.svg" id="calcHistoryBtn">
+                        </button>
+                        <div id="calcHistory">
+                            <div class="modal" id="calcHistoryModal">
+                                <span class="calcHistoryHeader">
+                                    <span style="text-align:center;">
+                                        Your History
+                                    </span>
+                                    <span id="exitCalcHistoryBtn">
+                                        X
+                                    </span>
+                                </span>
+                            </div>
+                        </div>
                         <div class="calcButtons">
                             <button class="calcButton clear" onclick="clearDisplay()">
                                 <b>
@@ -246,7 +261,6 @@
             </div>
         </header>
         <br>
-        <div id="containerPainter"></div>
         <br>
         <section>
             <span id="sidePanel">

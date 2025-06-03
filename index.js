@@ -174,6 +174,19 @@ var degreeMode = true;
 const mode = document.getElementById("calcMode");
 mode.addEventListener("click", changeMode);
 
+function showCalcHistory() {
+    calcHistoryModal.style.display = "block";
+}
+let exitCalcHistory = () => calcHistoryModal.style.display = "none";
+
+const calcHistoryBtn = document.getElementById("calcHistoryBtn");
+calcHistoryBtn.addEventListener("click", showCalcHistory);
+
+var calcHistoryModal = document.getElementById("exitCalcHistory");
+
+const exitCalcHistoryBtn = document.getElementById("exitCalcHistoryBtn");
+exitCalcHistoryBtn.addEventListener("click", exitCalcHistory);
+
 function changeMode() {
     degreeMode = !degreeMode;
     if (degreeMode) document.getElementById("calcMode").innerHTML = "Deg";
@@ -368,9 +381,11 @@ function buildQuestion() {
 
             if (unit[questionNum].allowSketchPad == true) {
                 canvas.style.border = "1px solid black";
+                canvas.style.borderRadius = "10px";
+                canvas.style.boxShadow = "box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)";
                 canvas.id = "sketchpad";
                 canvas.style.cursor = "crosshair";
-                canvas.style.backgroundColor = "transparent";
+                canvas.style.backgroundColor = "white";
                 /*let path1 = new Path2D();
                 path1.rect(10, 10, 100, 100);
 
