@@ -388,6 +388,8 @@ function buildQuestion() {
                     path2.moveTo(event.clientX, event.clientY);
                     ctx.stroke(path2);
                     console.log("end: (" + event.clientX + ", " + event.clientY + ")");
+                    ctx.fillStyle = "green";
+                    ctx.fillRect(10, 10, 150, 100);
                 }
                 canvas.addEventListener("mousedown", function(event) {
                     start(event);
