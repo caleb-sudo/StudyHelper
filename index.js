@@ -1,3 +1,5 @@
+var isUsingMobile = navigator.userAgentData.mobile;
+
 let reloadPage = () => location.reload();
 
 let radToDeg = (val) => val * (Math.PI/180);
@@ -233,9 +235,9 @@ function clearDisplay() {
     document.getElementById("display").value = '';
 }
 
-//dragCalulator(calcModal);
+if (isUsingMobile == false) dragCalulator(calcModal);
 
-/*function dragCalulator(elmnt) {
+function dragCalulator(elmnt) {
     let pos1, pos2, pos3, pos4;
     calcModal.onmousedown = dragMouseDown;
     calcModal.ontouchstart = dragMouseDown;
@@ -267,7 +269,7 @@ function clearDisplay() {
         document.onmousemove = null;
         document.ontouchmove = null;
     }
-}*/
+}
 
 function buildQuestion() {
     fetch('https://caleb-sudo.github.io/StudyHelper2/resources/questions.json')
