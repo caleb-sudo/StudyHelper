@@ -263,6 +263,7 @@ function buildQuestion() {
                 let path1 = new Path2D();
                 let path2;
                 ctx.fillRect(0, 0, 10, 10);
+                console.log("left = " rect.left + "\ntop = " rect.top);
                 function start(event) {
                     let x = event.offsetX;
                     let y = event.offsetY;
