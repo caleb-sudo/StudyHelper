@@ -377,6 +377,7 @@ function buildQuestion() {
             question.innerHTML = unit[questionNum].question;
 
             const canvas = document.createElement('canvas');
+            const rect = canvas.getBoundingClientRect();
             const ctx = canvas.getContext("2d")
 
             if (unit[questionNum].allowSketchPad == true) {
@@ -399,6 +400,8 @@ function buildQuestion() {
                 let path1 = new Path2D();
                 let path2;
                 function start(event) {
+                    let x = event.clientX - rect.left;
+                    let y = event.clientY - rect.top;
                     path1.rect(event.clientX, event.clientY, 100, 100);
                     path2 = new Path2D(path1);
                     console.log("start: (" + event.clientX + ", " + event.clientY + ")");
