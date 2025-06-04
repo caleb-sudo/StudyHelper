@@ -274,7 +274,7 @@ function buildQuestion() {
                     let y = event.clientY - rect.top;
                     //ctx.fillRect(10, 10, 150, 100);
                 }
-                canvas.addEventListener("mousemove", function(event) {
+                canvas.addEventListener("mouseclick", function(event) {
                     start(event);
                 });
                 canvas.addEventListener("mouseup", function(event) {
