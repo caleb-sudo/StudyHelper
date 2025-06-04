@@ -263,9 +263,9 @@ function buildQuestion() {
                 let path1 = new Path2D();
                 let path2;
                 function start(event) {
-                    let x = event.clientX - rect.left;
-                    let y = event.clientY - rect.top;
-                    ctx.fillRect(event.clientX, event.clientY, 10, 10);
+                    let x = event.offsetX;
+                    let y = event.offsetY;
+                    ctx.fillRect(x, y, 10, 10);
                     console.log("start: (" + x + ", " + y + ")");
                 }
                 function end(event) {
