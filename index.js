@@ -268,7 +268,7 @@ function buildQuestion() {
                     let y = event.offsetY;
                     ctx.fillRect(x, y, 10, 10);
                     console.log("start: (" + x + ", " + y + ")");
-                    console.log("start: (" + x - rect.left + ", " + y - rect.top + ")");
+                    console.log("start: (" + (x - rect.left) + ", " + (y - rect.top) + ")");
                 }
                 function end(event) {
                     let x = event.clientX - rect.left;
