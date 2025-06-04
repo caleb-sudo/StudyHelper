@@ -266,7 +266,7 @@ function buildQuestion() {
                 function start(event) {
                     let x = event.offsetX;
                     let y = event.offsetY;
-                    ctx.fillRect(x+100, y+100, 10, 10);
+                    ctx.fillRect(x, y, 10, 10);
                     console.log("start: (" + x + ", " + y + ")");
                 }
                 function end(event) {
