@@ -402,16 +402,13 @@ function buildQuestion() {
                 function start(event) {
                     let x = event.clientX - rect.left;
                     let y = event.clientY - rect.top;
-                    path1.rect(event.clientX, event.clientY, 100, 100);
-                    path2 = new Path2D(path1);
-                    console.log("start: (" + event.clientX + ", " + event.clientY + ")");
+                    ctx.fillRect(event.clientX, event.clientY, 10, 10);
+                    console.log("start: (" + x + ", " + y + ")");
                 }
                 function end(event) {
-                    path2.moveTo(event.clientX, event.clientY);
-                    ctx.stroke(path2);
-                    console.log("end: (" + event.clientX + ", " + event.clientY + ")");
-                    ctx.fillStyle = "green";
-                    ctx.fillRect(10, 10, 150, 100);
+                    let x = event.clientX - rect.left;
+                    let y = event.clientY - rect.top;
+                    //ctx.fillRect(10, 10, 150, 100);
                 }
                 canvas.addEventListener("mousedown", function(event) {
                     start(event);
