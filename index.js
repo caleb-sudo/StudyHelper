@@ -239,11 +239,13 @@ function buildQuestion() {
             let questionNum = Math.floor(Math.random() * unit.length);
             question.innerHTML = unit[questionNum].question;
 
+            const canvasContainer = document.getElementById("canvasContainer");
             const canvas = document.createElement('canvas');
             const rect = canvas.getBoundingClientRect();
             const ctx = canvas.getContext("2d")
-
+            
             if (unit[questionNum].allowSketchPad == true) {
+                canvasContainer.appendChild(canvasContainer);
                 canvas.style.border = "1px solid black";
                 canvas.style.borderRadius = "10px";
                 canvas.style.boxShadow = "box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)";
