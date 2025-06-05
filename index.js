@@ -262,20 +262,25 @@ function buildQuestion() {
                 path2.arc(170, 60, 50, 0, 2 * Math.PI);
 
                 ctx.stroke(path2);*/
-                let path1 = new Path2D();
-                let path2;
-                ctx.fillRect(0, 0, 10, 10);
+                let drawing = false;
+                function draw(event) {
+                  if (!drawing) return;
+                  ctx.lineTo(event.offsetX, event.offsetY);
+                  ctx.stroke();
+                  ctx.beginPath();
+                  ctx.moveTo(event.offsetX, event.offsetY);
+                }
                 function start(event) {
-                    let x = event.clientX - canvas.offsetLeft;
-                    let y = event.clientY - canvas.offsetTop;
-                    ctx.fillRect(x, y, 10, 10);
-                    console.log("start: (" + x + ", " + y + ")");
+                    drawing = true;
+                    ctx.beginPath();
+                    ctx.moveTo(event.offsetX, event.offsetY);
                 }
                 function end(event) {
-                    let x = event.clientX - rect.left;
-                    let y = event.clientY - rect.top;
-                    //ctx.fillRect(10, 10, 150, 100);
+                    drawing = false;
                 }
+                canvas.addEventListener("mousemove", function(event) {
+                    draw(event);
+                });
                 canvas.addEventListener("click", function(event) {
                     start(event);
                 });
