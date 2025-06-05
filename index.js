@@ -264,8 +264,8 @@ function buildQuestion() {
                 let path2;
                 ctx.fillRect(0, 0, 10, 10);
                 function start(event) {
-                    let x = event.offsetX;
-                    let y = event.offsetY;
+                    let x = event.clientX - canvas.offsetLeft;
+                    let y = event.clientY - canvas.offsetTop;
                     ctx.fillRect(x, y, 10, 10);
                     console.log("start: (" + x + ", " + y + ")");
                 }
