@@ -318,7 +318,7 @@ function buildQuestion() {
                     radio.id = 'r' + i;
                     radio.className = "radios";
                     lab.htmlFor = 'r' + i;
-                    lab.innerHTML = opts[i] + unit[questionNum].options[r[i]];
+                    lab.innerHTML = unit[questionNum].options[r[i]];
                     lab.className = "radioLabel";
                     div.appendChild(radio);
                     div.appendChild(lab);
