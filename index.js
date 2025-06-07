@@ -288,7 +288,7 @@ function buildQuestion() {
             }
 
             if (unit[questionNum].type == 0) { //multiple choice question
-                let r = randomize(unit[questionNum].totalElements);
+                let r = randomize(4);
                 const imgField = document.getElementById("box");
                 const pict = document.createElement('img');
 
