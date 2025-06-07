@@ -257,16 +257,20 @@ function buildQuestion() {
                 
                 let drawing = false;
                 function draw(event) {
-                  if (!drawing) return;
-                  ctx.lineTo(event.offsetX, event.offsetY);
-                  ctx.stroke();
-                  ctx.beginPath();
-                  ctx.moveTo(event.offsetX, event.offsetY);
+                    let x = event.pageX - canvas.offsetLeft;
+                    let y = event.pageY - canvas.offsetTop;
+                    if (!drawing) return;
+                    ctx.lineTo(x, y);
+                    ctx.stroke();
+                    ctx.beginPath();
+                    ctx.moveTo(x, y);
                 }
                 function start(event) {
+                    let x = event.pageX - canvas.offsetLeft;
+                    let y = event.pageY - canvas.offsetTop;
                     drawing = true;
                     ctx.beginPath();
-                    ctx.moveTo(event.offsetX, event.offsetY);
+                    ctx.moveTo(x, y);
                 }
                 function end(event) {
                     drawing = false;
