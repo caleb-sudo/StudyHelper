@@ -6,7 +6,45 @@
         "Chem": {
             "Chem20": {
                 "UnitA": [
-
+                    {
+                        "type": 0,
+                        "question": "What is the Molecular Geometry of the following molecule shown below?",
+                        "options": [
+                            "Linear",
+                            "Trigonal Planar",
+                            "Bent",
+                            "Tetrahedral"
+                        ],
+                        "answer": 2,
+                        "picture": "resources/images/Chem/molecules/water.png",
+                        "allowSketchPad": false
+                    },
+                    {
+                        "type": 0,
+                        "question": "What is the Molecular Geometry of the following molecule shown below?",
+                        "options": [
+                            "Tetrahedral",
+                            "Trigonal Pyramidal",
+                            "Trigonal Planar",
+                            "Linear"
+                        ],
+                        "answer": 0,
+                        "picture": "resources/images/Chem/molecules/PF3.png",
+                        "allowSketchPad": false
+                    },
+                    {
+                        "type": 0,
+                        "question": "What is the Molecular Geometry of the following molecule shown below?",
+                        "options": [
+                            "Bent",
+                            "Trigonal Pyramidal",
+                            "Tetrahedral",
+                            "Linear"
+                        ],
+                        "answer": 3,
+                        "picture": "resources/images/Chem/molecules/SiS2.png",
+                        "allowSketchPad": false
+                    }
                 ],
                 "UnitB": [
                     {
