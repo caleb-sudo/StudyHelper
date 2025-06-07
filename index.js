@@ -275,9 +275,12 @@ function buildQuestion() {
                 function end(event) {
                     drawing = false;
                 }
-                canvas.addEventListener("mousemove", function(event) {
-                    draw(event);
+                canvas.addEventListener("mousedown", function() {
+                    canvas.addEventListener("mousemove", function(event) {
+                        draw(event);
+                    });
                 });
+                
                 canvas.addEventListener("click", function(event) {
                     start(event);
                 });
