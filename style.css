@@ -284,3 +284,10 @@ table {
 .fill_inDefinitions {
     font-size: 20px;
 }
+
+.drawCanvas {
+    border: 1px solid black;
+    border-radius: 10px;
+    cursor: crosshair;
+    background-color: white;
+}

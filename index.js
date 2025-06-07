@@ -251,11 +251,8 @@ function buildQuestion() {
             
             if (unit[questionNum].allowSketchPad == true) {
                 canvasContainer.appendChild(canvas);
-                canvas.style.border = "1px solid black";
-                canvas.style.borderRadius = "10px";
                 canvas.id = "sketchpad";
-                canvas.style.cursor = "crosshair";
-                canvas.style.backgroundColor = "white";
+                canvas.classList = "drawCanvas";
                 canvas.width = "500";
                 canvas.height = "500";
                 
