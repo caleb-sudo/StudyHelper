@@ -148,6 +148,32 @@
                         "answer": 2,
                         "picture": "resources/images/Chem/molecules/trigonal/pyramidal/NH3.png",
                         "allowSketchPad": false
+                    },
+                    {
+                        "type": 0,
+                        "question": "What are <b>Intermolecular forces</b>?",
+                        "options": [
+                            "Forces that hold molecules together, <b>between molecules</b>.",
+                            "Forces that repel molecules apart, <b>between the molecules atoms</b>.",
+                            "Forces that hold molecules together, <b>between the molecules atoms</b>.",
+                            "Forces that repel molecules apart, <b>between molecules</b>."
+                        ],
+                        "answer": 0,
+                        "picture": null,
+                        "allowSketchPad": false
+                    },
+                    {
+                        "type": 0,
+                        "question": "What are <b>Intramolecular forces</b>?",
+                        "options": [
+                            "Forces that hold molecules together, <b>between molecules</b>.",
+                            "Forces that repel molecules apart, <b>between the molecules atoms</b>.",
+                            "Forces that hold molecules together, <b>between the molecules atoms</b>.",
+                            "Forces that repel molecules apart, <b>between molecules</b>."
+                        ],
+                        "answer": 2,
+                        "picture": null,
+                        "allowSketchPad": false
                     }
                 ],
                 "UnitB": [
