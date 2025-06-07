@@ -252,8 +252,8 @@ function buildQuestion() {
                 canvas.id = "sketchpad";
                 canvas.style.cursor = "crosshair";
                 canvas.style.backgroundColor = "white";
-                canvas.width = "500px";
-                canvas.height = "500px";
+                canvas.width = "500";
+                canvas.height = "500";
                 
                 let drawing = false;
                 function draw(event) {
