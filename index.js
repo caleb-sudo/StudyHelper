@@ -288,6 +288,7 @@ function buildQuestion() {
             }
 
             if (unit[questionNum].type == 0) { //multiple choice question
+                let r = randomize(unit[questionNum].totalElements);
                 const imgField = document.getElementById("box");
                 const pict = document.createElement('img');
 
@@ -317,7 +318,7 @@ function buildQuestion() {
                     radio.id = 'r' + i;
                     radio.className = "radios";
                     lab.htmlFor = 'r' + i;
-                    lab.innerHTML = opts[i] + unit[questionNum].options[i];
+                    lab.innerHTML = opts[i] + unit[questionNum].options[r[i]];
                     lab.className = "radioLabel";
                     div.appendChild(radio);
                     div.appendChild(lab);
@@ -346,7 +347,7 @@ function buildQuestion() {
                             let label = document.getElementsByClassName("radioLabel");
                             localStorage.setItem("totalAnswered", totalAnswered + 1);
                             let checkedIndex = [...document.querySelectorAll("input[name=opts]")].findIndex(e=>e.checked);
-                            if (checkedIndex == unit[questionNum].answer) {
+                            if (label[checkedIndex].innerHTML == unit[questionNum].answer) {
                                 localStorage.setItem("streak", strk + 1);
                                 localStorage.setItem("score", score + 1);
                                 localStorage.setItem("totalAnsweredCorrect", totalAnsweredCorrect + 1);
