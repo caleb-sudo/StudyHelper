@@ -16,7 +16,7 @@
                             "Tetrahedral"
                         ],
                         "answer": 2,
-                        "picture": "resources/images/Chem/molecules/water.png",
+                        "picture": "resources/images/Chem/molecules/bent/water.png",
                         "allowSketchPad": false
                     },
                     {
@@ -29,7 +29,7 @@
                             "Linear"
                         ],
                         "answer": 1,
-                        "picture": "resources/images/Chem/molecules/PF3.png",
+                        "picture": "resources/images/Chem/molecules/trigonal/pyramidal/PF3.png",
                         "allowSketchPad": false
                     },
                     {
@@ -42,7 +42,7 @@
                             "Linear"
                         ],
                         "answer": 3,
-                        "picture": "resources/images/Chem/molecules/SiS2.png",
+                        "picture": "resources/images/Chem/molecules/linear/SiS2.png",
                         "allowSketchPad": false
                     },
                     {
@@ -55,7 +55,7 @@
                             "Tetrahedral"
                         ],
                         "answer": 3,
-                        "picture": "resources/images/Chem/molecules/CH4.png",
+                        "picture": "resources/images/Chem/molecules/tetrahedral/tetrahedral/CH4.png",
                         "allowSketchPad": false
                     }
                 ],
