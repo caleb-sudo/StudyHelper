@@ -275,13 +275,10 @@ function buildQuestion() {
                 function end(event) {
                     drawing = false;
                 }
-                canvas.addEventListener("mousedown", function() {
-                    canvas.addEventListener("mousemove", function(event) {
-                        draw(event);
-                    });
+                canvas.addEventListener("mousemove", function(event) {
+                    draw(event);
                 });
-                
-                canvas.addEventListener("click", function(event) {
+                canvas.addEventListener("mousedown", function(event) {
                     start(event);
                 });
                 canvas.addEventListener("mouseup", function(event) {
