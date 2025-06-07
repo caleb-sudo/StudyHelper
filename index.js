@@ -126,7 +126,7 @@ if (score > 0) {
 const fixxer = document.getElementById("fixxer");
 
 function resetUserScores() {
-    let prompt = "Are you sure you want to reset your scores?\nYou should only use this if your score shows NaN\nTo miniminze cheating it will only work if one of you scores displays null";
+    let prompt = "Are you sure you want to reset your scores?\nYou should only use this if your score shows null\nTo miniminze cheating it will only work if one of you scores displays null";
     if (confirm(prompt) == true && getscore == null || getstrk == null || getHighscore == null || getHighestStrk == null) {
         localStorage.setItem("score", 0);
         localStorage.setItem("streak", 0);
