@@ -347,7 +347,7 @@ function buildQuestion() {
                             let label = document.getElementsByClassName("radioLabel");
                             localStorage.setItem("totalAnswered", totalAnswered + 1);
                             let checkedIndex = [...document.querySelectorAll("input[name=opts]")].findIndex(e=>e.checked);
-                            if (label[checkedIndex].innerHTML == unit[questionNum].answer) {
+                            if (label[checkedIndex].innerHTML == unit[questionNum].options[unit[questionNum].answer]) {
                                 localStorage.setItem("streak", strk + 1);
                                 localStorage.setItem("score", score + 1);
                                 localStorage.setItem("totalAnsweredCorrect", totalAnsweredCorrect + 1);
