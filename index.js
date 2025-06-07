@@ -156,7 +156,7 @@ function buildQuestion() {
             return response.json();
         })
         .then(data => {
-            var unit = data.Bio.Bio20.UnitD;
+            var unit = data.Science.Bio.Bio20.UnitD;
 
             const unitSelect = document.getElementById("UnitSelector");
 
@@ -169,34 +169,34 @@ function buildQuestion() {
                 if (unitSelect.value[0] == 'C') {
                     switch (unitSelect.value[2]) {
                         case 'A':
-                            unit = data.Chem.Chem20.UnitA;
+                            unit = data.Science.Chem.Chem20.UnitA;
                             break;
                         case 'B':
-                            unit = data.Chem.Chem20.UnitB;
+                            unit = data.Science.Chem.Chem20.UnitB;
                             break;
                         case 'C':
-                            unit = data.Chem.Chem20.UnitCa;
+                            unit = data.Science.Chem.Chem20.UnitCa;
                             break;
                         case 'E':
-                            unit = data.Chem.Chem20.UnitCb;
+                            unit = data.Science.Chem.Chem20.UnitCb;
                             break;
                         case 'D':
-                            unit = data.Chem.Chem20.UnitD;
+                            unit = data.Science.Chem.Chem20.UnitD;
                             break;
                     }
                 } else if (unitSelect.value[0] == 'B') {
                     switch (unitSelect.value[2]) {
                         case 'A':
-                            unit = data.Bio.Bio20.UnitA;
+                            unit = data.Science.Bio.Bio20.UnitA;
                             break;
                         case 'B':
-                            unit = data.Bio.Bio20.UnitB;
+                            unit = data.Science.Bio.Bio20.UnitB;
                             break;
                         case 'C':
-                            unit = data.Bio.Bio20.UnitC;
+                            unit = data.Science.Bio.Bio20.UnitC;
                             break;
                         case 'D':
-                            unit = data.Bio.Bio20.UnitD;
+                            unit = data.Science.Bio.Bio20.UnitD;
                             break;
                     }
                 } else if (unitSelect.value[0] == 'S') {
@@ -242,13 +242,17 @@ function buildQuestion() {
             const canvasContainer = document.getElementById("canvasContainer");
             const canvas = document.createElement('canvas');
             const rect = canvas.getBoundingClientRect();
-            const ctx = canvas.getContext("2d")
+            const ctx = canvas.getContext("2d");
+            const canvasSideBar = document.createElement('div');
+            const canvasClear = document.createElement('button');
+            const canvasBrushColor = document.createElement('div');
+            const canvasBrushSize = document.createElement('div');
+            const canvasText = document.createElement('input');
             
             if (unit[questionNum].allowSketchPad == true) {
                 canvasContainer.appendChild(canvas);
                 canvas.style.border = "1px solid black";
                 canvas.style.borderRadius = "10px";
-                canvas.style.boxShadow = "box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)";
                 canvas.id = "sketchpad";
                 canvas.style.cursor = "crosshair";
                 canvas.style.backgroundColor = "white";
