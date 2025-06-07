@@ -874,7 +874,7 @@
                     },
                     {
                         "type": 0,
-                        "question": "The pigments that absorb light energy for photosynthesis are located in the ____",
+                        "question": "The pigments that absorb light energy for photosynthesis are located in the ____________.",
                         "options": [
                             "inner membrane",
                             "thylakoid membrane",
@@ -887,7 +887,7 @@
                     },
                     {
                         "type": 0,
-                        "question": "The function of chlorophyll in photosynthesis is to _______",
+                        "question": "The function of chlorophyll in photosynthesis is to ______________.",
                         "options": [
                             "Split water molecules",
                             "Produce energy",
@@ -926,7 +926,7 @@
                     },
                     {
                         "type": 0,
-                        "question": "The process that breaks down water to release energy is called __________.",
+                        "question": "The process that breaks down water to release energy is called _______________.",
                         "options": [
                             "Photophosphorylation",
                             "Photolysis",
