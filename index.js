@@ -248,6 +248,7 @@ function buildQuestion() {
             const canvasBrushColor = document.createElement('div');
             const canvasBrushSize = document.createElement('div');
             const canvasText = document.createElement('input');
+            const graphBtn = document.createElement('button');
             
             if (unit[questionNum].allowSketchPad == true) {
                 canvasContainer.appendChild(canvas);
@@ -255,6 +256,7 @@ function buildQuestion() {
                 canvas.classList = "drawCanvas";
                 canvas.width = "500";
                 canvas.height = "500";
+                
                 
                 let drawing = false;
                 function draw(event) {
