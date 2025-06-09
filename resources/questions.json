@@ -3624,7 +3624,7 @@
             "UnitA": [
                 {
                     "type": 0,
-                    "question": "The graph of y = f(x) is stretched horizontally by a factor of 14. Determine the equation of the transformed graph.",
+                    "question": "The graph of y = f(x) is stretched horizontally by a factor of &frac14;. Determine the equation of the transformed graph.",
                     "options": [
                         "y = &frac14;f(x)",
                         "y = 4f(x)",
