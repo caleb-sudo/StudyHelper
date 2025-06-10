@@ -102,6 +102,16 @@ function openHelpModal() {
 }
 let closeHelpModal = () => hide(helpModal, false);
 
+let graphModal = document.getElementById("graphModal");
+function openGraphModal() {
+    graphModal.style.display = "flex";
+    closeMenu();
+}
+let closeGraphModal = () => hide(graphModal, true);
+
+var graph = document.getElementById("graph");
+var graphingCalc = Desmos.GraphingCalculator(graph);
+
 const strkText = document.getElementById("streak");
 const scoreText = document.getElementById("score");
 const highscoreText = document.getElementById("highscore");
@@ -240,22 +250,17 @@ function buildQuestion() {
             question.innerHTML = unit[questionNum].question;
 
             const canvasContainer = document.getElementById("canvasContainer");
-            const canvas = document.createElement('canvas');
+            const canvas = document.getElementById("sketchpad");
             const rect = canvas.getBoundingClientRect();
             const ctx = canvas.getContext("2d");
-            const canvasSideBar = document.createElement('div');
+            const canvasSideBar = document.getElementById("canvasSideBar");
             const canvasClear = document.createElement('button');
             const canvasBrushColor = document.createElement('div');
             const canvasBrushSize = document.createElement('div');
             const canvasText = document.createElement('input');
-            const graphBtn = document.createElement('button');
+            const graphBtn = document.getElementById("canvasGrapher");
             
             if (unit[questionNum].allowSketchPad == true) {
-                canvasContainer.appendChild(canvas);
-                canvas.id = "sketchpad";
-                canvas.classList = "drawCanvas";
-                canvas.width = "500";
-                canvas.height = "500";
                 
                 
                 let drawing = false;

@@ -8,6 +8,7 @@
             StudyHelper 2.0
         </title>
         <link rel="stylesheet" href="style.css">
+        <script src="https://www.desmos.com/api/v1.11/calculator.js?apiKey=dcb31709b452b1cf9dc26972add0fda6"></script>
     </head>
     <body>
         <header>
@@ -18,7 +19,7 @@
                     </button>
                     <div class="modal" id="menuModal">
                         <span>
-                            <div class="menuTextBtns" id="menuExitBtn" onclick="closeMenu()">
+                            <div class="menuTextBtns" id="menuExitBtn" onclick="run()">
                                 X
                             </div>
                         </span>
@@ -33,6 +34,12 @@
                         <hr>
                         <span>
                             <img src="resources/images/leaderboard.svg" width="45px" height="auto" onclick="alert('Coming soon(hopfully)')" class="icoBtns leaderboardBtn">
+                        </span>
+                        <hr>
+                        <span>
+                            <p class="icoBtns graphBtn" style="font-size:25px;" onclick="openGraphModal()">
+                                Graph
+                            </p>
                         </span>
                         <hr>
                         <span>
@@ -66,7 +73,7 @@
                 <span id="calculator">
                     <div class="modal" id="calcModal">
                         <input type="text" id="display" class="display" disabled>
-                        <button class="calcButton close" onclick="closeCalc()">
+                        <button class="exitModalBtns" onclick="closeCalc()">
                             <b>
                                 X
                             </b>
@@ -218,6 +225,16 @@
                         </div>
                     </div>
                 </span>
+                <span id="graphContainer">
+                    <div class="modal" id="graphModal" style="display:none;">
+                        <button class="exitModalBtns" onclick="closeGraphModal()" style="position:absolute;right:1%;top:1%;">
+                            <b>
+                                X
+                            </b>
+                        </button>
+                        <div id="graph"></div>
+                    </div>
+                </span>
                 <span id="help">
                     <div class="modal" id="helpModal"></div>
                 </span>
@@ -261,8 +278,10 @@
             </div>
         </header>
         <br>
-        <div id="canvasContainer" style="margin:none"></div>
         <br>
+        <div id="canvasContainer">
+            <canvas id="sketchpad" class="drawCanvas" width="500" height="500"></canvas>
+        </div>
         <section>
             <span id="sidePanel">
                 <p id="question" style="color:white;"></p>
