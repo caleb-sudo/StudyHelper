@@ -269,6 +269,62 @@
                         "answer": 2,
                         "picture": "resources/images/Chem/Gay-LussacsLaw.png",
                         "allowSketchPad": false
+                    },
+                    {
+                        "type": 0,
+                        "question": "Who's law states that 'As volume decreases, pressure increases'?",
+                        "options": [
+                            "Boyle's Law",
+                            "Charle's Law",
+                            "Gay-Lussac's Law",
+                            "Combined Gas Law"
+                        ],
+                        "answer": 0,
+                        "picture": null,
+                        "allowSketchPad": false
+                    },
+                    {
+                        "type": 0,
+                        "question": "Who's law states that 'As tempature increases, volume increases'?",
+                        "options": [
+                            "Boyle's Law",
+                            "Charle's Law",
+                            "Gay-Lussac's Law",
+                            "Combined Gas Law"
+                        ],
+                        "answer": 1,
+                        "picture": null,
+                        "allowSketchPad": false
+                    },
+                    {
+                        "type": 0,
+                        "question": "Who's law states that 'As tempature increases, the pressure increases'?",
+                        "options": [
+                            "Boyle's Law",
+                            "Charle's Law",
+                            "Gay-Lussac's Law",
+                            "Combined Gas Law"
+                        ],
+                        "answer": 2,
+                        "picture": null,
+                        "allowSketchPad": false
+                    },
+                    {
+                        "type": 2,
+                        "question": "Match the following gas laws to there following attributes.",
+                        "totalElements": 3,
+                        "definitions": [
+                            "As volume decreases, pressure increases.",
+                            "As tempature increases, volume increases.",
+                            "As tempature increases, the pressure increases."
+                        ],
+                        "terms": [
+                            "Boyle's Law",
+                            "Charle's Law",
+                            "Gay-Lussac's Law"
+                        ],
+                        "picture": null,
+                        "allowSketchPad": false
                     }
                 ],
                 "UnitCa": [
