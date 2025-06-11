@@ -241,7 +241,7 @@
                             "Combined Gas Law"
                         ],
                         "answer": 0,
-                        "picture" "resources/images/Chem/BoylesLaw.png",
+                        "picture": "resources/images/Chem/BoylesLaw.png",
                         "allowSketchPad": false
                     },
                     {
