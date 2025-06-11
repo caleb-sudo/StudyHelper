@@ -230,6 +230,45 @@
                         "unit": "g",
                         "picture": null,
                         "allowSketchPad": true
+                    },
+                    {
+                        "type": 0,
+                        "question": "Who's Law does this graph belong to?",
+                        "options": [
+                            "Boyle's Law",
+                            "Charle's Law",
+                            "Gay-Lussac's Law",
+                            "Combined Gas Law"
+                        ],
+                        "answer": 0,
+                        "picture": "resources/images/Chem/BoylesLaw.png",
+                        "allowSketchPad": false
+                    },
+                    {
+                        "type": 0,
+                        "question": "Who's Law does this graph belong to?",
+                        "options": [
+                            "Boyle's Law",
+                            "Charle's Law",
+                            "Gay-Lussac's Law",
+                            "Combined Gas Law"
+                        ],
+                        "answer": 1,
+                        "picture": "resources/images/Chem/CharlesLaw.png",
+                        "allowSketchPad": false
+                    },
+                    {
+                        "type": 0,
+                        "question": "Who's Law does this graph belong to?",
+                        "options": [
+                            "Boyle's Law",
+                            "Charle's Law",
+                            "Gay-Lussac's Law",
+                            "Combined Gas Law"
+                        ],
+                        "answer": 2,
+                        "picture": "resources/images/Chem/Gay-LussacsLaw.png",
+                        "allowSketchPad": false
                     }
                 ],
                 "UnitCa": [
