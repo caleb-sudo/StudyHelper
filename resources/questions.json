@@ -382,7 +382,7 @@
                 "UnitCb": [
                     {
                         "type": 4,
-                        "question": "If a solution has a <b>pH of 3.78</b>, <b>what is the concentration(mol/L)</b> of H<sub>3</sub>O<sup>+</sup>?<br>To answer the question with scientific notation please use the superscript button below.",
+                        "question": "If a solution has a <b>pH of 3.78</b>, <b>what is the concentration(mol/L)</b> of [H<sub>3</sub>O<sup>+</sup>]?<br>To answer the question with scientific notation please use the superscript button below.",
                         "formula": null,
                         "answer": "1.7x10<sup>-4</sup>",
                         "unit": "mol/L",
@@ -391,7 +391,7 @@
                     },
                     {
                         "type": 4,
-                        "question": "If a solution has a H<sub>3</sub>O<sup>+</sup> concentration of <b>3.89x10<sup>-4</sup>mol/L</b>, <b>what is the pH of this solution</b>?",
+                        "question": "If a solution has a [H<sub>3</sub>O<sup>+</sup>] concentration of <b>3.89x10<sup>-4</sup>mol/L</b>, <b>what is the pH of this solution</b>?",
                         "formula": null,
                         "answer": "3.41",
                         "unit": null,
@@ -400,7 +400,7 @@
                     },
                     {
                         "type": 4,
-                        "question": "If a solution has a <b>pH of 8.81</b>, <b>what is the concentration(mol/L)</b> of H<sub>3</sub>O<sup>+</sup>?<br>To answer the question with scientific notation please use the superscript button below.",
+                        "question": "If a solution has a <b>pH of 8.81</b>, <b>what is the concentration(mol/L)</b> of [H<sub>3</sub>O<sup>+</sup>]?<br>To answer the question with scientific notation please use the superscript button below.",
                         "formula": null,
                         "answer": "1.6x10<sup>-9</sup>",
                         "unit": "mol/L",
@@ -409,7 +409,7 @@
                     },
                     {
                         "type": 4,
-                        "question": "If a solution has a H<sub>3</sub>O<sup>+</sup> concentration of <b>2.04x10<sup>-9</sup>mol/L</b>, <b>what is the pH of this solution</b>?",
+                        "question": "If a solution has a [H<sub>3</sub>O<sup>+</sup>] concentration of <b>2.04x10<sup>-9</sup>mol/L</b>, <b>what is the pH of this solution</b>?",
                         "answer": 8.69,
                         "unit": null,
                         "picture": null,
@@ -417,7 +417,7 @@
                     },
                     {
                         "type": 4,
-                        "question": "If a solution has a <b>pH of 8.46</b>, <b>what is the concentration(mol/L)</b> of H<sub>3</sub>O<sup>+</sup>?<br>To answer the question with scientific notation please use the superscript button below.",
+                        "question": "If a solution has a <b>pH of 8.46</b>, <b>what is the concentration(mol/L)</b> of [H<sub>3</sub>O<sup>+</sup>]?<br>To answer the question with scientific notation please use the superscript button below.",
                         "formula": null,
                         "answer": "3.5x10<sup>-9</sup>",
                         "unit": "mol/L",
@@ -426,7 +426,7 @@
                     },
                     {
                         "type": 4,
-                        "question": "If a solution has a H<sub>3</sub>O<sup>+</sup> concentration of <b>8.45x10<sup>-13</sup>mol/L</b>, <b>what is the pH of this solution</b>?",
+                        "question": "If a solution has a [H<sub>3</sub>O<sup>+</sup>] concentration of <b>8.45x10<sup>-13</sup>mol/L</b>, <b>what is the pH of this solution</b>?",
                         "formula": null,
                         "answer": 12.073,
                         "unit": null,
