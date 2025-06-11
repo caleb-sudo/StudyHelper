@@ -261,8 +261,7 @@ function buildQuestion() {
             const graphBtn = document.getElementById("canvasGrapher");
             
             if (unit[questionNum].allowSketchPad == true) {
-                
-                
+                canvas.style.display = "block";
                 let drawing = false;
                 function draw(event) {
                     let x = event.pageX - canvas.offsetLeft;
