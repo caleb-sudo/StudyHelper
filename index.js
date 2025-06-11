@@ -158,7 +158,7 @@ function onePanelMode() {
 }
 
 function buildQuestion() {
-    fetch('https://caleb-sudo.github.io/StudyHelper2/resources/questions.json')
+    fetch('https://caleb-sudo.github.io/StudyHelper/resources/questions.json')
         .then(response => {
             if (!response.ok) {
                 throw new Error(`HTTP error! Status: ${response.status}`);
