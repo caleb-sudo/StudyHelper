@@ -4189,6 +4189,12 @@
                     "totalBoxes": 1,
                     "picture": null,
                     "allowSketchPad": false
+                },
+                {
+                    "type": 5,
+                    "question": "test"
+                    "picture": null,
+                    "allowSketchPad": false
                 }
             ]
         },
