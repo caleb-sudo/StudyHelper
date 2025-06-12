@@ -263,34 +263,62 @@ function buildQuestion() {
             if (unit[questionNum].allowSketchPad == true) {
                 canvas.style.display = "block";
                 let drawing = false;
-                function draw(event) {
-                    let x = event.pageX - canvas.offsetLeft;
-                    let y = event.pageY - canvas.offsetTop;
-                    if (!drawing) return;
-                    ctx.lineTo(x, y);
-                    ctx.stroke();
-                    ctx.beginPath();
-                    ctx.moveTo(x, y);
+                if (isUsingMobile == false) {
+                    function draw(event) {
+                        let x = event.pageX - canvas.offsetLeft;
+                        let y = event.pageY - canvas.offsetTop;
+                        if (!drawing) return;
+                        ctx.lineTo(x, y);
+                        ctx.stroke();
+                        ctx.beginPath();
+                        ctx.moveTo(x, y);
+                    }
+                    function start(event) {
+                        let x = event.pageX - canvas.offsetLeft;
+                        let y = event.pageY - canvas.offsetTop;
+                        drawing = true;
+                        ctx.beginPath();
+                        ctx.moveTo(x, y);
+                    }
+                    function end() {
+                        drawing = false;
+                    }
+                    canvas.addEventListener("mousemove", function (event) {
+                        draw(event);
+                    });
+                    canvas.addEventListener("mousedown", function (event) {
+                        start(event);
+                    });
+                    canvas.addEventListener("mouseup", end);
+                } else if (isUsingMobile == true) {
+                    function draw(event) {
+                        let x = event.touchX - canvas.offsetLeft;
+                        let y = event.touchY - canvas.offsetTop;
+                        if (!drawing) return;
+                        ctx.lineTo(x, y);
+                        ctx.stroke();
+                        ctx.beginPath();
+                        ctx.moveTo(x, y);
+                    }
+                    function start(event) {
+                        let x = event.touchX - canvas.offsetLeft;
+                        let y = event.touchY - canvas.offsetTop;
+                        drawing = true;
+                        ctx.beginPath();
+                        ctx.moveTo(x, y);
+                    }
+                    function end() {
+                        drawing = false;
+                    }
+                    canvas.addEventListener("touchmove", function(event) {
+                        draw(event);
+                    });
+                    canvas.addEventListener("touchstart", function(event) {
+                        start(event);
+                    });
+                    canvas.addEventListener("touchend", end);
                 }
-                function start(event) {
-                    let x = event.pageX - canvas.offsetLeft;
-                    let y = event.pageY - canvas.offsetTop;
-                    drawing = true;
-                    ctx.beginPath();
-                    ctx.moveTo(x, y);
-                }
-                function end(event) {
-                    drawing = false;
-                }
-                canvas.addEventListener("mousemove", function(event) {
-                    draw(event);
-                });
-                canvas.addEventListener("mousedown", function(event) {
-                    start(event);
-                });
-                canvas.addEventListener("mouseup", function(event) {
-                    end(event);
-                });
+                
             }
 
             if (unit[questionNum].type == 0) { //multiple choice question
@@ -379,6 +407,7 @@ function buildQuestion() {
                 submitBtn.addEventListener("click", submitMultChoice);
                 nextBtn.addEventListener("click", reloadPage);
             } else if (unit[questionNum].type == 1) { //word answer question
+                onePanelMode();
                 let checker = document.createElement('span');
                 checker.classList = "checker";
                 let textbox = document.createElement('input');
@@ -390,9 +419,10 @@ function buildQuestion() {
                 let submitBtn = document.createElement('button');
                 let nextBtn = document.createElement('button');
 
-                submitBtn.innerHtml = "submit";
+                submitBtn.innerHTML = "submit";
                 submitBtn.classList = "submitBtn";
-                nextBtn.innerHtml = "next";
+                qField.appendChild(submitBtn);
+                nextBtn.innerHTML = "next";
                 nextBtn.classList = "nextBtn";
 
                 function submitWorded() {
@@ -402,9 +432,11 @@ function buildQuestion() {
                     for (var i = 0; i < unit[questionNum].totalBoxes; i++) {
                         let span = document.createElement("span");
                         span.style.fontSize = "25px";
-                        let label = document.getElementsByClassName("radioLabel");
+                        let label = document.createElement('span');
+                        qField.appendChild(label);
                         let textboxVal = textbox[i].value.toLowerCase();
                         let correct = 0;
+                        label.innerHTML = "hello";
                         if (textboxVal.search(unit[questionNum].answers) != -1) {
                             correct++;
                             localStorage.setItem("streak", strk + 1);
@@ -412,6 +444,7 @@ function buildQuestion() {
                             localStorage.setItem("totalAnsweredCorrect", totalAnsweredCorrect + unit[questionNum].totalBoxes);
                         } else {
                             localStorage.setItem("score", score - correct);
+                            label.innerHTML = "&cross;";
                         }
                     }
                 }
@@ -662,7 +695,57 @@ function buildQuestion() {
                 submitBtn.addEventListener("click", submitNumeric);
                 nextBtn.addEventListener("click", reloadPage);
             } else if (unit[questionNum].type == 5) { //true or false
-
+                onePanelMode();
+                let btnContainer = document.createElement('div');
+                btnContainer.style.display = "flex";
+                let falseBtn = document.createElement('button');
+                falseBtn.style.float = "right";
+                falseBtn.style.backgroundColor = "red";
+                falseBtn.style.color = "white";
+                falseBtn.innerHTML = "False";
+                let trueBtn = document.createElement('button');
+                trueBtn.style.float = "left";
+                trueBtn.style.backgroundColor = "green";
+                trueBtn.style.color = "white";
+                trueBtn.innerHTML = "True";
+                let nextBtn = document.createElement('button');
+                nextBtn.innerHTML = "next";
+                nextBtn.classList = "nextBtn";
+                qField.appendChild(btnContainer);
+                btnContainer.appendChild(falseBtn);
+                btnContainer.appendChild(trueBtn);
+                function submitTOrF(answered) {
+                    let correct = 0;
+                    localStorage.setItem("totalAnswered", totalAnswered + unit[questionNum].totalElements);
+                    let label = document.createElement('span');
+                    let ans = document.createElement('span');
+                    label.style.fontSize = "25px";
+                    ans.style.fontSize = "20px";
+                    qField.appendChild(label);
+                    qField.appendChild(ans);
+                    qField.appendChild(document.createElement('br'));
+                    qField.appendChild(nextBtn);
+                    if (answered == unit[questionNum].answer) {
+                        correct++;
+                        localStorage.setItem("score", score + correct);
+                        localStorage.setItem("streak", strk + 1);
+                        localStorage.setItem("totalAnsweredCorrect", totalAnsweredCorrect + correct);
+                        label.innerHTML = "&check;";
+                        label.style.color = "green";
+                    } else {
+                        localStorage.setItem("streak", 0);
+                        label.innerHTML = "&cross;";
+                        label.style.color = "red";
+                        ans.innerHTML = "The correct answer is " + unit[questionNum].answer;
+                    }
+                }
+                trueBtn.addEventListener("click", function() {
+                    submitTOrF(true);
+                });
+                falseBtn.addEventListener("click", function() {
+                    submitTOrF(false);
+                });
+                nextBtn.addEventListener("click", reloadPage);
             } else if (unit[questionNum].type == 6) { //fill in the blanks
                 onePanelMode();
                 let r = randomize(unit[questionNum].totalElements);
@@ -687,6 +770,7 @@ function buildQuestion() {
                 function submitFillIn() {
                     let correct = 0;
                     submitBtn.style.display = "none";
+                    localStorage.setItem("totalAnswered", totalAnswered + unit[questionNum].totalElements);
                     for (var i = 0; i < unit[questionNum].totalElements; i++) {
                         let text = document.createElement('span');
                         text.style.color = "white";
