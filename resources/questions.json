@@ -4193,6 +4193,7 @@
                 {
                     "type": 5,
                     "question": "test",
+                    "answer": true,
                     "picture": null,
                     "allowSketchPad": false
                 }
