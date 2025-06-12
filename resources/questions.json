@@ -4192,7 +4192,7 @@
                 },
                 {
                     "type": 5,
-                    "question": "test"
+                    "question": "test",
                     "picture": null,
                     "allowSketchPad": false
                 }
