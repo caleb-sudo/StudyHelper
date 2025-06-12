@@ -378,8 +378,45 @@ function buildQuestion() {
                 }
                 submitBtn.addEventListener("click", submitMultChoice);
                 nextBtn.addEventListener("click", reloadPage);
-            } else if (unit[questionNum].type == 1) { //single word answer question
+            } else if (unit[questionNum].type == 1) { //word answer question
+                let checker = document.createElement('span');
+                checker.classList = "checker";
+                let textbox = document.createElement('input');
+                textbox.type = "text";
+                textbox.classList = "textboxes";
+                textbox.id = "textboxes" + 1;
+                qField.appendChild(textbox);
 
+                let submitBtn = document.createElement('button');
+                let nextBtn = document.createElement('button');
+
+                submitBtn.innerHtml = "submit";
+                submitBtn.classList = "submitBtn";
+                nextBtn.innerHtml = "next";
+                nextBtn.classList = "nextBtn";
+
+                function submitWorded() {
+                    submitBtn.style.display = "none";
+                    qField.appendChild(nextBtn);
+                    localStorage.setItem("totalAnswered", totalAnswered + 1);
+                    for (var i = 0; i < unit[questionNum].totalBoxes; i++) {
+                        let span = document.createElement("span");
+                        span.style.fontSize = "25px";
+                        let label = document.getElementsByClassName("radioLabel");
+                        let textboxVal = textbox[i].value.toLowerCase();
+                        let correct = 0;
+                        if (textboxVal.search(unit[questionNum].answers) != -1) {
+                            correct++;
+                            localStorage.setItem("streak", strk + 1);
+                            localStorage.setItem("score", score + unit[questionNum].totalBoxes);
+                            localStorage.setItem("totalAnsweredCorrect", totalAnsweredCorrect + unit[questionNum].totalBoxes);
+                        } else {
+                            localStorage.setItem("score", score - correct);
+                        }
+                    }
+                }
+                submitBtn.addEventListener("click", submitWorded);
+                nextBtn.addEventListener("click", reloadPage);
             } if (unit[questionNum].type == 2) { //drag and drop question
                 let r = randomize(unit[questionNum].totalElements);
                 for (var i = 0; i < unit[questionNum].totalElements; i++) {
