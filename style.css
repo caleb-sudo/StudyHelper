@@ -29,6 +29,7 @@ input {
     cursor: pointer;
 }
 
+.checkboxLabel,
 .radioLabel {
     justify-content: center;
     align-content: center;
@@ -250,14 +251,17 @@ table {
     position: absolute;
 }
 
+.checkbox_Box,
 .radioBox {
     cursor: pointer;
 }
 
+.checkbox_Box:hover,
 .radioBox:hover {
     scale: 1.1;
 }
 
+.checkbox_Box,
 .radioBox,
 .draggables,
 .dropboxes {

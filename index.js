@@ -805,6 +805,44 @@ function buildQuestion() {
 
                 submitBtn.addEventListener("click", submitFillIn);
                 nextBtn.addEventListener("click", reloadPage);
+            } else if (unit[questionNum].type == 7) { //checkboxes
+                onePanelMode();
+
+                for (var i = 0; i < unit[questionNum].totalCheckboxes; i++) {
+                    const div = document.createElement('div');
+                    div.classList = "checkbox_Box";
+                    qField.appendChild(div);
+                    const checkbox = document.createElement('input');
+                    const lab = document.createElement('label');
+                    checkbox.type = "checkbox";
+                    checkbox.name = "opts";
+                    checkbox.id = 'r' + i;
+                    checkbox.className = "checkboxes";
+                    lab.htmlFor = 'r' + i;
+                    lab.innerHTML = opts[i] + unit[questionNum].options[i];
+                    lab.className = "checkboxLabel";
+                    div.appendChild(checkbox);
+                    div.appendChild(lab);
+                    qField.appendChild(document.createElement('hr'));
+                }
+
+                let submitBtn = document.createElement('button');
+                submitBtn.innerHTML = "Submit";
+                submitBtn.classList = "submitBtn";
+                qField.appendChild(submitBtn);
+
+                let nextBtn = document.createElement('button');
+                nextBtn.innerHTML = "Next";
+                nextBtn.classList = "nextBtn";
+                
+                function submitCheckboxes() {
+                    let correct = 0;
+                    for (var i = 0; i < unit[questionNum].totalCheckboxes; i++) {
+                        
+                    }
+                    submitBtn.style.display = "none";
+                    qField.appendChild(nextBtn);
+                }
             }
             qField.appendChild(document.createElement('br'));
             qField.appendChild(document.createElement('br'));

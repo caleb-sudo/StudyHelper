@@ -4196,6 +4196,27 @@
                     "answer": true,
                     "picture": null,
                     "allowSketchPad": false
+                },
+                {
+                    "type": 7,
+                    "question": "test",
+                    "totalCheckboxes": 5,
+                    "options": [
+                        "1",
+                        "2",
+                        "3",
+                        "4",
+                        "5"
+                    ],
+                    "answers": [
+                        true,
+                        false,
+                        true,
+                        false,
+                        true
+                    ],
+                    "picture": null,
+                    "allowSketchPad": false
                 }
             ]
         },
