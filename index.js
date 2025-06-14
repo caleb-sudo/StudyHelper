@@ -819,7 +819,7 @@ function buildQuestion() {
                     checkbox.id = 'r' + i;
                     checkbox.className = "checkboxes";
                     lab.htmlFor = 'r' + i;
-                    lab.innerHTML = opts[i] + unit[questionNum].options[i];
+                    lab.innerHTML = unit[questionNum].options[i];
                     lab.className = "checkboxLabel";
                     div.appendChild(checkbox);
                     div.appendChild(lab);
