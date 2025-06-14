@@ -823,7 +823,7 @@ function buildQuestion() {
                     lab.className = "checkboxLabel";
                     div.appendChild(checkbox);
                     div.appendChild(lab);
-                    qField.appendChild(document.createElement('hr'));
+                    qField.appendChild(document.createElement('br'));
                 }
 
                 let submitBtn = document.createElement('button');
