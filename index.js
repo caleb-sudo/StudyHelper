@@ -837,6 +837,7 @@ function buildQuestion() {
                 
                 function submitCheckboxes() {
                     let correct = 0;
+                    submitBtn.style.display = "none";
                     localStorage.setItem("totalAnswered", totalAnswered + 1);
                     for (var i = 0; i < unit[questionNum].totalCheckboxes; i++) {
                         let checkboxes = document.getElementsByClassName("checkboxes");
@@ -852,9 +853,10 @@ function buildQuestion() {
                             labs[i].innerHTML += " &cross;";
                         }
                     }
-                    submitBtn.style.display = "none";
                     qField.appendChild(nextBtn);
                 }
+                submitBtn.addEventListener("click", submitCheckboxes);
+                nextBtn.addEventListener("click", reloadPage);
             }
             qField.appendChild(document.createElement('br'));
             qField.appendChild(document.createElement('br'));
