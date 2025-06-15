@@ -837,6 +837,7 @@ function buildQuestion() {
                 
                 function submitCheckboxes() {
                     let correct = 0;
+                    let wrong = 0;
                     submitBtn.style.display = "none";
                     localStorage.setItem("totalAnswered", totalAnswered + 1);
                     for (var i = 0; i < unit[questionNum].totalCheckboxes; i++) {
@@ -845,16 +846,17 @@ function buildQuestion() {
                         let span = document.createElement('span');
                         if (checkboxes[i].checked == unit[questionNum].answers[i]) {
                             correct++;
-                            localStorage.setItem("score", score + correct);
                             localStorage.setItem("streak", strk + correct);
                             localStorage.setItem("totalAnsweredCorrect", totalAnsweredCorrect + correct);
                             span.style.color = "green";
                             span.innerHTML += " &check;";
                         } else {
+                            wrong++;
                             localStorage.setItem("streak", 0);
                             span.style.color = "red";
                             span.innerHTML += " &cross;";
                         }
+                        localStorage.setItem("score", score + (correct - wrong))
                         labs[i].appendChild(span);
                     }
                     qField.appendChild(nextBtn);
