@@ -10,6 +10,8 @@ function drop(event) {
     event.target.appendChild(document.getElementById(data));
 }
 
+let calcProbability = (ways, outcomes) => (ways / outcomes) * 100;
+
 const gettopic = localStorage.getItem("topic");
 const getUsername = localStorage.getItem("username");
 const getscore = localStorage.getItem("score");
@@ -248,6 +250,13 @@ function buildQuestion() {
 
             let questionNum = Math.floor(Math.random() * unit.length);
             question.innerHTML = unit[questionNum].question;
+            alert(unit.length);
+
+            /*if (unit == data.Bio.Bio20.UnitD) {
+                let probs = [
+                    calcProbability()
+                ]
+            }*/
 
             const canvasContainer = document.getElementById("canvasContainer");
             const canvas = document.getElementById("sketchpad");
