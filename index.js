@@ -707,14 +707,10 @@ function buildQuestion() {
                 let btnContainer = document.createElement('div');
                 btnContainer.style.display = "flex";
                 let falseBtn = document.createElement('button');
-                falseBtn.style.float = "right";
-                falseBtn.style.backgroundColor = "red";
-                falseBtn.style.color = "white";
+                falseBtn.classList = "falseBtn";
                 falseBtn.innerHTML = "False";
                 let trueBtn = document.createElement('button');
-                trueBtn.style.float = "left";
-                trueBtn.style.backgroundColor = "green";
-                trueBtn.style.color = "white";
+                trueBtn.classList = "trueBtn";
                 trueBtn.innerHTML = "True";
                 let nextBtn = document.createElement('button');
                 nextBtn.innerHTML = "next";

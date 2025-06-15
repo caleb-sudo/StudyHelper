@@ -316,3 +316,21 @@ table {
 #canvasContainer {
     display: block;
 }
+
+.falseBtn,
+.trueBtn {
+    color: white;
+    font-size: 35px;
+    width: 50%;
+    height: 100px;
+}
+
+.falseBtn {
+    float: right;
+    background-color: red;
+}
+
+.trueBtn {
+    float: left;
+    background-color: green;
+}
