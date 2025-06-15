@@ -426,6 +426,8 @@ function buildQuestion() {
                 nextBtn.classList = "nextBtn";
 
                 function submitWorded() {
+                    let correct = 0;
+                    let wrong = 0;
                     submitBtn.style.display = "none";
                     qField.appendChild(nextBtn);
                     localStorage.setItem("totalAnswered", totalAnswered + 1);
@@ -440,12 +442,16 @@ function buildQuestion() {
                         if (textboxVal.search(unit[questionNum].answers) != -1) {
                             correct++;
                             localStorage.setItem("streak", strk + 1);
-                            localStorage.setItem("score", score + unit[questionNum].totalBoxes);
                             localStorage.setItem("totalAnsweredCorrect", totalAnsweredCorrect + unit[questionNum].totalBoxes);
+                            label.style.color = "green";
+                            label.innerHTML = "&check;";
                         } else {
-                            localStorage.setItem("score", score - correct);
+                            wrong++;
+                            localStorage.setItem("streal", 0);
+                            label.style.color = "red";
                             label.innerHTML = "&cross;";
                         }
+                        localStorage.setItem("score", score + (correct - wrong));
                     }
                 }
                 submitBtn.addEventListener("click", submitWorded);
@@ -506,6 +512,7 @@ function buildQuestion() {
                 
                 function submitDragboxes() {
                     let correct = 0;
+                    let wrong = 0;
                     submitBtn.style.display = "none";
                     field.appendChild(nextBtn);
                     localStorage.setItem("totalAnswered", totalAnswered + unit[questionNum].totalElements);
@@ -518,18 +525,18 @@ function buildQuestion() {
                         let terms = unit[questionNum].terms;
                         let definitions = unit[questionNum].definitions;
                         if (terms.indexOf(draggables[i].innerHTML) == definitions.indexOf(p[i].innerHTML)) {
+                            correct++;
                             checker.style.color = "green";
                             checker.innerHTML = "&check;";
-                            correct++;
-                            localStorage.setItem("score", score + correct);
                             localStorage.setItem("streak", strk + correct);
                             localStorage.setItem("totalAnsweredCorrect", totalAnsweredCorrect + correct);
                         } else {
+                            wrong++;
                             checker.style.color = "red";
                             checker.innerHTML = "&cross;";
-                            localStorage.setItem("score", score - (unit[questionNum].totalElements - correct));
                             localStorage.setItem("streak", 0);
                         }
+                        localStorage.setItem("score", score + (correct - wrong));
                         draggables[i].appendChild(checker);
                     }
                 }
@@ -573,6 +580,7 @@ function buildQuestion() {
 
                 function submitSort() {
                     let correct = 0;
+                    let wrong = 0;
                     submitBtn.style.display = "none";
                     field.appendChild(nextBtn);
                     localStorage.setItem("totalAnswered", totalAnswered + unit[questionNum].totalElements);
@@ -583,18 +591,18 @@ function buildQuestion() {
                         draggables.draggable = false;
                         localStorage.setItem("totalAnswered", totalAnswered + unit[questionNum].totalElements)
                         if (draggables[i].innerHTML == unit[questionNum].definitions[i]) {
+                            correct++;
                             checker.style.color = "green";
                             checker.innerHTML = "&check;";
-                            correct++;
-                            localStorage.setItem("score", score + correct);
                             localStorage.setItem("streak", strk + 1);
                             localStorage.setItem("totalAnsweredCorrect", totalAnsweredCorrect + correct);
                         } else {
+                            wrong++;
                             checker.style.color = "red";
                             checker.innerHTML = "&cross;";
-                            localStorage.setItem("score", score - (unit[questionNum].totalElements - correct));
                             localStorage.setItem("streak", 0);
                         }
+                        localStorage.setItem("score", score + (correct - wrong));
                         draggables[i].appendChild(checker);
                     }
                 }
@@ -715,8 +723,7 @@ function buildQuestion() {
                 btnContainer.appendChild(falseBtn);
                 btnContainer.appendChild(trueBtn);
                 function submitTOrF(answered) {
-                    let correct = 0;
-                    localStorage.setItem("totalAnswered", totalAnswered + unit[questionNum].totalElements);
+                    localStorage.setItem("totalAnswered", totalAnswered + 1);
                     let label = document.createElement('span');
                     let ans = document.createElement('span');
                     label.style.fontSize = "25px";
@@ -726,13 +733,13 @@ function buildQuestion() {
                     qField.appendChild(document.createElement('br'));
                     qField.appendChild(nextBtn);
                     if (answered == unit[questionNum].answer) {
-                        correct++;
-                        localStorage.setItem("score", score + correct);
+                        localStorage.setItem("score", score + 1);
                         localStorage.setItem("streak", strk + 1);
-                        localStorage.setItem("totalAnsweredCorrect", totalAnsweredCorrect + correct);
+                        localStorage.setItem("totalAnsweredCorrect", totalAnsweredCorrect + 1);
                         label.innerHTML = "&check;";
                         label.style.color = "green";
                     } else {
+                        localStorage.setItem("score", score - 1);
                         localStorage.setItem("streak", 0);
                         label.innerHTML = "&cross;";
                         label.style.color = "red";
@@ -769,6 +776,7 @@ function buildQuestion() {
                 nextBtn.classList = "nextBtn";
                 function submitFillIn() {
                     let correct = 0;
+                    let wrong = 0;
                     submitBtn.style.display = "none";
                     localStorage.setItem("totalAnswered", totalAnswered + unit[questionNum].totalElements);
                     for (var i = 0; i < unit[questionNum].totalElements; i++) {
@@ -784,19 +792,19 @@ function buildQuestion() {
                         let val = value.toLowerCase();
                         let ans = (x) => unit[questionNum].answers[r[i]][x].toString().toLowerCase();
                         if (ans(0) == val || ans(1) == val) {
+                            correct++;
                             checker.style.color = "green";
                             checker.innerHTML = "&check;";
-                            correct++;
-                            localStorage.setItem("score", score + correct);
                             localStorage.setItem("streak", strk + 1);
                             localStorage.setItem("totalAnsweredCorrect", totalAnsweredCorrect + correct);
                         } else {
+                            wrong++;
                             checker.style.color = "red";
                             checker.innerHTML = "&cross;";
-                            localStorage.setItem("score", score - (unit[questionNum].totalElements - correct));
                             localStorage.setItem("streak", 0);
                             text.innerHTML = "The correct answer was `<b> " + unit[questionNum].answers[r[i]][0] + " </b>`";
                         }
+                        localStorage.setItem("score", score + (correct - wrong));
                         checker.appendChild(text);
                         definitions[i].appendChild(checker);
                     }
