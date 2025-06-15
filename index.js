@@ -10,7 +10,7 @@ function drop(event) {
     event.target.appendChild(document.getElementById(data));
 }
 
-let calcProbability = (ways, outcomes) => (ways / outcomes) * 100;
+let calcProbability = (ways, outcomes) => (ways / outcomes);
 
 const gettopic = localStorage.getItem("topic");
 const getUsername = localStorage.getItem("username");
@@ -112,7 +112,7 @@ function openGraphModal() {
 let closeGraphModal = () => hide(graphModal, true);
 
 var graph = document.getElementById("graph");
-var graphingCalc = Desmos.GraphingCalculator(graph);
+//var graphingCalc = Desmos.GraphingCalculator(graph);
 
 const strkText = document.getElementById("streak");
 const scoreText = document.getElementById("score");
@@ -168,7 +168,7 @@ function buildQuestion() {
             return response.json();
         })
         .then(data => {
-            var unit = data.Science.Bio.Bio20.UnitD;
+            var unit = data.Science.Chem.Chem20.UnitA;
 
             const unitSelect = document.getElementById("UnitSelector");
 
@@ -208,7 +208,52 @@ function buildQuestion() {
                             unit = data.Science.Bio.Bio20.UnitC;
                             break;
                         case 'D':
-                            unit = data.Science.Bio.Bio20.UnitD;
+                            let rand = Math.random();
+                            let arr = [
+                                unit.nutrition.length,
+                                unit.enzymes.length,
+                                unit.digestion.length,
+                                unit.circulatory.length,
+                                unit.respiratory.length,
+                                unit.blood.length,
+                                unit.kidney.length
+                            ];
+                            let totlaOutcomes = 0;
+                            for (var i = 0; i < arr.length; i++) {
+                                totlaOutcomes += arr[i];
+                            }
+                            let probs = [
+                                calcProbability(arr[0], totlaOutcomes),
+                                calcProbability(arr[1], totlaOutcomes),
+                                calcProbability(arr[2], totlaOutcomes),
+                                calcProbability(arr[3], totlaOutcomes),
+                                calcProbability(arr[4], totlaOutcomes),
+                                calcProbability(arr[5], totlaOutcomes),
+                                calcProbability(arr[6], totlaOutcomes),
+                            ]
+                            let dec = 0;
+                            let per = [];
+                            for (var i = 0; i < probs.length; i++) {
+                                //console.log(probs[i]+per);
+                                dec = probs[i];
+                                per.push(dec);
+                            }
+                            if (rand < per[0]) {
+                                unit = data.Science.Bio.Bio20.UnitD.nutrition;
+                            } else if (rand < per[1]) {
+                                unit = data.Science.Bio.Bio20.UnitD.enzymes;
+                            } else if (rand < per[2]) {
+                                unit = data.Science.Bio.Bio20.UnitD.digestion;
+                            } else if (rand < per[3]) {
+                                unit = data.Science.Bio.Bio20.UnitD.circulatory;
+                            } else if (rand < per[4]) {
+                                unit = data.Science.Bio.Bio20.UnitD.respiratory;
+                            } else if (rand < per[5]) {
+                                unit = data.Science.Bio.Bio20.UnitD.blood;
+                            } else if (rand < per[6]) {
+                                unit = data.Science.Bio.Bio20.UnitD.kidney;
+                            }
+                            console.log(rand)
                             break;
                     }
                 } else if (unitSelect.value[0] == 'S') {
@@ -250,13 +295,6 @@ function buildQuestion() {
 
             let questionNum = Math.floor(Math.random() * unit.length);
             question.innerHTML = unit[questionNum].question;
-            alert(unit.length);
-
-            /*if (unit == data.Bio.Bio20.UnitD) {
-                let probs = [
-                    calcProbability()
-                ]
-            }*/
 
             const canvasContainer = document.getElementById("canvasContainer");
             const canvas = document.getElementById("sketchpad");
