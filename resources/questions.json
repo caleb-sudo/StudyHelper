@@ -4199,21 +4199,23 @@
                 },
                 {
                     "type": 7,
-                    "question": "test",
-                    "totalCheckboxes": 5,
+                    "question": "Select the right definitions that most closely align to what a NGO is.",
+                    "totalCheckboxes": 6,
                     "options": [
-                        "1",
-                        "2",
-                        "3",
-                        "4",
-                        "5"
+                        "A nonprofit organization.",
+                        "A governmental organization.",
+                        "A non-governmental organization.",
+                        "An organization that works to address social or political issues.",
+                        "A for profit organization.",
+                        "An organization that works to try to sell you goods and services."
                     ],
                     "answers": [
                         true,
                         false,
                         true,
+                        true,
                         false,
-                        true
+                        false
                     ],
                     "picture": null,
                     "allowSketchPad": false

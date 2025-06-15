@@ -815,7 +815,7 @@ function buildQuestion() {
                 nextBtn.addEventListener("click", reloadPage);
             } else if (unit[questionNum].type == 7) { //checkboxes
                 onePanelMode();
-
+                let r = randomize(unit[questionNum].totalCheckboxes);
                 for (var i = 0; i < unit[questionNum].totalCheckboxes; i++) {
                     const div = document.createElement('div');
                     div.classList = "checkbox_Box";
@@ -827,7 +827,7 @@ function buildQuestion() {
                     checkbox.id = 'r' + i;
                     checkbox.className = "checkboxes";
                     lab.htmlFor = 'r' + i;
-                    lab.innerHTML = unit[questionNum].options[i];
+                    lab.innerHTML = unit[questionNum].options[r[i]];
                     lab.className = "checkboxLabel";
                     div.appendChild(checkbox);
                     div.appendChild(lab);
@@ -852,7 +852,7 @@ function buildQuestion() {
                         let checkboxes = document.getElementsByClassName("checkboxes");
                         let labs = document.getElementsByClassName("checkboxLabel");
                         let span = document.createElement('span');
-                        if (checkboxes[i].checked == unit[questionNum].answers[i]) {
+                        if (checkboxes[r[i]].checked == unit[questionNum].answers[r[i]]) {
                             correct++;
                             localStorage.setItem("streak", strk + correct);
                             localStorage.setItem("totalAnsweredCorrect", totalAnsweredCorrect + correct);
