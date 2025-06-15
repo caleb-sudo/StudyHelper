@@ -855,7 +855,7 @@ function buildQuestion() {
                             span.style.color = "red";
                             span.innerHTML += " &cross;";
                         }
-                        labs.appendChild(span);
+                        labs[i].appendChild(span);
                     }
                     qField.appendChild(nextBtn);
                 }
