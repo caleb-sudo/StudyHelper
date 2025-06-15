@@ -842,16 +842,20 @@ function buildQuestion() {
                     for (var i = 0; i < unit[questionNum].totalCheckboxes; i++) {
                         let checkboxes = document.getElementsByClassName("checkboxes");
                         let labs = document.getElementsByClassName("checkboxLabel");
+                        let span = document.createElement('span');
                         if (checkboxes[i].checked == unit[questionNum].answers[i]) {
                             correct++;
                             localStorage.setItem("score", score + correct);
                             localStorage.setItem("streak", strk + correct);
                             localStorage.setItem("totalAnsweredCorrect", totalAnsweredCorrect + correct);
-                            labs[i].innerHTML += " &check;";
+                            span.style.color = "green";
+                            span.innerHTML += " &check;";
                         } else {
                             localStorage.setItem("streak", 0);
-                            labs[i].innerHTML += " &cross;";
+                            span.style.color = "red";
+                            span.innerHTML += " &cross;";
                         }
+                        labs.appendChild(span);
                     }
                     qField.appendChild(nextBtn);
                 }
