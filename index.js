@@ -545,6 +545,7 @@ function buildQuestion() {
                 submitBtn.addEventListener("click", submitDragboxes);
                 nextBtn.addEventListener("click", reloadPage);
             } else if (unit[questionNum].type == 3) { //sorting question
+                onePanelMode();
                 let r = randomize(unit[questionNum].totalElements);
                 for (var i = 0; i < unit[questionNum].totalElements; i++) {
                     let draggables = document.createElement("div");
