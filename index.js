@@ -208,52 +208,7 @@ function buildQuestion() {
                             unit = data.Science.Bio.Bio20.UnitC;
                             break;
                         case 'D':
-                            let rand = Math.random();
-                            let arr = [
-                                unit.nutrition.length,
-                                unit.enzymes.length,
-                                unit.digestion.length,
-                                unit.circulatory.length,
-                                unit.respiratory.length,
-                                unit.blood.length,
-                                unit.kidney.length
-                            ];
-                            let totlaOutcomes = 0;
-                            for (var i = 0; i < arr.length; i++) {
-                                totlaOutcomes += arr[i];
-                            }
-                            let probs = [
-                                calcProbability(arr[0], totlaOutcomes),
-                                calcProbability(arr[1], totlaOutcomes),
-                                calcProbability(arr[2], totlaOutcomes),
-                                calcProbability(arr[3], totlaOutcomes),
-                                calcProbability(arr[4], totlaOutcomes),
-                                calcProbability(arr[5], totlaOutcomes),
-                                calcProbability(arr[6], totlaOutcomes),
-                            ]
-                            let dec = 0;
-                            let per = [];
-                            for (var i = 0; i < probs.length; i++) {
-                                //console.log(probs[i]+per);
-                                dec = probs[i];
-                                per.push(dec);
-                            }
-                            if (rand < per[0]) {
-                                unit = data.Science.Bio.Bio20.UnitD.nutrition;
-                            } else if (rand < per[1]) {
-                                unit = data.Science.Bio.Bio20.UnitD.enzymes;
-                            } else if (rand < per[2]) {
-                                unit = data.Science.Bio.Bio20.UnitD.digestion;
-                            } else if (rand < per[3]) {
-                                unit = data.Science.Bio.Bio20.UnitD.circulatory;
-                            } else if (rand < per[4]) {
-                                unit = data.Science.Bio.Bio20.UnitD.respiratory;
-                            } else if (rand < per[5]) {
-                                unit = data.Science.Bio.Bio20.UnitD.blood;
-                            } else if (rand < per[6]) {
-                                unit = data.Science.Bio.Bio20.UnitD.kidney;
-                            }
-                            console.log(rand)
+                            unit = data.Science.Bio.Bio20.UnitD;
                             break;
                     }
                 } else if (unitSelect.value[0] == 'S') {
