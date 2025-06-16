@@ -560,7 +560,7 @@ function buildQuestion() {
                     dropboxes.addEventListener("dragover", function(event) {
                         allowDrop(event);
                     });
-                    field.appendChild(dropboxes);
+                    qField.appendChild(dropboxes);
                     draggables.draggable = true;
                     draggables.addEventListener("dragstart", function(event) {
                         dragStart(event);
@@ -575,7 +575,7 @@ function buildQuestion() {
                 let submitBtn = document.createElement('button');
                 submitBtn.innerHTML = "Submit";
                 submitBtn.classList = "submitBtn";
-                field.appendChild(submitBtn);
+                qField.appendChild(submitBtn);
 
                 let nextBtn = document.createElement('button');
                 nextBtn.innerHTML = "Next";
@@ -585,7 +585,7 @@ function buildQuestion() {
                     let correct = 0;
                     let wrong = 0;
                     submitBtn.style.display = "none";
-                    field.appendChild(nextBtn);
+                    qField.appendChild(nextBtn);
                     localStorage.setItem("totalAnswered", totalAnswered + unit[questionNum].totalElements);
                     for (var i = 0; i < unit[questionNum].totalElements; i++) {
                         let draggables = document.getElementsByClassName("draggables");
