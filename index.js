@@ -547,6 +547,8 @@ function buildQuestion() {
             } else if (unit[questionNum].type == 3) { //sorting question
                 onePanelMode();
                 let r = randomize(unit[questionNum].totalElements);
+                qField.style.display = "grid";
+                qField.style.justifyContent = "center";
                 for (var i = 0; i < unit[questionNum].totalElements; i++) {
                     let draggables = document.createElement("div");
                     let dropboxes = document.createElement("div");
