@@ -359,7 +359,6 @@ function buildQuestion() {
                     lab.className = "radioLabel";
                     div.appendChild(radio);
                     div.appendChild(lab);
-                    qField.appendChild(document.createElement('hr'));
                 }
 
                 const radios = document.getElementsByClassName("radios");
