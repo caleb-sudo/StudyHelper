@@ -359,6 +359,7 @@ function buildQuestion() {
                     lab.className = "radioLabel";
                     div.appendChild(radio);
                     div.appendChild(lab);
+                    div.appendChild(document.createElement('br'));
                 }
 
                 const radios = document.getElementsByClassName("radios");
@@ -872,7 +873,7 @@ function buildQuestion() {
                 }
                 submitBtn.addEventListener("click", submitCheckboxes);
                 nextBtn.addEventListener("click", reloadPage);
-            } else if (unit[questionNum].type == 8) {
+            } else if (unit[questionNum].type == 8) { //dropdown question
 
             }
             qField.appendChild(document.createElement('br'));
