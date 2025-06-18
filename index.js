@@ -168,7 +168,7 @@ function buildQuestion() {
             return response.json();
         })
         .then(data => {
-            var unit = data.Science.Chem.Chem20.UnitA;
+            var unit = data.Science.Bio.Bio20.UnitD;
 
             const unitSelect = document.getElementById("UnitSelector");
 
@@ -872,6 +872,8 @@ function buildQuestion() {
                 }
                 submitBtn.addEventListener("click", submitCheckboxes);
                 nextBtn.addEventListener("click", reloadPage);
+            } else if (unit[questionNum].type == 8) {
+
             }
             qField.appendChild(document.createElement('br'));
             qField.appendChild(document.createElement('br'));
