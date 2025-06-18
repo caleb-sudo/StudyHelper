@@ -324,6 +324,7 @@ function buildQuestion() {
             }
 
             if (unit[questionNum].type == 0) { //multiple choice question
+                onePanelMode();
                 let r = randomize(unit[questionNum].totalElements);
                 const imgField = document.getElementById("box");
                 const pict = document.createElement('img');
@@ -346,7 +347,7 @@ function buildQuestion() {
                 for (let i = 0; i < 4; i++) {
                     const div = document.createElement('div');
                     div.classList = "radioBox";
-                    field.appendChild(div);
+                    qField.appendChild(div);
                     const radio = document.createElement('input');
                     const lab = document.createElement('label');
                     radio.type = "radio";
@@ -358,7 +359,7 @@ function buildQuestion() {
                     lab.className = "radioLabel";
                     div.appendChild(radio);
                     div.appendChild(lab);
-                    field.appendChild(document.createElement('hr'));
+                    qField.appendChild(document.createElement('hr'));
                 }
 
                 const radios = document.getElementsByClassName("radios");
@@ -367,7 +368,7 @@ function buildQuestion() {
 
                 submitBtn.innerHTML = "Submit";
                 submitBtn.classList = "submitBtn";
-                field.appendChild(submitBtn);
+                qField.appendChild(submitBtn);
 
                 nextBtn.innerHTML = "next";
                 nextBtn.classList = "nextBtn";
@@ -377,7 +378,7 @@ function buildQuestion() {
                         if (radios[i].checked == true) {
                             radios.disabled = true;
                             submitBtn.style.display = "none";
-                            field.appendChild(nextBtn);
+                            qField.appendChild(nextBtn);
                             let span = document.createElement("span");
                             span.style.fontSize = "25px";
                             let label = document.getElementsByClassName("radioLabel");
