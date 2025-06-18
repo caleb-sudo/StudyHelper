@@ -390,6 +390,186 @@
                 ],
                 "UnitCa": [
                     {
+                        "type": 8,
+                        "question": "What colour is lithium's flame'?",
+                        "totalOpts": 8,
+                        "options": [
+                            "Red",
+                            "Yellow",
+                            "Violet",
+                            "Yellowish red",
+                            "Scarlet red",
+                            "Yellowish green",
+                            "blue to green",
+                            "blue-white"
+                        ],
+                        "answer": "Red",
+                        "picture": null,
+                        "allowSketchPad": false
+                    },
+                    {
+                        "type": 8,
+                        "question": "What colour is sodium's flame'?",
+                        "totalOpts": 8,
+                        "options": [
+                            "Red",
+                            "Yellow",
+                            "Violet",
+                            "Yellowish red",
+                            "Scarlet red",
+                            "Yellowish green",
+                            "blue to green",
+                            "blue-white"
+                        ],
+                        "answer": "Yellow",
+                        "picture": null,
+                        "allowSketchPad": false
+                    },
+                    {
+                        "type": 8,
+                        "question": "What colour is potassium's flame?",
+                        "totalOpts": 8,
+                        "options": [
+                            "Red",
+                            "Yellow",
+                            "Violet",
+                            "Yellowish red",
+                            "Scarlet red",
+                            "Yellowish green",
+                            "blue to green",
+                            "blue-white"
+                        ],
+                        "answer": "Violet",
+                        "picture": null,
+                        "allowSketchPad": false
+                    },
+                    {
+                        "type": 8,
+                        "question": "What colour is rubidium's flame?",
+                        "totalOpts": 8,
+                        "options": [
+                            "Red",
+                            "Yellow",
+                            "Violet",
+                            "Yellowish red",
+                            "Scarlet red",
+                            "Yellowish green",
+                            "blue to green",
+                            "blue-white"
+                        ],
+                        "answer": "Violet",
+                        "picture": null,
+                        "allowSketchPad": false
+                    },
+                    {
+                        "type": 8,
+                        "question": "What colour is cesium's flame?",
+                        "totalOpts": 8,
+                        "options": [
+                            "Red",
+                            "Yellow",
+                            "Violet",
+                            "Yellowish red",
+                            "Scarlet red",
+                            "Yellowish green",
+                            "blue to green",
+                            "blue-white"
+                        ],
+                        "answer": "Violet",
+                        "picture": null,
+                        "allowSketchPad": false
+                    },
+                    {
+                        "type": 8,
+                        "question": "What colour is calcium's flame?",
+                        "totalOpts": 8,
+                        "options": [
+                            "Red",
+                            "Yellow",
+                            "Violet",
+                            "Yellowish red",
+                            "Scarlet red",
+                            "Yellowish green",
+                            "blue to green",
+                            "blue-white"
+                        ],
+                        "answer": "Yellowish red",
+                        "picture": null,
+                        "allowSketchPad": false
+                    },
+                    {
+                        "type": 8,
+                        "question": "What colour is strontium's flame?",
+                        "totalOpts": 8,
+                        "options": [
+                            "Red",
+                            "Yellow",
+                            "Violet",
+                            "Yellowish red",
+                            "Scarlet red",
+                            "Yellowish green",
+                            "blue to green",
+                            "blue-white"
+                        ],
+                        "answer": "Scarlet red",
+                        "picture": null,
+                        "allowSketchPad": false
+                    },
+                    {
+                        "type": 8,
+                        "question": "What colour is barium's flame?",
+                        "totalOpts": 8,
+                        "options": [
+                            "Red",
+                            "Yellow",
+                            "Violet",
+                            "Yellowish red",
+                            "Scarlet red",
+                            "Yellowish green",
+                            "blue to green",
+                            "blue-white"
+                        ],
+                        "answer": "Yellowish green",
+                        "picture": null,
+                        "allowSketchPad": false
+                    },
+                    {
+                        "type": 8,
+                        "question": "What colour is boron's flame?",
+                        "totalOpts": 8,
+                        "options": [
+                            "Red",
+                            "Yellow",
+                            "Violet",
+                            "Yellowish red",
+                            "Scarlet red",
+                            "Yellowish green",
+                            "blue to green",
+                            "blue-white"
+                        ],
+                        "answer": "blue to green",
+                        "picture": null,
+                        "allowSketchPad": false
+                    },
+                    {
+                        "type": 8,
+                        "question": "What colour is lead's flame?",
+                        "totalOpts": 8,
+                        "options": [
+                            "Red",
+                            "Yellow",
+                            "Violet",
+                            "Yellowish red",
+                            "Scarlet red",
+                            "Yellowish green",
+                            "blue to green",
+                            "blue-white"
+                        ],
+                        "answer": "blue-white",
+                        "picture": null,
+                        "allowSketchPad": false
+                    },
+                    {
                         "type": 0,
                         "question": "What is <b>Dissociation</b>?",
                         "options": [

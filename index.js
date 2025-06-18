@@ -874,7 +874,32 @@ function buildQuestion() {
                 submitBtn.addEventListener("click", submitCheckboxes);
                 nextBtn.addEventListener("click", reloadPage);
             } else if (unit[questionNum].type == 8) { //dropdown question
+                onePanelMode();
+                let select = document.createElement('select');
+                qField.appendChild(select);
+                for (var i = 0; i < unit[questionNum].totalOpts; i++) {
+                    let option = document.createElement('option');
+                    option.value = unit[questionNum].options[i];
+                    option.innerHTML = unit[questionNum].options[i];
+                    select.appendChild(option);
+                }
 
+                let submitBtn = document.createElement('button');
+                submitBtn.innerHTML = "Submit";
+                submitBtn.classList = "submitBtn";
+                qField.appendChild(submitBtn);
+
+                let nextBtn = document.createElement('button');
+                nextBtn.innerHTML = "Next";
+                nextBtn.classList = "nextBtn";
+
+                function submitSelect() {
+                    submitBtn.style.display = "none";
+                    localStorage.setItem("totalAnswered", totalAnswered + 1);
+                    qField.appendChild(nextBtn);
+                }
+                submitBtn.addEventListener("click", submitSelect);
+                nextBtn.addEventListener("click", reloadPage);
             }
             qField.appendChild(document.createElement('br'));
             qField.appendChild(document.createElement('br'));
