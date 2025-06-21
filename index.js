@@ -883,6 +883,7 @@ function buildQuestion() {
                     option.innerHTML = unit[questionNum].options[i];
                     select.appendChild(option);
                 }
+                qField.appendChild(document.createElement('br'));
 
                 let submitBtn = document.createElement('button');
                 submitBtn.innerHTML = "Submit";
@@ -896,6 +897,9 @@ function buildQuestion() {
                 function submitSelect() {
                     submitBtn.style.display = "none";
                     localStorage.setItem("totalAnswered", totalAnswered + 1);
+                    if (option.value == unit[questionNum].answer) {
+                    } else {
+                    }
                     qField.appendChild(nextBtn);
                 }
                 submitBtn.addEventListener("click", submitSelect);
