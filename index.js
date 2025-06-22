@@ -112,7 +112,7 @@ function openGraphModal() {
 let closeGraphModal = () => hide(graphModal, true);
 
 var graph = document.getElementById("graph");
-//var graphingCalc = Desmos.GraphingCalculator(graph);
+var graphingCalc = Desmos.GraphingCalculator(graph);
 
 const strkText = document.getElementById("streak");
 const scoreText = document.getElementById("score");
