@@ -916,7 +916,7 @@ function buildQuestion() {
                         btns.innerHTML = unit[questionNum].appendables[i];
                         btns.addEventListener("click", function() {
                             appendHistory.push(p.innerHTML);
-                            p.innerHTML += btns.innerHTML;
+                            p.innerHTML += this.innerHTML;
                         });
                         qField.appendChild(btns);
                     }
