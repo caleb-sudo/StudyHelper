@@ -939,8 +939,8 @@ function buildQuestion() {
                     nextBtn.classList = "nextBtn";
 
                     undo.addEventListener("click", function() {
+                        p.innerHTML = appendHistory[appendHistory.length - 1];
                         appendHistory.splice(-1, 1);
-                        p.innerHTML = appendHistory[appendHistory.length];
                     });
                     function submitAppend() {
                         submitBtn.style.display = "none";
