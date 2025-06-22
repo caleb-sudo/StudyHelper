@@ -323,6 +323,21 @@ function buildQuestion() {
                 
             }
 
+            if (unitSelect.value[0] == 'T' && unitSelect.value[1] == 'T' && unitSelect.value[0] == 'T') {
+                unit = data.testing;
+                if (unit[questionNum].type == 9) {
+                    onePanelMode();
+                    let p = document.createElement('p');
+                    qField.appendChild(p);
+                    qField.appendChild(document.createElement('br'));
+                    for (var i = 0; i < unit[questionNum].appendables.length; i++) {
+                        let btns = document.createElement("button");
+                        btns.innerHTML = unit[questionNum].appendables[i];
+                        qField.appendChild(btns);
+                    }
+                }
+            }
+
             if (unit[questionNum].type == 0) { //multiple choice question
                 onePanelMode();
                 let r = randomize(unit[questionNum].totalElements);
