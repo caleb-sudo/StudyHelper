@@ -924,8 +924,7 @@ function buildQuestion() {
                     undo.innerHTML = "undo";
                     qField.appendChild(undo);
                     undo.addEventListener("click", function() {
-                        appendHistory.pop();
-                        p.innerHTML = appendHistory[appendHistory.length];
+                        p.innerHTML = appendHistory[appendHistory.length - 1];
                     });
                 }
             qField.appendChild(document.createElement('br'));
