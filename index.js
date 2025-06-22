@@ -323,7 +323,7 @@ function buildQuestion() {
                 
             }
 
-            if (unitSelect.value[0] == 'T' && unitSelect.value[1] == 'T' && unitSelect.value[0] == 'T') {
+            if (unitSelect.value[0] == 'T' && unitSelect.value[1] == 'T' && unitSelect.value[2] == 'T') {
                 unit = data.testing;
                 if (unit[questionNum].type == 9) {
                     onePanelMode();
