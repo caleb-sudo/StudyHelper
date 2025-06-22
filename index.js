@@ -907,16 +907,26 @@ function buildQuestion() {
             } else if (unit[questionNum].type == 9) {
                     onePanelMode();
                     let p = document.createElement('p');
+                    let appendHistory = [];
                     qField.appendChild(p);
                     qField.appendChild(document.createElement('br'));
                     for (var i = 0; i < unit[questionNum].appendables.length; i++) {
                         let btns = document.createElement("button");
                         btns.innerHTML = unit[questionNum].appendables[i];
                         btns.addEventListener("click", function() {
+                            appendHistory.push(p.innerHTML);
                             p.innerHTML += btns.innerHTML;
                         });
                         qField.appendChild(btns);
                     }
+                    qField.appendChild(document.createElement('br'));
+                    let undo = document.createElement('button');
+                    undo.innerHTML = "undo";
+                    qField.appendChild(undo);
+                    undo.addEventListener("click", function() {
+                        appendHistory.pop();
+                        p.innerHTML = appendHistory[appendHistory.length];
+                    });
                 }
             qField.appendChild(document.createElement('br'));
             qField.appendChild(document.createElement('br'));
