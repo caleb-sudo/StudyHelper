@@ -925,6 +925,7 @@ function buildQuestion() {
                     qField.appendChild(undo);
                     undo.addEventListener("click", function() {
                         p.innerHTML = appendHistory[appendHistory.length - 1];
+                        appendHistory.splice(-1, 1);
                     });
                 }
             qField.appendChild(document.createElement('br'));
