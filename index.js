@@ -907,9 +907,10 @@ function buildQuestion() {
             } else if (unit[questionNum].type == 9) {
                     onePanelMode();
                     let p = document.createElement('p');
+                    let br = document.createElement('br');
                     let appendHistory = [];
                     qField.appendChild(p);
-                    qField.appendChild(document.createElement('br'));
+                    qField.appendChild(br);
                     for (var i = 0; i < unit[questionNum].appendables.length; i++) {
                         let btns = document.createElement("button");
                         btns.innerHTML = unit[questionNum].appendables[i];
@@ -919,14 +920,40 @@ function buildQuestion() {
                         });
                         qField.appendChild(btns);
                     }
-                    qField.appendChild(document.createElement('br'));
+                    qField.appendChild(br);
+
                     let undo = document.createElement('button');
                     undo.innerHTML = "undo";
                     qField.appendChild(undo);
+
+                    qField.appendChild(br);
+                    qField.appendChild(br);
+
+                    let submitBtn = document.createElement('button');
+                    submitBtn.innerHTML = "Submit";
+                    submitBtn.classList = "submitBtn";
+                    qField.appendChild(submitBtn);
+
+                    let nextBtn = document.createElement('button');
+                    nextBtn.innerHTML = "Next";
+                    nextBtn.classList = "nextBtn";
+
                     undo.addEventListener("click", function() {
-                        p.innerHTML = appendHistory[appendHistory.length - 1];
                         appendHistory.splice(-1, 1);
+                        p.innerHTML = appendHistory[appendHistory.length];
                     });
+                    function submitAppend() {
+                        submitBtn.style.display = "none";
+                        localStorage.setItem("totalAnswered", totalAnswered + 1);
+                        if (p.innerHTML == unit[questionNum].answer) {
+                            console.log("hello");
+                        } else {
+                            console.log("bye");
+                        }
+                        qField.appendChild(nextBtn);
+                    }
+                    submitBtn.addEventListener("click", submitAppend);
+                    nextBtn.addEventListener("click", reloadPage);
                 }
             qField.appendChild(document.createElement('br'));
             qField.appendChild(document.createElement('br'));
