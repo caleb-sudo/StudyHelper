@@ -912,6 +912,9 @@ function buildQuestion() {
                     for (var i = 0; i < unit[questionNum].appendables.length; i++) {
                         let btns = document.createElement("button");
                         btns.innerHTML = unit[questionNum].appendables[i];
+                        btns.addEventListener("click", function() {
+                            p.innerHTML += btns.innerHTML;
+                        });
                         qField.appendChild(btns);
                     }
                 }
