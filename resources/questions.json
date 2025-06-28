@@ -393,10 +393,10 @@
                         "type": 0,
                         "question": "Which of the following, is the <b>correct net ionic equation</b> for the reaction of aqueous silver nitrate and aqueous calcium chloride?",
                         "options": [
-                            "aqueous calcium ion + 2 aqueous chlorine ions &rarr; calcium chloride percipitate",
-                            "aqueous silver ion + aqueous nitrate ion &rarr; silver nitrate percipitate",
-                            "aqueous silver ion + aqueous chlorine ion &rarr; silver chloride percipitate",
-                            "aqueous calcium ion + 2 aqueous clorine ions &rarr; calcium chloride percipitate"
+                            "Ca<sup>2+</sup><sub>(aq)</sub> + 2Cl<sup>-</sup><sub>(aq)</sub> &rarr; CaCl<sub(s)</sub>",
+                            "Ag<sup>+</sup><sub>(aq)</sub> + NO<sub>3</sub><sup>+</sup><sub>(aq)</sub> &rarr; AgNO<sub>3(s)</sub>",
+                            "Ag<sup>+</sup><sub>(aq)</sub> + Cl<sup>-</sup><sub>(aq)</sub> &rarr; AgCl<sub>(s)</sub>",
+                            "Ca<sup>2+</sup><sub>(aq)</sub> + 2Cl<sup>-</sup><sub>(aq)</sub> &rarr; CaCl<sub>2(s)</sub>"
                         ],
                         "answer": 2,
                         "picture": null,
@@ -419,10 +419,10 @@
                         "type": 0,
                         "question": "Which of the following, is the <b>correct net ionic equation</b> for the reaction of aqueous lead(II) nitrate and aqueous potassium chloride?",
                         "options": [
-                            "aqueous potassium ion + aqueous chloride ion &rarr; potassium chloride percipitate",
-                            "aqueous lead(II) ion + aqueous nitrate ion &rarr; lead(II) nitrate percipitate",
-                            "aqueous potassium ion + aqueous nitrate ion &rarr; potassium nitrate percipitate",
-                            "aqueous lead(II) ion + 2 aqueous chloride ions &rarr; lead(II) chloride percipitate"
+                            "K<sup>+</sup><sub>(aq)</sub> + Cl<sup>-</sup><sub>(aq)</sub> &rarr; KCl<sub>(s)</sub>",
+                            "Pb<sup>2+</sup><sub>(aq)</sub> + 2NO<sub>3</sub><sup>+</sup><sub>(aq)</sub> &rarr; Pb(NO<sub>3</sub>)<sub>2(aq)</sub>",
+                            "K<sup>+</sup><sub>(aq)</sub> + NO<sub>3</sub><sup>+</sup><sub>(aq)</sub> &rarr; KNO<sub>3</sub><sup>+</sup><sub>(s)</sub>",
+                            "Pb<sup>2+</sup><sub>(aq)</sub> + Cl<sup>-</sup><sub>(aq)</sub> &rarr; PbCl<sub>2(s)</sub>"
                         ],
                         "answer": 3,
                         "picture": null,
@@ -453,6 +453,24 @@
                         "answer": 0,
                         "picture": null,
                         "allowSketchPad": true
+                    },
+                    {
+                        "type": 9,
+                        "question": "Which of the following, is the <b>correct net ionic equation</b> for the reaction of K<sub>3</sub>PO<sub>4(aq)</sub> and MgCl<sub>2(aq)</sub>?",
+                        "appendables": [
+                            "K<sub>3</sub>PO<sub>4(aq)</sub>",
+                            "MgCl<sub>2(aq)</sub>",
+                            "3Mg<sup>2+</sup><sub>(aq)</sub>",
+                            "Mg<sup>2+</sup><sub>(aq)</sub>",
+                            "2PO<sub>4</sub><sup>3-</sup><sub>(aq)</sub>",
+                            "Mg<sub>3</sub>(PO<sub>4</sub>)<sub>2(s)</sub>",
+                            "2Cl<sup>-</sup><sub>(aq)</sub>",
+                            "&rarr;",
+                            "+"
+                        ],
+                        "answer": "3Mg<sup>2+</sup><sub>(aq)</sub>+2PO<sub>4</sub><sup>3-</sup><sub>(aq)</sub>&rarr;Mg<sub>3</sub>(PO<sub>4</sub>)<sub>2(s)</sub>",
+                        "picture": null,
+                        "allowSketchPad": false
                     },
                     {
                         "type": 8,
