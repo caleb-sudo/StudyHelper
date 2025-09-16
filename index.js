@@ -946,9 +946,14 @@ function buildQuestion() {
                         submitBtn.style.display = "none";
                         localStorage.setItem("totalAnswered", totalAnswered + 1);
                         if (p.innerHTML == unit[questionNum].answer) {
-                            console.log("hello");
+                            p.innerHTML += "<br><span style='color:green;'>&check;</span>";
+                            localStorage.setItem("score", score+1);
+                            localStorage.setItem("streak", strk+1);
+                            localStorage.setItem("totalAnsweredCorrect", totalAnsweredCorrect+1);
                         } else {
-                            console.log("bye");
+                            p.innerHTML += "<br><span style='color:red;'> &cross;</span>";
+                            localStorage.setItem("streak", 0);
+                            localStorage.setItem("score", score-1);
                         }
                         qField.appendChild(nextBtn);
                     }
@@ -992,4 +997,5 @@ function openLeaderBoards() {
             tr.appendChild(td);
         }
     }
+
 }
