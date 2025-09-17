@@ -344,7 +344,7 @@ function buildQuestion() {
                     "D) "
                 ];
                 
-                for (let i = 0; i < 4; i++) {
+                for (let i = 0; i < 4; i++) 
                     const div = document.createElement('div');
                     div.classList = "radioBox";
                     qField.appendChild(div);
@@ -359,6 +359,14 @@ function buildQuestion() {
                     lab.className = "radioLabel";
                     div.appendChild(radio);
                     div.appendChild(lab);
+                    const crossOutBtn = document.createElement('button');
+                    crossOutBtn.innerHTML = "<s>Cross Out</s>";
+                    crossOutBtn.addEventListener("click", function() {
+                        let temp = lab.innerHTML;
+                        lab.innerHTML = "<s>";
+                        lab.innerHTML += temp + "</s>";
+                    )};
+                    qField.appendChild(crossOutBtn);
                     qField.appendChild(document.createElement('br'));
                 }
 
@@ -999,3 +1007,4 @@ function openLeaderBoards() {
     }
 
 }
+
