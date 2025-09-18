@@ -344,7 +344,7 @@ function buildQuestion() {
                     "D) "
                 ];
                 
-                for (let i = 0; i < 4; i++) 
+                for (let i = 0; i < 4; i++) {
                     const div = document.createElement('div');
                     div.classList = "radioBox";
                     qField.appendChild(div);
@@ -365,7 +365,7 @@ function buildQuestion() {
                         let temp = lab.innerHTML;
                         lab.innerHTML = "<s>";
                         lab.innerHTML += temp + "</s>";
-                    )};
+                    });
                     qField.appendChild(crossOutBtn);
                     qField.appendChild(document.createElement('br'));
                 }
