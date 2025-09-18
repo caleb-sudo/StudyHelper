@@ -363,6 +363,7 @@ function buildQuestion() {
                     crossOutBtn.innerHTML = "<s>Cross Out</s>";
                     crossOutBtn.addEventListener("click", function() {
                         let temp = lab.innerHTML;
+                        lab.innerHTML = "";
                         lab.innerHTML = "<s>";
                         lab.innerHTML += temp + "</s>";
                     });
