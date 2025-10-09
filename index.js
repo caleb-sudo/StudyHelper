@@ -362,10 +362,9 @@ function buildQuestion() {
                     const crossOutBtn = document.createElement('button');
                     crossOutBtn.innerHTML = "<s>Cross Out</s>";
                     crossOutBtn.addEventListener("click", function() {
-                        let temp = lab.innerHTML;
-                        lab.innerHTML = "";
-                        lab.innerHTML = "<s>";
-                        lab.innerHTML += temp + "</s>";
+                        let l = lab.innerHTML;
+                        let r = l.strike();
+                        l = r;
                     });
                     qField.appendChild(crossOutBtn);
                     qField.appendChild(document.createElement('br'));
