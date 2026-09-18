@@ -379,10 +379,20 @@ function buildQuestion() {
                 const radios = document.getElementsByClassName("radios");
                 let submitBtn = document.createElement('button');
                 let nextBtn = document.createElement('button');
+                let skipBtn = document.createElement('button');
 
                 submitBtn.innerHTML = "Submit";
                 submitBtn.classList = "submitBtn";
                 qField.appendChild(submitBtn);
+                qField.appendChild(document.createElement('br'));
+                skipBtn.innerHTML = "Skip"
+                skipBtn.classList = "skipBtn";
+                qField.appendChild(skipBtn);
+
+                function hideSubmiteAndSkipBtn() {
+                    submitBtn.style.display = "none";
+                    skipBtn.style.display = "none";
+                }
 
                 nextBtn.innerHTML = "next";
                 nextBtn.classList = "nextBtn";
@@ -391,7 +401,7 @@ function buildQuestion() {
                     for (let i = 0; i < 4; i++) {
                         if (radios[i].checked == true) {
                             radios.disabled = true;
-                            submitBtn.style.display = "none";
+                            hideSubmiteAndSkipBtn()
                             qField.appendChild(nextBtn);
                             let span = document.createElement("span");
                             span.style.fontSize = "25px";
@@ -445,7 +455,7 @@ function buildQuestion() {
                 function submitWorded() {
                     let correct = 0;
                     let wrong = 0;
-                    submitBtn.style.display = "none";
+                    hideSubmiteAndSkipBtn()
                     qField.appendChild(nextBtn);
                     localStorage.setItem("totalAnswered", totalAnswered + 1);
                     for (var i = 0; i < unit[questionNum].totalBoxes; i++) {
@@ -530,7 +540,7 @@ function buildQuestion() {
                 function submitDragboxes() {
                     let correct = 0;
                     let wrong = 0;
-                    submitBtn.style.display = "none";
+                    hideSubmiteAndSkipBtn()
                     field.appendChild(nextBtn);
                     localStorage.setItem("totalAnswered", totalAnswered + unit[questionNum].totalElements);
                     for (var i = 0; i < unit[questionNum].totalElements; i++) {
@@ -601,7 +611,7 @@ function buildQuestion() {
                 function submitSort() {
                     let correct = 0;
                     let wrong = 0;
-                    submitBtn.style.display = "none";
+                    hideSubmiteAndSkipBtn()
                     qField.appendChild(nextBtn);
                     localStorage.setItem("totalAnswered", totalAnswered + unit[questionNum].totalElements);
                     for (var i = 0; i < unit[questionNum].totalElements; i++) {
@@ -654,7 +664,7 @@ function buildQuestion() {
                 nextBtn.classList = "nextBtn";
 
                 function submitNumeric() {
-                    submitBtn.style.display = "none";
+                    hideSubmiteAndSkipBtn()
                     let value = responseBox.value;
                     let val = parseFloat(value);
                     let valMin = val - 1;
@@ -793,7 +803,7 @@ function buildQuestion() {
                 function submitFillIn() {
                     let correct = 0;
                     let wrong = 0;
-                    submitBtn.style.display = "none";
+                    hideSubmiteAndSkipBtn()
                     localStorage.setItem("totalAnswered", totalAnswered + unit[questionNum].totalElements);
                     for (var i = 0; i < unit[questionNum].totalElements; i++) {
                         let text = document.createElement('span');
@@ -862,7 +872,7 @@ function buildQuestion() {
                 function submitCheckboxes() {
                     let correct = 0;
                     let wrong = 0;
-                    submitBtn.style.display = "none";
+                    hideSubmiteAndSkipBtn()
                     localStorage.setItem("totalAnswered", totalAnswered + 1);
                     for (var i = 0; i < unit[questionNum].totalCheckboxes; i++) {
                         let checkboxes = document.getElementsByClassName("checkboxes");
@@ -909,7 +919,7 @@ function buildQuestion() {
                 nextBtn.classList = "nextBtn";
 
                 function submitSelect() {
-                    submitBtn.style.display = "none";
+                    hideSubmiteAndSkipBtn()
                     localStorage.setItem("totalAnswered", totalAnswered + 1);
                     if (option.value == unit[questionNum].answer) {
                     } else {
@@ -957,7 +967,7 @@ function buildQuestion() {
                         appendHistory.splice(-1, 1);
                     });
                     function submitAppend() {
-                        submitBtn.style.display = "none";
+                        hideSubmiteAndSkipBtn()
                         localStorage.setItem("totalAnswered", totalAnswered + 1);
                         if (p.innerHTML == unit[questionNum].answer) {
                             p.innerHTML += "<br><span style='color:green;'>&check;</span>";
@@ -1011,6 +1021,4 @@ function openLeaderBoards() {
             tr.appendChild(td);
         }
     }
-
 }
-

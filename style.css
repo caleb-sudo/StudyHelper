@@ -39,7 +39,8 @@ input {
 }
 
 .submitBtn,
-.nextBtn {
+.nextBtn,
+.skipBtn {
     background-color: #2196F3;
     color: white;
     border: none;
@@ -51,7 +52,8 @@ input {
 }
 
 .submitBtn:hover,
-.nextBtn:hover {
+.nextBtn:hover,
+.skipBtn:hover {
     opacity: 0.6;
 }
 
