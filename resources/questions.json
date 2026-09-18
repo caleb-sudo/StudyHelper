@@ -4579,12 +4579,12 @@
                 "ERDs": [
                     {
                         "type": 0,
-                        "question": "What is a DBMS and what does it stand for?",
+                        "question": "What is a <b>DBMS</b> and what does it stand for?",
                         "options": [
-                            "A DBMS is a system where you can store data, and it stands for Database Manipulation System",
-                            "A DBMS is a system where you can manage data, and it stands for Database Managment System",
-                            "A DBMS is a system where you can store data, and it stands for Database Managment System",
-                            "A DBMS is a system where you can manage data, and it stands for Database Manipulation System"
+                            "A <b>DBMS</b> is a system where you can store data, and it stands for <b>Database Manipulation System</b>.",
+                            "A <b>DBMS</b> is a system where you can manage data, and it stands for <b>Database Managment System</b>.",
+                            "A <b>DBMS</b> is a system where you can store data, and it stands for <b>Database Managment System</b>.",
+                            "A <b>DBMS</b> is a system where you can manage data, and it stands for <b>Database Manipulation System</b>."
                         ],
                         "answer": 1,
                         "picture": null,
@@ -4592,14 +4592,125 @@
                     },
                     {
                         "type": 0,
-                        "question": "What is a DML and what does it stand for?",
+                        "question": "What is a <b>DML</b> and what does it stand for?",
                         "options": [
-                            "A DML is a system where you can control access and security, and it stands for Database Manipulation System",
-                            "A DML is a system where you can manage data, and it stands for Database Managment System",
-                            "A DML is a system where you can store data, and it stands for Database Managment System",
-                            "A DML is a system where you create and manipulate data, and it stands for Database Manipulation System"
+                            "A <b>DML</b> is a system where you can control access and security, and it stands for <b>Database Manipulation System</b>.",
+                            "A <b>DML</b> is a system where you can manage data, and it stands for <b>Database Managment System</b>.",
+                            "A <b>DML</b> is a system where you can store data, and it stands for <b>Database Managment System</b>.",
+                            "A <b>DML</b> is a system where you create and manipulate data, and it stands for <b>Database Manipulation System</b>."
                         ],
                         "answer": 3,
+                        "picture": null,
+                        "allowSketchPad": false
+                    },
+                    {
+                        "type": 2,
+                        "question": "Connect the following accronyms/terms with the correct definition of what they do.",
+                        "totalElements": 5,
+                        "definitions": [
+                            "A system where you can manage/manipulate/create/control an entire database.",
+                            "A language that defines/builds an entire database.",
+                            "A language that can create and manipulate data in a database.",
+                            "A language that controls access and secures the database.",
+                            "A language that retrieves data from a database."
+                        ],
+                        "terms": [
+                            "<b>DBMS</b>",
+                            "<b>DDL</b>",
+                            "<b>DCL</b>",
+                            "<b>Query Language</b>"
+                        ],
+                        "picture": null,
+                        "allowSketchPad": false
+                    },
+                    {
+                        "type": 0,
+                        "question": "What is an <b>Entity</b>?",
+                        "options": [
+                            "An <b>Entity</b> is a single piece of data about the thing we are storing data about.",
+                            "An <b>Entity</b> is a collection of data for one instance of data.",
+                            "An <b>Entity</b> is a person, place, thing, or concept for which data is collected.",
+                            "An <b>Entity</b> is a part of information about the instances of data being stored about."
+                        ],
+                        "answer": 2,
+                        "picture": null,
+                        "allowSketchPad": false
+                    },
+                    {
+                        "type": 0,
+                        "question": "What is an <b>Attribute</b>?",
+                        "options": [
+                            "An <b>Attribute</b> is a piece of data that describes an entity.",
+                            "An <b>Attribute</b> is a collection of data for one instance of data.",
+                            "An <b>Attribute</b> is a person, place, thing, or concept for which data is collected.",
+                            "An <b>Attribute</b> is a single piece of data about the thing we are storing data about."
+                        ],
+                        "answer": 0,
+                        "picture": null,
+                        "allowSketchPad": false
+                    },
+                    {
+                        "type": 0,
+                        "question": "What is an <b>Instance</b>?",
+                        "options": [
+                            "An <b>Instance</b> is a piece of data that describes an entity.",
+                            "An <b>Instance</b> is a set of processed and organized data that has been given context.",
+                            "An <b>Instance</b> is one specific occurrence of an entity.",
+                            "An <b>Instance</b> is a set of unprocessed and unorganized data that has no context."
+                        ],
+                        "answer": 2,
+                        "picture": null,
+                        "allowSketchPad": false
+                    },
+                    {
+                        "type": 5,
+                        "question": "<b>Information</b> is a set of organized data that has been given context.",
+                        "answer": true,
+                        "picture": null,
+                        "allowSketchPad": false
+                    },
+                    {
+                        "type": 5,
+                        "question": "<b>Data</b> is a set of organized data that has been given context.",
+                        "answer": false,
+                        "picture": null,
+                        "allowSketchPad": false
+                    },
+                    {
+                        "type": 0,
+                        "question": "What is a <b>Physical Entity</b>?",
+                        "options": [
+                            "A <b>Physical Entity</b> is a very strong entity that might beat you up if it sees you, <b>RUN AWAY if you ever see one</b>.",
+                            "A <b>Physical Entity</b> is an entity representing something that can be seen or touched in the real world.",
+                            "A <b>Physical Entity</b> is a very weak entity.",
+                            "A <b>Physical Entity</b> is an entity representing something that cannot be seen or touched, nor does exist in the physical world."
+                        ],
+                        "answer": 1,
+                        "picture": null,
+                        "allowSketchPad": false
+                    },
+                    {
+                        "type": 5,
+                        "question": "A <b>Conceptual Entity</b>? is an entity that can be seen and touched in the real world.",
+                        "answer": false,
+                        "picture": null,
+                        "allowSketchPad": false
+                    },
+                    {
+                        "type": 2,
+                        "question": "Match the following types of attributes with there correct definition.",
+                        "definitions": [
+                            "An attribute that cannot be divided into smaller sets of data.",
+                            "An attribute that can be broken down into smaller sets of data.",
+                            "An attribute that is actual value is stored in the database, and cannot be derived from other data points in the database.",
+                            "An attribute whose value can be determined from other data points in the database."
+                        ],
+                        "terms": [
+                            "<b>Atomic Attribute</b>",
+                            "<b>Composite Attribute</b>",
+                            "<b>Stored Attribute</b>",
+                            "<b>Derived Attribute</b>"
+                        ],
                         "picture": null,
                         "allowSketchPad": false
                     }
