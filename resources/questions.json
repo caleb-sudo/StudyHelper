@@ -4572,5 +4572,42 @@
             ]
         },
         "Social30": {}
+    },
+    "NAIT": {
+        "SDev": {
+            "Databases": {
+                "ERDs": [
+                    {
+                        "type": 0,
+                        "question": "What is a DBMS and what does it stand for?",
+                        "options": [
+                            "A DBMS is a system where you can store data, and it stands for Database Manipulation System",
+                            "A DBMS is a system where you can manage data, and it stands for Database Managment System",
+                            "A DBMS is a system where you can store data, and it stands for Database Managment System",
+                            "A DBMS is a system where you can manage data, and it stands for Database Manipulation System"
+                        ],
+                        "answer": 1,
+                        "picture": null,
+                        "allowSketchPad": false
+                    },
+                    {
+                        "type": 0,
+                        "question": "What is a DML and what does it stand for?",
+                        "options": [
+                            "A DML is a system where you can control access and security, and it stands for Database Manipulation System",
+                            "A DML is a system where you can manage data, and it stands for Database Managment System",
+                            "A DML is a system where you can store data, and it stands for Database Managment System",
+                            "A DML is a system where you create and manipulate data, and it stands for Database Manipulation System"
+                        ],
+                        "answer": 3,
+                        "picture": null,
+                        "allowSketchPad": false
+                    }
+                ],
+                "Normalization": [
+
+                ]
+            }
+        }
     }
 }

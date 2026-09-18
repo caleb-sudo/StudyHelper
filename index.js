@@ -244,6 +244,12 @@ function buildQuestion() {
                         break;
                 }
             }
+            if (unitSelect.value == "Database-ERDs") {
+                unit = data.NAIT.SDev.Databases.ERDs
+            } else if (unitSelect.value == "Database-normalization") {
+                unit = data.NAIT.SDev.Databases.Normalization
+            }
+            
             const question = document.getElementById("question");
             const qField = document.getElementById("box");
             const field = document.getElementById("box2");
