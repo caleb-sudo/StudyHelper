@@ -4786,7 +4786,22 @@
                     }
                 ],
                 "Normalization": [
-
+                    {
+                        "type": 2,
+                        "question": "Match the following types of database anomalies.",
+                        "definitions": [
+                            "An anomaly that occurs when all data is updated but there are missing points that where not updated.",
+                            "An anomaly that occurs when data was inserted with the wrong data in part of the data being inserted.",
+                            "An anomaly that occurs when certain data that contained other important data was removed along with the data being removed."
+                        ],
+                        "terms": [
+                            "Update Anomaly",
+                            "Insert Anomaly",
+                            "Delete Anomaly"
+                        ],
+                        "picture": null,
+                        "allowSketchPad": false
+                    }
                 ]
             }
         }
