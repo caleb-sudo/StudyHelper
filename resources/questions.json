@@ -4765,6 +4765,24 @@
                         "answer": 3,
                         "picture": null,
                         "allowSketchPad": false
+                    },
+                    {
+                        "type": 2,
+                        "question": "Connect the following Cardinality symbols the represent the correct relationship.",
+                        "definitions": [
+                            "zero to zero relationship",
+                            "one to zero relationship",
+                            "zero to many relationship",
+                            "one to many relationship"
+                        ],
+                        "terms": [
+                            "OO",
+                            "|O",
+                            "O<",
+                            "|O"
+                        ],
+                        "picture": null,
+                        "allowSketchPad": false
                     }
                 ],
                 "Normalization": [
