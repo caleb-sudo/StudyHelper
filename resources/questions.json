@@ -4713,6 +4713,58 @@
                         ],
                         "picture": null,
                         "allowSketchPad": false
+                    },
+                    {
+                        "type": 0,
+                        "question": "What does this Cardinality symbol represent?<br>OO",
+                        "options": [
+                            "A zero to zero relationship",
+                            "A one to zero relationship",
+                            "A zero to many relationship",
+                            "A one to many relationship"
+                        ],
+                        "answer": 0,
+                        "picture": null,
+                        "allowSketchPad": false
+                    },
+                    {
+                        "type": 0,
+                        "question": "What does the Cardinality symbol represent?<br>|O",
+                        "options": [
+                            "A zero to zero relationship",
+                            "A one to zero relationship",
+                            "A zero to many relationship",
+                            "A one to many relationship"
+                        ],
+                        "answer": 1,
+                        "picture": null,
+                        "allowSketchPad": false
+                    },
+                    {
+                        "type": 0,
+                        "question": "What does the Cardinality symbol represent?<br>O<",
+                        "options": [
+                            "A zero to zero relationship",
+                            "A one to zero relationship",
+                            "A zero to many relationship",
+                            "A one to many relationship"
+                        ],
+                        "answer": 2,
+                        "picture": null,
+                        "allowSketchPad": false
+                    },
+                    {
+                        "type": 0,
+                        "question": "What does the Cardinality symbol represent?<br>|<",
+                        "options": [
+                            "A zero to zero relationship",
+                            "A one to zero relationship",
+                            "A zero to many relationship",
+                            "A one to many relationship"
+                        ],
+                        "answer": 3,
+                        "picture": null,
+                        "allowSketchPad": false
                     }
                 ],
                 "Normalization": [
