@@ -4795,10 +4795,67 @@
                             "An anomaly that occurs when certain data that contained other important data was removed along with the data being removed."
                         ],
                         "terms": [
-                            "Update Anomaly",
-                            "Insert Anomaly",
-                            "Delete Anomaly"
+                            "<b>Update Anomaly</b>",
+                            "<b>Insert Anomaly</b>",
+                            "<b>Delete Anomaly</b>"
                         ],
+                        "sortingTerm": "Anomalies",
+                        "picture": null,
+                        "allowSketchPad": false
+                    },
+                    {
+                        "type": 0,
+                        "question": "What is an <b>Update Anomaly</b>?",
+                        "options": [
+                            "An anomaly that occurs when all data is updated but there are missing points that where not updated.",
+                            "An anomaly that occurs when data was inserted with the wrong data in part of the data being inserted.",
+                            "An anomaly that occurs when certain data that contained other important data was removed along with the data being removed.",
+                            "An anomaly that occurs when you try updating an application but deupgrades you application."
+                        ],
+                        "answer": 0,
+                        "sortingTerm": "Anomalies",
+                        "picture": null,
+                        "allowSketchPad": false
+                    },
+                    {
+                        "type": 0,
+                        "question": "What is an <b>Insert Anomaly</b>?",
+                        "options": [
+                            "An anomaly that occurs when all data is updated but there are missing points that where not updated.",
+                            "An anomaly that occurs when data was inserted with the wrong data in part of the data being inserted.",
+                            "An anomaly that occurs when certain data that contained other important data was removed along with the data being removed.",
+                            "An anomaly that occurs when you insert a file into a folder but it adds 200 files."
+                        ],
+                        "answer": 1,
+                        "sortingTerm": "Anomalies",
+                        "picture": null,
+                        "allowSketchPad": false
+                    },
+                    {
+                        "type": 0,
+                        "question": "What is an <b>Delete Anomaly</b>?",
+                        "options": [
+                            "An anomaly that occurs when all data is updated but there are missing points that where not updated.",
+                            "An anomaly that occurs when data was inserted with the wrong data in part of the data being inserted.",
+                            "An anomaly that occurs when certain data that contained other important data was removed along with the data being removed.",
+                            "An anomaly that occurs when you try deleting something but everything ends up being deleted."
+                        ],
+                        "answer": 2,
+                        "sortingTerm": "Anomalies",
+                        "picture": null,
+                        "allowSketchPad": false
+                    },
+                    {
+                        "type": 0,
+                        "question": "What is the goal of Normalization?",
+                        "options": [
+                            "To maximize redundency.",
+                            "To minimize redundency.",
+                            "To get more anomalies.",
+                            "To make your database more confusing."
+                        ],
+                        "answer": 1,
+                        "sortingTerm": "general",
                         "picture": null,
                         "allowSketchPad": false
                     }
