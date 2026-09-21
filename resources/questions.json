@@ -4715,6 +4715,38 @@
                         "allowSketchPad": false
                     },
                     {
+                        "type": 5,
+                        "question": "Address is an <b>Composite attribute</b>?",
+                        "answer": false,
+                        "picture": null,
+                        "allowSketchPad": false
+
+                    },
+                    {
+                        "type": 5,
+                        "question": "Address is an <b>Atomic attribute</b>?",
+                        "answer": true,
+                        "picture": null,
+                        "allowSketchPad": false
+
+                    },
+                    {
+                        "type": 5,
+                        "question": "FirstName is an <b>Atomic attribute</b>?",
+                        "answer": true,
+                        "picture": null,
+                        "allowSketchPad": false
+
+                    },
+                    {
+                        "type": 5,
+                        "question": "FirstName is an <b>Composite attribute</b>?",
+                        "answer": false,
+                        "picture": null,
+                        "allowSketchPad": false
+
+                    },
+                    {
                         "type": 0,
                         "question": "What does this Cardinality symbol represent?<br>OO",
                         "options": [
