@@ -4860,6 +4860,10 @@
                         "allowSketchPad": false
                     }
                 ]
+            },
+            "Logic&Problem_solving": {
+                "Flowcharts": [
+                ]
             }
         }
     }

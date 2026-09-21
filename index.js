@@ -245,9 +245,11 @@ function buildQuestion() {
                 }
             }
             if (unitSelect.value == "Database-ERDs") {
-                unit = data.NAIT.SDev.Databases.ERDs
+                unit = data.NAIT.SDev.Databases.ERDs;
             } else if (unitSelect.value == "Database-normalization") {
-                unit = data.NAIT.SDev.Databases.Normalization
+                unit = data.NAIT.SDev.Databases.Normalization;
+            } else if (unitSelect.value == "logic-problemSolving_Flowcharts") {
+                unit = data.NAIT.Sdev.Logic&Problem_solving.Flowcharts;
             }
             
             const question = document.getElementById("question");
