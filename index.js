@@ -251,6 +251,10 @@ function buildQuestion() {
             } else if (unitSelect.value == "logic-problemSolving_Flowcharts") {
                 unit = data.NAIT.Sdev.Logic&Problem_solving.Flowcharts;
             }
+
+            if (unitSelect.value == "testing") {
+                unit = data.testing;
+            }
             
             const question = document.getElementById("question");
             const qField = document.getElementById("box");
@@ -333,7 +337,7 @@ function buildQuestion() {
 
             if (unit[questionNum].type == 0) { //multiple choice question
                 onePanelMode();
-                let r = randomize(unit[questionNum].totalElements);
+                let r = randomize(4);
                 const imgField = document.getElementById("box");
                 const pict = document.createElement('img');
 
@@ -351,6 +355,10 @@ function buildQuestion() {
                     "C) ",
                     "D) "
                 ];
+
+                function randomizeQuestions() {
+                    
+                }
                 
                 for (let i = 0; i < 4; i++) {
                     const div = document.createElement('div');

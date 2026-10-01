@@ -4898,5 +4898,20 @@
                 ]
             }
         }
-    }
+    },
+    "testing": [
+        {
+            "type": 0,
+            "question": "Choose A",
+            "options": [
+                "A",
+                "B",
+                "C",
+                "D"
+            ],
+            "answer": 0,
+            "picture": null,
+            "allowSketchPad": false
+        }
+    ]
 }
