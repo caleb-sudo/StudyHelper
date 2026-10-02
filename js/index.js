@@ -252,7 +252,11 @@ function buildQuestion() {
                 unit = data.NAIT.Sdev.Logic&Problem_solving.Flowcharts;
             }
 
-            if (unitSelect.value == "testing") unit = data.testing;
+            if (unitSelect.value == "testing0") {
+                unit = data.testing.type0;
+            } else if (unitSelect.value == "testing2") {
+                unit = data.testing.type2;
+            }
             
             const question = document.getElementById("question");
             const qField = document.getElementById("box");
@@ -517,7 +521,12 @@ function buildQuestion() {
                 nextBtn.addEventListener("click", reloadPage);
             } if (unit[questionNum].type == 2) { //drag and drop questions
                 let r = randomize(unit[questionNum].totalElements);
-                for (var i = 0; i < unit[questionNum].totalElements; i++) {
+                let containsDroppedElement = [];
+                for (let i = 0; i < unit[questionNum].totalElements; i++) {
+                    containsDroppedElement[i] = false;
+                }
+                console.log(containsDroppedElement);
+                for (let i = 0; i < unit[questionNum].totalElements; i++) {
                     let draggables = document.createElement('div');
                     let dropboxes = document.createElement('div');
                     let droppers = document.createElement('div');

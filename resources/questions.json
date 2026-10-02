@@ -4899,19 +4899,42 @@
             }
         }
     },
-    "testing": [
-        {
-            "type": 0,
-            "question": "Choose A",
-            "options": [
-                "A",
-                "B",
-                "C",
-                "D"
-            ],
-            "answer": 0,
-            "picture": null,
-            "allowSketchPad": false
-        }
-    ]
+    "testing": {
+        "type0": [
+            {
+                "type": 0,
+                "question": "Choose A",
+                "options": [
+                    "A",
+                    "B",
+                    "C",
+                    "D"
+                ],
+                "answer": 0,
+                "picture": null,
+                "allowSketchPad": false
+            }
+        ],
+        "type2": [
+            {
+                "type": 2,
+                "question": "Match the letters",
+                "totalElements": 4,
+                "definitions": [
+                    "A",
+                    "B",
+                    "C",
+                    "D"
+                    ],
+                "terms": [
+                    "A",
+                    "B",
+                    "C",
+                    "D"
+                ],
+                "picture": null,
+                "allowSketchPad": false
+            }
+        ]
+    }
 }
