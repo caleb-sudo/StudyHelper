@@ -355,7 +355,7 @@ function buildQuestion() {
                 ];
 
                 let questionOptions = unit[questionNum].options;
-                let randomizedOptions = randomize(questionOptions);
+                let randomizedOptions = randomize(4);
                 
                 for (let i = 0; i < 4; i++) {
                     const div = document.createElement('div');
@@ -368,7 +368,7 @@ function buildQuestion() {
                     radio.id = 'r' + i;
                     radio.className = "radios";
                     lab.htmlFor = 'r' + i;
-                    lab.innerHTML = opts[i] + unit[questionNum].options[i];//randomizedOptions[i];
+                    lab.innerHTML = opts[i] + unit[questionNum].options[randomizedOptions[i]];
                     lab.className = "radioLabel";
                     div.appendChild(radio);
                     div.appendChild(lab);
@@ -411,7 +411,18 @@ function buildQuestion() {
                             let label = document.getElementsByClassName("radioLabel");
                             localStorage.setItem("totalAnswered", totalAnswered + 1);
                             let checkedIndex = [...document.querySelectorAll("input[name=opts]")].findIndex(e=>e.checked);
-                            if (checkedIndex == unit[questionNum].answer) {//(randomizedOptions[checkedIndex] == unit[questionNum].options[unit[questionNum].answer]) {
+                            let correctAnsIndex = 0;
+                            for (let j = 0; j < 4; j++) {
+                                let correctAnsOriginPos = unit[questionNum].answer;
+                                let possibleAnsPos = randomizedOptions[j];
+                                if (correctAnsOriginPos == possibleAnsPos) {
+                                    correctAnsIndex = j;
+                                    break;
+                                } else continue;
+                            }
+                            console.log(correctAnsIndex);
+                            console.log(unit[questionNum].options[correctAnsIndex]);
+                            if (checkedIndex == correctAnsIndex) {
                                 localStorage.setItem("streak", strk + 1);
                                 localStorage.setItem("score", score + 1);
                                 localStorage.setItem("totalAnsweredCorrect", totalAnsweredCorrect + 1);
@@ -429,7 +440,7 @@ function buildQuestion() {
                                 correctAnsSpan.innerHTML = "&check;";
                                 correctAnsSpan.style.color = "green";
                                 correctAnsSpan.style.fontSize = "25px";
-                                label[unit[questionNum].answer].appendChild(correctAnsSpan);
+                                label[correctAnsIndex].appendChild(correctAnsSpan);
                             }
                         }
                     }
