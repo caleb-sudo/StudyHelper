@@ -29,6 +29,11 @@ input {
     cursor: pointer;
 }
 
+.radios {
+    padding: 0% 10% 0% 10%;
+    margin-top: 10px;
+}
+
 .checkboxLabel,
 .radioLabel {
     justify-content: center;
@@ -40,7 +45,8 @@ input {
 
 .submitBtn,
 .nextBtn,
-.skipBtn {
+.skipBtn,
+.crossOutBtns {
     background-color: #2196F3;
     color: white;
     border: none;
@@ -49,6 +55,10 @@ input {
     padding: 10px;
     margin-top: 10px;
     box-shadow: 4px 4px 0 0 #050505;
+}
+
+.crossOutBtns:hover {
+    text-decoration: line-through;
 }
 
 .submitBtn:hover,
@@ -273,7 +283,7 @@ table {
     background: #24292d;
     width: fit-content;
     height: fit-content;
-    padding: 5px;
+    padding: 0rem 3.125rem 0rem 3.125rem;
 }
 
 .draggables {
@@ -335,4 +345,15 @@ table {
 .trueBtn {
     float: left;
     background-color: green;
+}
+
+#box {
+    display: grid;
+    justify-content: center;
+}
+
+.optionBoxes {
+    display: flex;
+    justify-content: space-between;
+    margin: 0.625rem 0rem 0.625rem 0rem;
 }

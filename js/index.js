@@ -358,9 +358,13 @@ function buildQuestion() {
                 let randomizedOptions = randomize(4);
                 
                 for (let i = 0; i < 4; i++) {
+                    const optionBox = document.createElement('div');
+                    optionBox.classList = "optionBoxes";
+                    optionBox.id = "optionBox" + i;
+                    qField.appendChild(optionBox);
                     const div = document.createElement('div');
                     div.classList = "radioBox";
-                    qField.appendChild(div);
+                    optionBox.appendChild(div);
                     const radio = document.createElement('input');
                     const lab = document.createElement('label');
                     radio.type = "radio";
@@ -375,20 +379,23 @@ function buildQuestion() {
                     div.appendChild(lab);
                     let crossedOff = [ false, false, false, false]
                     const crossOutBtn = document.createElement('button');
-                    crossOutBtn.innerHTML = "<s>Cross Out</s>";
+                    crossOutBtn.innerHTML = "Cross Out";
+                    crossOutBtn.classList = "crossOutBtns";
                     crossOutBtn.id = i;
                     crossOutBtn.addEventListener("click", function() {
                         let crossedLabel = document.getElementById('l' + i);
                         if (crossedOff[i] == false) {
                             crossedLabel.style.textDecoration = 'line-through';
                             crossedOff[i] = true;
+                            crossOutBtn.innerHTML = "Undo Cross Out";
                         } else {
                             crossedLabel.style.textDecoration = 'none';
                             crossedOff[i] = false;
+                            crossOutBtn.innerHTML = "Cross Out";
                         }
                     });
-                    qField.appendChild(crossOutBtn);
-                    qField.appendChild(document.createElement('br'));
+                    optionBox.appendChild(document.createElement('br'));
+                    optionBox.appendChild(crossOutBtn);
                 }
 
                 const radios = document.getElementsByClassName("radios");
