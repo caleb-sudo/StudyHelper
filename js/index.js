@@ -370,14 +370,22 @@ function buildQuestion() {
                     lab.htmlFor = 'r' + i;
                     lab.innerHTML = opts[i] + unit[questionNum].options[randomizedOptions[i]];
                     lab.className = "radioLabel";
+                    lab.id = 'l' + i;
                     div.appendChild(radio);
                     div.appendChild(lab);
+                    let crossedOff = [ false, false, false, false]
                     const crossOutBtn = document.createElement('button');
                     crossOutBtn.innerHTML = "<s>Cross Out</s>";
+                    crossOutBtn.id = i;
                     crossOutBtn.addEventListener("click", function() {
-                        let l = lab.innerHTML;
-                        let r = l.strike();
-                        l = r;
+                        let crossedLabel = document.getElementById('l' + i);
+                        if (crossedOff[i] == false) {
+                            crossedLabel.style.textDecoration = 'line-through';
+                            crossedOff[i] = true;
+                        } else {
+                            crossedLabel.style.textDecoration = 'none';
+                            crossedOff[i] = false;
+                        }
                     });
                     qField.appendChild(crossOutBtn);
                     qField.appendChild(document.createElement('br'));
