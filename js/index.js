@@ -435,8 +435,6 @@ function buildQuestion() {
                                     break;
                                 } else continue;
                             }
-                            console.log(correctAnsIndex);
-                            console.log(unit[questionNum].options[correctAnsIndex]);
                             if (checkedIndex == correctAnsIndex) {
                                 localStorage.setItem("streak", strk + 1);
                                 localStorage.setItem("score", score + 1);
@@ -580,7 +578,6 @@ function buildQuestion() {
                 function submitDragboxes() {
                     let correct = 0;
                     let wrong = 0;
-                    console.log("submit (should) work(s).");
                     submitBtn.style.display = "none";
                     skipBtn.style.display = "none";
                     field.appendChild(nextBtn);

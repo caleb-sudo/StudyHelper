@@ -10,17 +10,17 @@ table {
 }
 
 td {
-    border: 1px solid black;
-    padding: 2px;
+    border: 0.0625rem solid black;
+    padding: 0.125rem;
 }
 
 #calcModal {
     width: auto;
     height: auto;
-    padding: 10px;
+    padding: 0.625rem;
     position: absolute;
     background-color: rgb(0 0 0 / 0.1);
-    border-radius: 16px;
+    border-radius: 1rem;
     cursor: move;
     display: none;
 }
@@ -31,7 +31,7 @@ input {
 
 .radios {
     padding: 0% 10% 0% 10%;
-    margin-top: 10px;
+    margin-top: 0.625rem;
 }
 
 .checkboxLabel,
@@ -50,11 +50,11 @@ input {
     background-color: #2196F3;
     color: white;
     border: none;
-    border-radius: 10px;
+    border-radius: 0.625rem;
     cursor: pointer;
-    padding: 10px;
-    margin-top: 10px;
-    box-shadow: 4px 4px 0 0 #050505;
+    padding: 0.625rem;
+    margin-top: 0.625rem;
+    box-shadow: 0.25rem 0.25rem 0 0 #050505;
 }
 
 .crossOutBtns:hover {
@@ -74,9 +74,9 @@ input {
     height: auto;
     overflow: auto;
     background-color: rgb(0 0 0 / 0.5);
-    border-radius: 16px;
-    padding: 15px 15px 15px 15px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 1rem;
+    padding: 0.937rem 0.937rem 0.937rem 0.937rem;
+    box-shadow: 0 0.25rem 0.5rem 0 rgba(0, 0, 0, 0.2), 0 0.375rem 1.25rem 0 rgba(0, 0, 0, 0.19);
 }
 
 #menuContainer {
@@ -127,7 +127,7 @@ input {
 
 .menuTextBtns,
 .exitModalBtns {
-    font-size: 25px;
+    font-size: 1.5625rem;
     cursor: pointer;
     color: black;
 }
@@ -143,11 +143,11 @@ input {
     color: rgba(255, 255, 255, 0.7);
     border: none;
     border-radius: 50%;
-    font-size: 25px;
+    font-size: 1.5625rem;
 }
 
 .scoresText {
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 
 .question {
@@ -158,12 +158,12 @@ input {
 article,
 #scores {
     background-color: rgb(0 0 0 / 0.1);
-    border-radius: 16px;
+    border-radius: 1rem;
 }
 
 article {
     float: right;
-    padding: 20px;
+    padding: 1.25rem;
     width: 50%;
     height: fit-content;
 }
@@ -180,30 +180,30 @@ section {
 
 .display {
     width: 75%;
-    height: 50px;
+    height: 3.125rem;
     text-align: right;
     font-size: 1.5rem;
-    padding: 10px;
-    margin-bottom: 20px;
+    padding: 0.625rem;
+    margin-bottom: 1.25rem;
     border: none;
     background-color: #ffeb3b;
-    border-radius: 8px;
+    border-radius: 0.5rem;
     color: #333;
 }
 
 .calcButtons {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
+    gap: 0.625rem;
 }
 
 .calcButton {
     background-color: #03a9f4;
     border: none;
     font-size: 1.5rem;
-    padding: 20px;
+    padding: 1.25rem;
     cursor: pointer;
-    border-radius: 10px;
+    border-radius: 0.625rem;
     transition: background-color 0.3s, transform 0.2s;
     color: white;
 }
@@ -246,8 +246,8 @@ section {
 }
 
 #calcHistoryBtn {
-    width: 25px;
-    height: 25px;
+    width: 1.5625rem;
+    height: 1.5625rem;
 }
 
 #exitLeaderboardModal {
@@ -256,7 +256,7 @@ section {
 }
 
 table {
-    border: 1px solid black;
+    border: 0.0625rem solid black;
 }
 
 .title {
@@ -277,9 +277,9 @@ table {
 .radioBox,
 .draggables,
 .dropboxes {
-    border: 2px solid black;
-    border-radius: 10px;
-    box-shadow: 4px 4px 0 0 #050505;
+    border: 0.125rem solid black;
+    border-radius: 0.625rem;
+    box-shadow: 0.25rem 0.25rem 0 0 #050505;
     background: #24292d;
     width: fit-content;
     height: fit-content;
@@ -291,8 +291,8 @@ table {
 }
 
 .droppers {
-    border: 2px dashed white;
-    padding: 10px;
+    border: 0.125rem dashed white;
+    padding: 0.625rem;
     width: fit-content;
     height: fit-content;
 }
@@ -302,7 +302,7 @@ table {
 }
 
 .checker {
-    font-size: 25px;
+    font-size: 1.5625rem;
 }
 
 .fill_in {
@@ -311,7 +311,7 @@ table {
 }
 
 .fill_inDefinitions {
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 
 #sketchpad {
@@ -319,8 +319,8 @@ table {
 }
 
 .drawCanvas {
-    border: 1px solid black;
-    border-radius: 10px;
+    border: 0.0625rem solid black;
+    border-radius: 0.625rem;
     cursor: crosshair;
     background-color: white;
 }
@@ -332,9 +332,9 @@ table {
 .falseBtn,
 .trueBtn {
     color: white;
-    font-size: 35px;
+    font-size: 2.1875rem;
     width: 50%;
-    height: 100px;
+    height: 6.25rem;
 }
 
 .falseBtn {
