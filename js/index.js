@@ -1103,7 +1103,27 @@ function buildQuestion() {
                     submitBtn.addEventListener("click", submitAppend);
                     nextBtn.addEventListener("click", reloadPage);
                 } else if (unit[questionNum].type = 10) { // dropdown sentence finish
-                    let sentence = unit[questionNum].question;
+                    onePanelMode();
+                    let sentence = unit[questionNum].sentence;
+                    let dropdownIndex = 0;
+                    let p = document.createElement('p');
+                    p.id = "dropdownSentence";
+                    p.innerHTML = sentence;
+                    qField.appendChild(p);
+                    for (let i = 0; i < sentence.length; i++) {
+                        if (sentence[i] == '^') {
+                            sentence[i] = "";
+                            console.log(i);
+                            let select = document.createElement('select');
+                            select.name = "dropdown" + dropdownIndex+1;
+                            select.id = "dropwdown" + dropdownIndex+1;
+                            dropdownIndex += 1;
+                            let testAdd = document.createElement('p');
+                            testAdd.innerHTML = "<br><span style='color:red;'> &cross;</span>";
+                            p.insertBefore(testAdd, p[i]);
+                        }
+                    }
+                    console.log(sentence);
                     function submitDropdownSectence() {
 
                     }

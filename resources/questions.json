@@ -4971,7 +4971,7 @@
             {
                 "type": 10,
                 "question": "finish the sentence",
-                "sentence": "^ is the first letter in the alphabet and ^ is the smallest number in this dropdown list",
+                "sentence": "<div></div> is the first letter in the alphabet and <div></div> is the smallest number in this dropdown list",
                 "totalDropdowns": 2,
                 "options": {
                     "dropdown1": [

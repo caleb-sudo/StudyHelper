@@ -357,3 +357,9 @@ table {
     justify-content: space-between;
     margin: 0.625rem 0rem 0.625rem 0rem;
 }
+
+#dropdownSentence {
+    text-align: center;
+    color: white;
+    font-size: 1.25rem;
+}
