@@ -1105,7 +1105,7 @@ function buildQuestion() {
                 } else if (unit[questionNum].type = 10) { // dropdown sentence finish
                     onePanelMode();
                     let sentence = unit[questionNum].sentence;
-                    let dropdownIndex = 0;
+                    let dropdownIndex = 1;
                     let p = document.createElement('p');
                     p.id = "dropdownSentence";
                     p.innerHTML = sentence;
@@ -1117,10 +1117,11 @@ function buildQuestion() {
                             let select = document.createElement('select');
                             select.name = "dropdown" + dropdownIndex+1;
                             select.id = "dropwdown" + dropdownIndex+1;
-                            dropdownIndex += 1;
                             let testAdd = document.createElement('p');
+                            let drop = document.getElementById('drop'+i);
                             testAdd.innerHTML = "<br><span style='color:red;'> &cross;</span>";
-                            p.insertBefore(testAdd, p[i]);
+                            p.appendChild(testAdd);
+                            dropdownIndex += 1;
                         }
                     }
                     console.log(sentence);
