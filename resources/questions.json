@@ -4940,7 +4940,7 @@
             {
                 "type": 8,
                 "question": "choose A",
-                "totalOpts": 8,
+                "totalOpts": 4,
                 "options": [
                     "A",
                     "B",

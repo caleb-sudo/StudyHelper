@@ -349,7 +349,7 @@ function buildQuestion() {
 
                 if (unit[questionNum].picture != null) {
                     pict.src = unit[questionNum].picture;
-                    pict.style.width = '98%';
+                    pict.style.width = '78%';
                     pict.style.height = 'auto';
                     imgField.appendChild(pict);
                     imgField.appendChild(document.createElement('br'));
