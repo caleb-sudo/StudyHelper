@@ -4935,6 +4935,37 @@
                 "picture": null,
                 "allowSketchPad": false
             }
+        ],
+        "type8": [
+            {
+                "type": 8,
+                "question": "choose A",
+                "totalOpts": 8,
+                "options": [
+                    "A",
+                    "B",
+                    "C",
+                    "D"
+                ],
+                "answer": "A",
+                "picture": null,
+                "allowSketchPad": false
+            }
+        ],
+        "type9": [
+            {
+                "type": 9,
+                "question": "print 'Hello World!'",
+                "appendables": [
+                    "Hello",
+                    "World",
+                    " ",
+                    "!"
+                ],
+                "answer": "Hello World!",
+                "picture": null,
+                "allowSketchPad": false
+            }
         ]
     }
 }

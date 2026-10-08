@@ -256,6 +256,10 @@ function buildQuestion() {
                 unit = data.testing.type0;
             } else if (unitSelect.value == "testing2") {
                 unit = data.testing.type2;
+            } else if (unitSelect.value == "testing8") {
+                unit = data.testing.type8;
+            } else if (unitSelect.value = "testing9") {
+                unit = data.testing.type9;
             }
             
             const question = document.getElementById("question");
