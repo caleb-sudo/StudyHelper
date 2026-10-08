@@ -4959,7 +4959,7 @@
                 "appendables": [
                     "Hello",
                     "World",
-                    " ",
+                    "<b>space</b>",
                     "!"
                 ],
                 "answer": "Hello World!",
