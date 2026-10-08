@@ -524,7 +524,6 @@ function buildQuestion() {
                     draggablesCorrectOrder[i] = unit[questionNum].terms[i];
                 }
                 let randomizedDraggables = randomize(unit[questionNum].totalElements);
-                //let randomizedDropBoxes = randomize(unit[questionNum].totalElements);
                 let containsDroppedElement = [];
                 for (let i = 0; i < unit[questionNum].totalElements; i++) {
                     containsDroppedElement[i] = false;
@@ -561,17 +560,12 @@ function buildQuestion() {
                     qField.appendChild(draggables);
                     field.appendChild(dropboxes);
                     field.appendChild(document.createElement('br'));
-                    p.innerHTML = unit[questionNum].definitions[i];//unit[questionNum].definitions[randomizedDropBoxes[i]];
+                    p.innerHTML = unit[questionNum].definitions[i];
                     p.classList = "dropboxParas";
                     p.id = "dropboxPara" + i;
                     dropboxes.appendChild(p);
                     dropboxes.appendChild(droppers);
                     droppers.appendChild(dropText);
-                    /*if (dropText[i].innerHTML.toString() != droppers[i].innerText.toString()) {
-                        dropText[i].style.display = "none";
-                    } else {
-                        dropText[i].style.display = "block";
-                    }*/
                 }
 
                 let submitBtn = document.createElement('button');
@@ -588,7 +582,6 @@ function buildQuestion() {
                 skipBtn.classList = "skipBtn";
                 qField.appendChild(skipBtn);
 
-                
                 function submitDragboxes() {
                     let correct = 0;
                     let wrong = 0;
@@ -601,7 +594,6 @@ function buildQuestion() {
                         let p = document.getElementsByClassName("dropboxParas");
                         let checker = document.createElement("span");
                         checker.classList = "checker";
-                        //terms.indexOf(d[i].innerHTML) == definitions.indexOf(p[i].innerHTML
                         let terms = unit[questionNum].terms;
                         let definitions = unit[questionNum].definitions;
                         if (terms.indexOf(draggables[i].innerHTML) == terms.indexOf(draggablesCorrectOrder[i])) {
