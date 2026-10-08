@@ -532,7 +532,6 @@ function buildQuestion() {
                 for (let i = 0; i < unit[questionNum].totalElements; i++) {
                     containsDroppedElement[i] = false;
                 }
-                console.log(containsDroppedElement);
                 for (let i = 0; i < unit[questionNum].totalElements; i++) {
                     let draggables = document.createElement('div');
                     let dropboxes = document.createElement('div');
@@ -1018,9 +1017,10 @@ function buildQuestion() {
                     for (var i = 0; i < unit[questionNum].appendables.length; i++) {
                         let btns = document.createElement("button");
                         btns.innerHTML = unit[questionNum].appendables[i];
-                        let isPressedBtnASpace = false;
-                        if (p.innerHTML == "<b>space</b>") isPressedBtnASpace = true;
                         btns.addEventListener("click", function() {
+                            let isPressedBtnASpace = false;
+                            if (btns.innerHTML == "<b>space</b>") isPressedBtnASpace = true;
+                            console.log(isPressedBtnASpace);
                             if (!isPressedBtnASpace) {
                                 appendHistory.push(p.innerHTML);
                                 p.innerHTML += this.innerHTML;
@@ -1036,6 +1036,10 @@ function buildQuestion() {
                     let undo = document.createElement('button');
                     undo.innerHTML = "undo";
                     qField.appendChild(undo);
+
+                    let reset = document.createElement('button');
+                    reset.innerHTML = "reset";
+                    qField.appendChild(reset);
 
                     qField.appendChild(br);
                     qField.appendChild(br);
@@ -1058,12 +1062,16 @@ function buildQuestion() {
                         p.innerHTML = appendHistory[appendHistory.length - 1];
                         appendHistory.splice(-1, 1);
                     });
+                    reset.addEventListener("click", function() {
+                        p.innerHTML = "";
+                        appendHistory = [];
+                    })
                     function submitAppend() {
                         submitBtn.style.display = "none";
                         skipBtn.style.display = "none";
                         localStorage.setItem("totalAnswered", totalAnswered + 1);
                         let appendString = p.innerHTML;
-                        appendString.trim();
+                        appendString = appendString.trim();
                         if (appendString == unit[questionNum].answer) {
                             p.innerHTML += "<br><span style='color:green;'>&check;</span>";
                             localStorage.setItem("score", score+1);
