@@ -358,7 +358,6 @@ function buildQuestion() {
                     "D) "
                 ];
 
-                let questionOptions = unit[questionNum].options;
                 let randomizedOptions = randomize(4);
                 
                 for (let i = 0; i < 4; i++) {
@@ -520,7 +519,12 @@ function buildQuestion() {
                 submitBtn.addEventListener("click", submitWorded);
                 nextBtn.addEventListener("click", reloadPage);
             } if (unit[questionNum].type == 2) { //drag and drop questions
-                let r = randomize(unit[questionNum].totalElements);
+                draggablesCorrectOrder = [];
+                for (let i = 0; i < unit[questionNum].totalElements; i++) {
+                    draggablesCorrectOrder[i] = unit[questionNum].terms[i];
+                }
+                let randomizedDraggables = randomize(unit[questionNum].totalElements);
+                //let randomizedDropBoxes = randomize(unit[questionNum].totalElements);
                 let containsDroppedElement = [];
                 for (let i = 0; i < unit[questionNum].totalElements; i++) {
                     containsDroppedElement[i] = false;
@@ -533,9 +537,10 @@ function buildQuestion() {
                     let p = document.createElement('p');
                     let dropText = document.createElement('span');
                     draggables.draggable = true;
-                    draggables.innerHTML = unit[questionNum].terms[r[i]];
+                    draggables.innerHTML = unit[questionNum].terms[randomizedDraggables[i]];
                     draggables.classList = "draggables";
                     draggables.id = "draggable" + i;
+                    pickedUp = null;
                     draggables.addEventListener("dragstart", function(event) {
                         dragStart(event);
                     });
@@ -556,7 +561,7 @@ function buildQuestion() {
                     qField.appendChild(draggables);
                     field.appendChild(dropboxes);
                     field.appendChild(document.createElement('br'));
-                    p.innerHTML = unit[questionNum].definitions[r[i]];
+                    p.innerHTML = unit[questionNum].definitions[i];//unit[questionNum].definitions[randomizedDropBoxes[i]];
                     p.classList = "dropboxParas";
                     p.id = "dropboxPara" + i;
                     dropboxes.appendChild(p);
@@ -599,7 +604,7 @@ function buildQuestion() {
                         //terms.indexOf(d[i].innerHTML) == definitions.indexOf(p[i].innerHTML
                         let terms = unit[questionNum].terms;
                         let definitions = unit[questionNum].definitions;
-                        if (terms.indexOf(draggables[i].innerHTML) == definitions.indexOf(p[i].innerHTML)) {
+                        if (terms.indexOf(draggables[i].innerHTML) == terms.indexOf(draggablesCorrectOrder[i])) {
                             correct++;
                             checker.style.color = "green";
                             checker.innerHTML = "&check;";
