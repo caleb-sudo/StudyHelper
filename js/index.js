@@ -1118,7 +1118,7 @@ function buildQuestion() {
                         select.id = "dropwdown" + dropdownIndex+1;
                         for (let j = 0; j < unit[questionNum].totalOptionsPerDropdown[i-1]; j++) {
                             let opt = document.createElement('option');
-                            //opt.innerHTML = unit[questionNum].
+                            opt.innerHTML = unit[questionNum].options[j]
                         }
                         div.appendChild(select);
                         /*let testAdd = document.createElement('p');

@@ -4973,8 +4973,8 @@
                 "question": "finish the sentence",
                 "sentence": "<div id='drop1'></div> is the first letter in the alphabet and <div id='drop2'></div> is the smallest number in this dropdown list",
                 "totalDropdowns": 2,
-                "options": {
-                    "dropdown1": [
+                "options": [
+                    [
                         "X",
                         "A",
                         "B",
@@ -4982,14 +4982,14 @@
                         "D",
                         "Z"
                     ],
-                    "dropdown2": [
+                    [
                         "-10",
                         "-99",
                         "1",
                         "0",
                         "999"
                     ]
-                },
+                ],
                 "totalOptionsPerDropdown": [
                     6,
                     5
