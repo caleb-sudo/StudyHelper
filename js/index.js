@@ -1062,7 +1062,9 @@ function buildQuestion() {
                         submitBtn.style.display = "none";
                         skipBtn.style.display = "none";
                         localStorage.setItem("totalAnswered", totalAnswered + 1);
-                        if (p.innerHTML == unit[questionNum].answer) {
+                        let appendString = p.innerHTML;
+                        appendString.trim();
+                        if (appendString == unit[questionNum].answer) {
                             p.innerHTML += "<br><span style='color:green;'>&check;</span>";
                             localStorage.setItem("score", score+1);
                             localStorage.setItem("streak", strk+1);
