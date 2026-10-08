@@ -1018,9 +1018,16 @@ function buildQuestion() {
                     for (var i = 0; i < unit[questionNum].appendables.length; i++) {
                         let btns = document.createElement("button");
                         btns.innerHTML = unit[questionNum].appendables[i];
+                        let isPressedBtnASpace = false;
+                        if (p.innerHTML == "<b>space</b>") isPressedBtnASpace = true;
                         btns.addEventListener("click", function() {
-                            appendHistory.push(p.innerHTML);
-                            p.innerHTML += this.innerHTML;
+                            if (!isPressedBtnASpace) {
+                                appendHistory.push(p.innerHTML);
+                                p.innerHTML += this.innerHTML;
+                            } else {
+                                appendHistory.push(" "),
+                                p.innerHTML += " ";
+                            }
                         });
                         qField.appendChild(btns);
                     }
