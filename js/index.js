@@ -258,8 +258,10 @@ function buildQuestion() {
                 unit = data.testing.type2;
             } else if (unitSelect.value == "testing8") {
                 unit = data.testing.type8;
-            } else if (unitSelect.value = "testing9") {
+            } else if (unitSelect.value == "testing9") {
                 unit = data.testing.type9;
+            } else if (unitSelect.value == "testing10") {
+                unit = data.testing.type10;
             }
             
             const question = document.getElementById("question");
@@ -978,8 +980,14 @@ function buildQuestion() {
                     let option = document.createElement('option');
                     option.value = unit[questionNum].options[i];
                     option.innerHTML = unit[questionNum].options[i];
+                    option.id = "dropdown";
                     select.appendChild(option);
                 }
+                qField.appendChild(document.createElement('br'));
+
+                let checker = document.createElement('p');
+                qField.appendChild(checker);
+
                 qField.appendChild(document.createElement('br'));
 
                 let submitBtn = document.createElement('button');
@@ -1000,8 +1008,16 @@ function buildQuestion() {
                     submitBtn.style.display = "none";
                     skipBtn.style.display = "none";
                     localStorage.setItem("totalAnswered", totalAnswered + 1);
+                    let option = document.getElementById('dropdown');
                     if (option.value == unit[questionNum].answer) {
+                        checker.innerHTML = "<br><span style='color:green;'>&check;</span>";
+                        localStorage.setItem("score", score+1);
+                        localStorage.setItem("streak", strk+1);
+                        localStorage.setItem("totalAnsweredCorrect", totalAnsweredCorrect+1);
                     } else {
+                        checker.innerHTML = "<br><span style='color:red;'>&cross;</span>"
+                        localStorage.setItem("score", score-1);
+                        localStorage.setItem("streak", 0);
                     }
                     qField.appendChild(nextBtn);
                 }
@@ -1025,7 +1041,7 @@ function buildQuestion() {
                                 appendHistory.push(p.innerHTML);
                                 p.innerHTML += this.innerHTML;
                             } else {
-                                appendHistory.push(" "),
+                                appendHistory.push(" ");
                                 p.innerHTML += " ";
                             }
                         });
@@ -1065,7 +1081,7 @@ function buildQuestion() {
                     reset.addEventListener("click", function() {
                         p.innerHTML = "";
                         appendHistory = [];
-                    })
+                    });
                     function submitAppend() {
                         submitBtn.style.display = "none";
                         skipBtn.style.display = "none";
@@ -1086,6 +1102,11 @@ function buildQuestion() {
                     }
                     submitBtn.addEventListener("click", submitAppend);
                     nextBtn.addEventListener("click", reloadPage);
+                } else if (unit[questionNum].type = 10) { // dropdown sentence finish
+                    let sentence = unit[questionNum].question;
+                    function submitDropdownSectence() {
+
+                    }
                 }
             qField.appendChild(document.createElement('br'));
             qField.appendChild(document.createElement('br'));

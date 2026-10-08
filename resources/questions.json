@@ -4966,6 +4966,41 @@
                 "picture": null,
                 "allowSketchPad": false
             }
+        ],
+        "type10": [
+            {
+                "type": 10,
+                "question": "finish the sentence",
+                "sentence": "^ is the first letter in the alphabet and ^ is the smallest number in this dropdown list",
+                "totalDropdowns": 2,
+                "options": {
+                    "dropdown1": [
+                        "X",
+                        "A",
+                        "B",
+                        "C",
+                        "D",
+                        "Z"
+                    ],
+                    "dropdown2": [
+                        "-10",
+                        "-99",
+                        "1",
+                        "0",
+                        "999"
+                    ]
+                },
+                "totalOptionsPerDropdown": {
+                    "dropdown1": 6,
+                    "dropdown2": 5
+                },
+                "answers": {
+                    "dropdown1": "A",
+                    "dropdown2": "-99"
+                },
+                "picture": null,
+                "allowSketchPad": false
+            }
         ]
     }
 }
