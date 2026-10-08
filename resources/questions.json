@@ -4990,10 +4990,10 @@
                         "999"
                     ]
                 },
-                "totalOptionsPerDropdown": {
-                    "dropdown1": 6,
-                    "dropdown2": 5
-                },
+                "totalOptionsPerDropdown": [
+                    6,
+                    5
+                ],
                 "answers": {
                     "dropdown1": "A",
                     "dropdown2": "-99"

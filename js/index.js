@@ -1110,24 +1110,51 @@ function buildQuestion() {
                     p.id = "dropdownSentence";
                     p.innerHTML = sentence;
                     qField.appendChild(p);
-                    for (let i = 0; i < sentence.length; i++) {
-                        if (sentence[i] == '^') {
-                            sentence[i] = "";
-                            console.log(i);
-                            let select = document.createElement('select');
-                            select.name = "dropdown" + dropdownIndex+1;
-                            select.id = "dropwdown" + dropdownIndex+1;
-                            let testAdd = document.createElement('p');
-                            let drop = document.getElementById('drop'+i);
-                            testAdd.innerHTML = "<br><span style='color:red;'> &cross;</span>";
-                            p.appendChild(testAdd);
-                            dropdownIndex += 1;
+                    let selects = [];
+                    for (let i = 1; i < unit[questionNum].totalDropdowns+1; i++) {
+                        let div = document.getElementById('drop'+i);
+                        let select = document.createElement('select');
+                        select.name = "dropdown" + dropdownIndex+1;
+                        select.id = "dropwdown" + dropdownIndex+1;
+                        for (let j = 0; j < unit[questionNum].totalOptionsPerDropdown[i-1]; j++) {
+                            let opt = document.createElement('option');
+                            //opt.innerHTML = unit[questionNum].
                         }
+                        div.appendChild(select);
+                        /*let testAdd = document.createElement('p');
+                        testAdd.innerHTML = "<br><span style='color:red;'> &cross;</span>";
+                        drop.appendChild(testAdd);*/
+                        selects[i] = select;
+                        dropdownIndex += 1;
                     }
-                    console.log(sentence);
-                    function submitDropdownSectence() {
 
+                    let submitBtn = document.createElement('button');
+                    submitBtn.innerHTML = "Submit";
+                    submitBtn.classList = "submitBtn";
+                    qField.appendChild(submitBtn);
+
+                    let nextBtn = document.createElement('button');
+                    nextBtn.innerHTML = "Next";
+                    nextBtn.classList = "nextBtn";
+
+                    let skipBtn = document.createElement('button');
+                    skipBtn.innerHTML = "Skip";
+                    skipBtn.classList = "skipBtn";
+                    qField.appendChild(skipBtn);
+
+                    function submitDropdownSentence() {
+                        submitBtn.style.display = "none";
+                        skipBtn.style.display = "none";
+                        localStorage.setItem("totalAnswered", totalAnswered + 1);
+                        for (let i = 0; i < unit[questionNum].totalDropdowns; i++) {
+
+                        }
+                        qField.appendChild(nextBtn);
                     }
+
+                    submitBtn.addEventListener("click", submitDropdownSentence);
+                    skipBtn.addEventListener("click", reloadPage);
+                    nextBtn.addEventListener("click", reloadPage);
                 }
             qField.appendChild(document.createElement('br'));
             qField.appendChild(document.createElement('br'));
