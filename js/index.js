@@ -966,7 +966,7 @@ function buildQuestion() {
                             span.style.color = "red";
                             span.innerHTML += " &cross;";
                         }
-                        localStorage.setItem("score", score + (correct - wrong))
+                        localStorage.setItem("score", score + (correct - wrong));
                         labs[i].appendChild(span);
                     }
                     qField.appendChild(nextBtn);
@@ -1156,6 +1156,7 @@ function buildQuestion() {
                                 boxIndex += 1;
                             } else completeSentence += word + ' ';
                         });
+                        completeSentence.trim();
                         yourSentence.innerHTML = completeSentence;
                     }
                     resetCompleteSentence();
