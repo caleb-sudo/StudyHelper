@@ -1186,13 +1186,13 @@ function buildQuestion() {
                             if (unit[questionNum].answers[i] == selects[i].value) {
                                 labels[i].innerHTML += "<br><span style='color:green;'>&check;</span>";
                                 gotRight += 1;
-                                localStorage.setItem("score", score+1);
                                 localStorage.setItem("totalAnsweredCorrect", totalAnsweredCorrect+1);
                             } else {
+                                gotRight -= 1;
                                 labels[i].innerHTML += "<br><span style='color:red;'>&cross;</span>";
-                                localStorage.setItem("score", score-1);
                             }
                         }
+                        localStorage.setItem("score", score+gotRight);
                         if (gotRight == shouldGetRightToKeepStrk) localStorage.setItem("streak", strk+1);
                         else localStorage.setItem("streak", 0);
                         qField.appendChild(nextBtn);
