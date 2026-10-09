@@ -1113,12 +1113,17 @@ function buildQuestion() {
                     let selects = [];
                     for (let i = 1; i < unit[questionNum].totalDropdowns+1; i++) {
                         let div = document.getElementById('drop'+i);
-                        let select = document.createElement('select');
-                        select.name = "dropdown" + dropdownIndex+1;
-                        select.id = "dropwdown" + dropdownIndex+1;
-                        for (let j = 0; j < unit[questionNum].totalOptionsPerDropdown[i-1]; j++) {
-                            let opt = document.createElement('option');
-                            opt.innerHTML = unit[questionNum].options[j]
+                        let select = null;
+                        for (let j = 0; j < unit[questionNum].totalDropdowns; j++) {
+                            select = document.createElement('select');
+                            select.name = "dropdown" + dropdownIndex+1;
+                            select.id = "dropwdown" + dropdownIndex+1;
+                            for (let k = 0; k < unit[questionNum].totalOptionsPerDropdown[i]; k++) {
+                                let opt = document.createElement('option');
+                                opt.innerHTML = unit[questionNum].options[j][k];
+                                select.appendChild(opt);
+                            }
+                            div.appendChild(select);
                         }
                         div.appendChild(select);
                         /*let testAdd = document.createElement('p');
