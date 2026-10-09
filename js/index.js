@@ -118,11 +118,15 @@ const strkText = document.getElementById("streak");
 const scoreText = document.getElementById("score");
 const highscoreText = document.getElementById("highscore");
 const highestStreakText = document.getElementById("highestStreak");
+const totalAnsweredText = document.getElementById("totalAnswered");
+const totalAnsweredCorrectText = document.getElementById("totalAnsweredCorrect");
 
 scoreText.innerHTML = "Your Score: <b class='scoresText'>" + getscore + "</b>";
 highscoreText.innerHTML = "Your Highscore: <b class='scoresText'>" + getHighscore + "</b>";
 strkText.innerHTML = "Your Streak: <b class='scoresText'>" + getstrk + "</b>";
 highestStreakText.innerHTML = "Your highest Streak: <b class='scoresText'>" + getHighestStrk + "</b>";
+totalAnsweredText.innerHTML = "You've answered <b class='scoresText'>" + getTotalAnswered + "</b> questions";
+totalAnsweredCorrectText.innerHTML = "You've answered <b class='scoresText'>" + getTotalAnsweredCorrect + "</b> questions correctly";
 
 if (score >= highscore) localStorage.setItem("highscore", score);
 if (strk >= highestStrk) localStorage.setItem("highestStreak", strk);
@@ -1204,6 +1208,8 @@ function buildQuestion() {
                     submitBtn.addEventListener("click", submitDropdownSentence);
                     skipBtn.addEventListener("click", reloadPage);
                     nextBtn.addEventListener("click", reloadPage);
+                } else {
+                    console.log("somethings wrong with the json file, a question is trying to be a question type that does not exist.")
                 }
             qField.appendChild(document.createElement('br'));
             qField.appendChild(document.createElement('br'));
