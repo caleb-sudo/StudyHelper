@@ -4994,10 +4994,10 @@
                     6,
                     5
                 ],
-                "answers": {
-                    "dropdown1": "A",
-                    "dropdown2": "-99"
-                },
+                "answers": [
+                    "A",
+                    "-99"
+                ],
                 "picture": null,
                 "allowSketchPad": false
             }

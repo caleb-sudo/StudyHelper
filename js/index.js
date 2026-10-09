@@ -1102,36 +1102,63 @@ function buildQuestion() {
                     }
                     submitBtn.addEventListener("click", submitAppend);
                     nextBtn.addEventListener("click", reloadPage);
-                } else if (unit[questionNum].type = 10) { // dropdown sentence finish
-                    onePanelMode();
+                } else if (unit[questionNum].type == 10) { // dropdown sentence finish
                     let sentence = unit[questionNum].sentence;
                     let dropdownIndex = 1;
                     let p = document.createElement('p');
                     p.id = "dropdownSentence";
                     p.innerHTML = sentence;
-                    qField.appendChild(p);
+                    field.appendChild(p);
                     let selects = [];
-                    for (let i = 1; i < unit[questionNum].totalDropdowns+1; i++) {
-                        let div = document.getElementById('drop'+i);
-                        let select = null;
-                        for (let j = 0; j < unit[questionNum].totalDropdowns; j++) {
-                            select = document.createElement('select');
-                            select.name = "dropdown" + dropdownIndex+1;
-                            select.id = "dropwdown" + dropdownIndex+1;
-                            for (let k = 0; k < unit[questionNum].totalOptionsPerDropdown[i]; k++) {
-                                let opt = document.createElement('option');
-                                opt.innerHTML = unit[questionNum].options[j][k];
-                                select.appendChild(opt);
-                            }
-                            div.appendChild(select);
+                    let labels = [];
+                    for (let i = 0; i < unit[questionNum].totalDropdowns; i++) {
+                        selectContainer = document.createElement('div');
+                        let label = document.createElement('label');
+                        let select = document.createElement('select');
+                        select.name = "dropdown" + dropdownIndex + i;
+                        select.id = "dropwdown" + dropdownIndex + i;
+                        label.htmlFor = "dropdown" + dropdownIndex + i;
+                        label.id = "dropdownLabel" + i;
+                        label.textContent = dropdownIndex+i+ ".";
+                        let randomizedOpts = randomize(unit[questionNum].totalOptionsPerDropdown[i]);
+                        for (let j = 0; j < unit[questionNum].totalOptionsPerDropdown[i]; j++) {
+                            let opt = document.createElement('option');
+                            opt.innerHTML = unit[questionNum].options[i][randomizedOpts[j]];
+                            select.appendChild(opt);
                         }
-                        div.appendChild(select);
-                        /*let testAdd = document.createElement('p');
-                        testAdd.innerHTML = "<br><span style='color:red;'> &cross;</span>";
-                        drop.appendChild(testAdd);*/
+                        qField.appendChild(label);
+                        qField.appendChild(select);
                         selects[i] = select;
-                        dropdownIndex += 1;
+                        labels[i] = label;
+                        select.addEventListener('change', resetCompleteSentence);
                     }
+                    let splitSentence = String(unit[questionNum].sentence).split(' ');
+                    let completeSentence = "";
+
+                    field.appendChild(document.createElement('hr'));
+                    let yourSentenceTitle = document.createElement('h2');
+                    yourSentenceTitle.textContent = "Your Complete Sentence";
+                    field.appendChild(yourSentenceTitle);
+                    let yourSentence = document.createElement('p');
+                    yourSentence.textContent = completeSentence;
+                    yourSentence.id = 'completeSentence';
+                    field.appendChild(yourSentence);
+
+                    function resetCompleteSentence() {
+                        let boxIndex = 1;
+                        completeSentence = "";
+                        splitSentence.forEach(word => {
+                            startWith = boxIndex + '._';
+                            if (word.startsWith(startWith)) {
+                                completeSentence += selects[boxIndex-1].value + ' ';
+                                boxIndex += 1;
+                            } else {
+                                completeSentence += word + ' ';
+                            }
+                        });
+                        yourSentence.textContent = completeSentence;
+                    }
+                    resetCompleteSentence();
 
                     let submitBtn = document.createElement('button');
                     submitBtn.innerHTML = "Submit";
@@ -1151,9 +1178,24 @@ function buildQuestion() {
                         submitBtn.style.display = "none";
                         skipBtn.style.display = "none";
                         localStorage.setItem("totalAnswered", totalAnswered + 1);
+                        let gotRight = 0;
+                        let shouldGetRightToKeepStrk = unit[questionNum].totalDropdowns;
                         for (let i = 0; i < unit[questionNum].totalDropdowns; i++) {
-
+                            console.log(unit[questionNum].answers[i]);
+                            console.log(selects[i].value);
+                            if (unit[questionNum].answers[i] == selects[i].value) {
+                                console.log('hello');
+                                labels[i].innerHTML += "<br><span style='color:green;'>&check;</span>";
+                                gotRight += 1;
+                                localStorage.setItem("score", score+1);
+                                localStorage.setItem("totalAnsweredCorrect", totalAnsweredCorrect+1);
+                            } else {
+                                console.log('no');
+                                localStorage.setItem("score", score-1);
+                            }
                         }
+                        if (gotRight == shouldGetRightToKeepStrk) localStorage.setItem("streak", strk+1);
+                        else localStorage.setItem("streak", 0);
                         qField.appendChild(nextBtn);
                     }
 
