@@ -1179,6 +1179,7 @@ function buildQuestion() {
                         skipBtn.style.display = "none";
                         localStorage.setItem("totalAnswered", totalAnswered + 1);
                         let gotRight = 0;
+                        let scoreChange = 0;
                         let shouldGetRightToKeepStrk = unit[questionNum].totalDropdowns;
                         for (let i = 0; i < unit[questionNum].totalDropdowns; i++) {
                             console.log(unit[questionNum].answers[i]);
@@ -1186,13 +1187,14 @@ function buildQuestion() {
                             if (unit[questionNum].answers[i] == selects[i].value) {
                                 labels[i].innerHTML += "<br><span style='color:green;'>&check;</span>";
                                 gotRight += 1;
-                                localStorage.setItem("totalAnsweredCorrect", totalAnsweredCorrect+1);
+                                scoreChange += 1;
                             } else {
-                                gotRight -= 1;
+                                scoreChange -= 1;
                                 labels[i].innerHTML += "<br><span style='color:red;'>&cross;</span>";
                             }
                         }
-                        localStorage.setItem("score", score+gotRight);
+                        localStorage.setItem("score", score + scoreChange);
+                        localStorage.setItem("totalAnsweredCorrect", totalAnsweredCorrect + gotRight);
                         if (gotRight == shouldGetRightToKeepStrk) localStorage.setItem("streak", strk+1);
                         else localStorage.setItem("streak", 0);
                         qField.appendChild(nextBtn);
