@@ -270,6 +270,7 @@ function buildQuestion() {
 
             let questionNum = Math.floor(Math.random() * unit.length);
             question.innerHTML = unit[questionNum].question;
+            question.id = "question";
 
             const canvasContainer = document.getElementById("canvasContainer");
             const canvas = document.getElementById("sketchpad");
@@ -1118,6 +1119,7 @@ function buildQuestion() {
                         select.name = "dropdown" + dropdownIndex + i;
                         select.id = "dropwdown" + dropdownIndex + i;
                         label.htmlFor = "dropdown" + dropdownIndex + i;
+                        label.classList = "dropdownLabel";
                         label.id = "dropdownLabel" + i;
                         label.textContent = dropdownIndex+i+ ".";
                         let randomizedOpts = randomize(unit[questionNum].totalOptionsPerDropdown[i]);
@@ -1150,13 +1152,11 @@ function buildQuestion() {
                         splitSentence.forEach(word => {
                             startWith = boxIndex + '._';
                             if (word.startsWith(startWith)) {
-                                completeSentence += selects[boxIndex-1].value + ' ';
+                                completeSentence += '<b>' + selects[boxIndex-1].value + '</b> ';
                                 boxIndex += 1;
-                            } else {
-                                completeSentence += word + ' ';
-                            }
+                            } else completeSentence += word + ' ';
                         });
-                        yourSentence.textContent = completeSentence;
+                        yourSentence.innerHTML = completeSentence;
                     }
                     resetCompleteSentence();
 
@@ -1184,13 +1184,12 @@ function buildQuestion() {
                             console.log(unit[questionNum].answers[i]);
                             console.log(selects[i].value);
                             if (unit[questionNum].answers[i] == selects[i].value) {
-                                console.log('hello');
                                 labels[i].innerHTML += "<br><span style='color:green;'>&check;</span>";
                                 gotRight += 1;
                                 localStorage.setItem("score", score+1);
                                 localStorage.setItem("totalAnsweredCorrect", totalAnsweredCorrect+1);
                             } else {
-                                console.log('no');
+                                labels[i].innerHTML += "<br><span style='color:red;'>&cross;</span>";
                                 localStorage.setItem("score", score-1);
                             }
                         }

@@ -36,7 +36,8 @@ input {
 }
 
 .checkboxLabel,
-.radioLabel {
+.radioLabel,
+.dropdownLabel {
     justify-content: center;
     align-content: center;
     word-wrap: normal;
@@ -359,7 +360,9 @@ table {
     margin: 0.625rem 0rem 0.625rem 0rem;
 }
 
-#dropdownSentence {
+#dropdownSentence,
+#completeSentence,
+#question {
     text-align: center;
     color: white;
     font-size: 1.25rem;

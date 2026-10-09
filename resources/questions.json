@@ -4970,8 +4970,8 @@
         "type10": [
             {
                 "type": 10,
-                "question": "finish the sentence",
-                "sentence": "1._________ is the first letter in the alphabet and 2._________ is the smallest number in this dropdown list",
+                "question": "Finish the sentence",
+                "sentence": "1._________ is the first letter in the alphabet and 2._________ is the smallest number in this dropdown list.",
                 "totalDropdowns": 2,
                 "options": [
                     [
